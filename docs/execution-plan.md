@@ -12,6 +12,7 @@ The first implementation prioritizes text-based database Q&A. Voice chat is adde
 - Use HLCA as the lung reference context and LuCA as the NSCLC tumor atlas source.
 - Use TRACERx/PEACE as biological motivation for tumor evolution and metastasis, not as the first ingestion target.
 - Explain why the database stores summaries rather than raw single-cell matrices.
+- Enforce reader-facing documentation standards: no prompt leakage, no hidden drafting notes, and no unsupported scientific claims.
 
 ## Phase 2: Data Source Reconnaissance
 
@@ -77,4 +78,5 @@ The first implementation prioritizes text-based database Q&A. Voice chat is adde
 - AWS resources are budget-protected and tagged.
 - The agent never fabricates unsupported database answers.
 - Every biological answer includes SQL and source provenance.
-
+- Reader-facing docs contain no prompt text, chain-of-thought, private notes, or AI meta-commentary.
+- Biological claims are supported by dataset documentation, peer-reviewed papers, or clearly marked as hypotheses.

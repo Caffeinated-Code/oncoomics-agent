@@ -36,6 +36,12 @@ NSCLC is a strong first disease focus because it connects multiple advanced biol
 
 TRACERx and PEACE studies provide the motivating biological story: lung cancer evolves across space and time, and metastasis is shaped by subclonal selection and tumor microenvironment context. This project uses that story to motivate public atlas questions, while keeping v1 data ingestion focused on easier-to-use public single-cell atlas resources.
 
+Key evidence anchors:
+
+- The Human Lung Cell Atlas provides a broad reference for lung cell identities in health and disease.
+- LuCA integrates NSCLC single-cell datasets and is useful for tumor microenvironment questions.
+- TRACERx/PEACE motivates the need to reason about tumor evolution, metastasis, and sampling context.
+
 ## What Counts As Multi-Omics Here?
 
 The first build is single-cell transcriptomics plus metadata. It is still an omics integration project because it connects expression with:
@@ -93,3 +99,6 @@ mindmap
 - Do malignant epithelial cells show EMT-associated expression?
 - Which results are from LuCA versus HLCA-derived sources?
 
+## Important Caveat
+
+Single-cell RNA expression is not the same as protein abundance, pathway activity, treatment response, or clinical outcome. The database should make expression patterns easier to explore, but it should not present exploratory atlas summaries as clinical conclusions.

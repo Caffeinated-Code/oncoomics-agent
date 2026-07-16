@@ -59,3 +59,16 @@ How to use in v1:
 - No raw FASTQ, BAM, CRAM, or massive `.h5ad` files in Git.
 - Source license and provenance must be recorded before ingestion.
 
+## Citation And Provenance Fields
+
+Every imported source should be tracked with:
+
+- source name
+- source URL
+- publication DOI or PubMed link, if available
+- download date
+- license or access note
+- file name and checksum, if downloaded
+- transformation script or notebook used
+
+This keeps the project reproducible and prevents scientific claims from drifting away from the data.

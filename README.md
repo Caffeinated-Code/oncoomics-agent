@@ -2,6 +2,17 @@
 
 An advanced Bioinformatics Field Guide project: curate public single-cell lung cancer atlas data into a small AWS-hosted SQL database, then build an AI agent that can answer biological questions about non-small cell lung cancer (NSCLC) cell states, tumor microenvironment biology, and gene expression patterns.
 
+## Who This Is For
+
+This repo is for readers who want to:
+
+- learn NSCLC tumor microenvironment biology through public single-cell data
+- build a similar atlas-backed AI database agent
+- practice SQL, AWS, and data curation with a real biomedical use case
+- see how to keep AI-generated scientific answers grounded in queryable evidence
+
+The writing aims to be direct, reproducible, and easy to navigate. No hidden prompt text, draft instructions, or AI meta-commentary should appear in reader-facing docs.
+
 ## Why This Project?
 
 Public single-cell atlases have changed what a bioinformatics project can do. Instead of looking only at bulk tumor averages, we can ask questions at the level of cell types, tissue compartments, disease states, and patient-derived samples.
@@ -16,6 +27,12 @@ NSCLC is a strong disease focus because lung cancer progression involves tumor e
 - biological themes from studies such as TRACERx and PEACE
 
 This project makes those connections queryable.
+
+The scientific motivation is supported by three lines of evidence:
+
+- The Human Lung Cell Atlas integrates large-scale lung single-cell data and provides reference cell type context for healthy and diseased lung tissue.
+- LuCA focuses on NSCLC and supports cell-type-level exploration of tumor and immune microenvironment programs.
+- TRACERx/PEACE studies show why lung cancer evolution, metastasis, and sampling context matter, even though controlled-access TRACERx data is not the first ingestion target.
 
 ## What It Solves
 
@@ -119,6 +136,19 @@ See [Customization Guide](docs/customization-guide.md).
 - [AWS Account Prep](docs/aws-account-prep.md)
 - [Execution Plan](docs/execution-plan.md)
 - [Customization Guide](docs/customization-guide.md)
+- [Evidence And Writing Standards](docs/evidence-and-writing-standards.md)
+- [Scientific References](docs/scientific-references.md)
+
+## Repository Quality Standard
+
+This project should read like a polished scientific software repo, not a chat transcript.
+
+- Keep docs concise and navigable.
+- Separate facts, design choices, and future work.
+- Cite sources for biological claims and dataset descriptions.
+- Never include prompts, chain-of-thought, private notes, or drafting instructions in content.
+- Make every agent answer traceable to SQL, curated tables, and source provenance.
+- Prefer small reproducible examples over broad claims.
 
 ## AWS Cost-Conscious Plan
 
@@ -158,4 +188,3 @@ Recommended project defaults:
 - Monthly budget alert: `$5`
 - Resource tag: `project=oncoomics-agent`
 - Database content: public, processed, non-controlled data only
-
