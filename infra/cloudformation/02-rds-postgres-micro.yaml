@@ -1,0 +1,111 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Minimal RDS PostgreSQL option for OncoOmics Agent summary tables.
+
+Parameters:
+  DBName:
+    Type: String
+    Default: oncoomics
+    AllowedPattern: "[a-zA-Z][a-zA-Z0-9]*"
+  DBUsername:
+    Type: String
+    Default: oncoomics_admin
+    NoEcho: true
+  DBPassword:
+    Type: String
+    NoEcho: true
+    MinLength: 12
+    Description: Use a generated password. Do not commit it.
+  DBInstanceClass:
+    Type: String
+    Default: db.t4g.micro
+    AllowedValues:
+      - db.t4g.micro
+      - db.t3.micro
+  AllocatedStorageGB:
+    Type: Number
+    Default: 20
+    MinValue: 20
+    MaxValue: 20
+  VpcId:
+    Type: AWS::EC2::VPC::Id
+  PrivateSubnetIds:
+    Type: List<AWS::EC2::Subnet::Id>
+    Description: At least two private subnets in different Availability Zones.
+  AppSecurityGroupId:
+    Type: AWS::EC2::SecurityGroup::Id
+    Description: Security group allowed to connect to PostgreSQL.
+  Environment:
+    Type: String
+    Default: dev
+    AllowedValues:
+      - dev
+      - test
+      - prod
+
+Resources:
+  DBSubnetGroup:
+    Type: AWS::RDS::DBSubnetGroup
+    Properties:
+      DBSubnetGroupDescription: Private subnets for OncoOmics Agent PostgreSQL.
+      SubnetIds: !Ref PrivateSubnetIds
+      Tags:
+        - Key: project
+          Value: oncoomics-agent
+        - Key: environment
+          Value: !Ref Environment
+
+  DBSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: PostgreSQL access for OncoOmics Agent.
+      VpcId: !Ref VpcId
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 5432
+          ToPort: 5432
+          SourceSecurityGroupId: !Ref AppSecurityGroupId
+      SecurityGroupEgress:
+        - IpProtocol: -1
+          CidrIp: 0.0.0.0/0
+      Tags:
+        - Key: project
+          Value: oncoomics-agent
+        - Key: environment
+          Value: !Ref Environment
+
+  PostgresDB:
+    Type: AWS::RDS::DBInstance
+    DeletionPolicy: Snapshot
+    UpdateReplacePolicy: Snapshot
+    Properties:
+      DBInstanceIdentifier: !Sub "oncoomics-${Environment}"
+      Engine: postgres
+      DBInstanceClass: !Ref DBInstanceClass
+      AllocatedStorage: !Ref AllocatedStorageGB
+      StorageType: gp3
+      DBName: !Ref DBName
+      MasterUsername: !Ref DBUsername
+      MasterUserPassword: !Ref DBPassword
+      PubliclyAccessible: false
+      MultiAZ: false
+      AutoMinorVersionUpgrade: true
+      BackupRetentionPeriod: 1
+      CopyTagsToSnapshot: true
+      DeletionProtection: false
+      DBSubnetGroupName: !Ref DBSubnetGroup
+      VPCSecurityGroups:
+        - !Ref DBSecurityGroup
+      Tags:
+        - Key: project
+          Value: oncoomics-agent
+        - Key: environment
+          Value: !Ref Environment
+
+Outputs:
+  DBEndpointAddress:
+    Value: !GetAtt PostgresDB.Endpoint.Address
+  DBEndpointPort:
+    Value: !GetAtt PostgresDB.Endpoint.Port
+  DBSecurityGroupId:
+    Value: !Ref DBSecurityGroup
+

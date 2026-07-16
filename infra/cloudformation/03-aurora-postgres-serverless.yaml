@@ -1,0 +1,110 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Aurora PostgreSQL Serverless option for newer AWS Free plan testing.
+
+Parameters:
+  DBName:
+    Type: String
+    Default: oncoomics
+    AllowedPattern: "[a-zA-Z][a-zA-Z0-9]*"
+  DBUsername:
+    Type: String
+    Default: oncoomics_admin
+    NoEcho: true
+  DBPassword:
+    Type: String
+    NoEcho: true
+    MinLength: 12
+    Description: Use a generated password. Do not commit it.
+  VpcId:
+    Type: AWS::EC2::VPC::Id
+  PrivateSubnetIds:
+    Type: List<AWS::EC2::Subnet::Id>
+    Description: At least two private subnets in different Availability Zones.
+  AppSecurityGroupId:
+    Type: AWS::EC2::SecurityGroup::Id
+    Description: Security group allowed to connect to PostgreSQL.
+  Environment:
+    Type: String
+    Default: dev
+    AllowedValues:
+      - dev
+      - test
+      - prod
+
+Resources:
+  DBSubnetGroup:
+    Type: AWS::RDS::DBSubnetGroup
+    Properties:
+      DBSubnetGroupDescription: Private subnets for OncoOmics Agent Aurora PostgreSQL.
+      SubnetIds: !Ref PrivateSubnetIds
+      Tags:
+        - Key: project
+          Value: oncoomics-agent
+        - Key: environment
+          Value: !Ref Environment
+
+  DBSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Aurora PostgreSQL access for OncoOmics Agent.
+      VpcId: !Ref VpcId
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 5432
+          ToPort: 5432
+          SourceSecurityGroupId: !Ref AppSecurityGroupId
+      SecurityGroupEgress:
+        - IpProtocol: -1
+          CidrIp: 0.0.0.0/0
+      Tags:
+        - Key: project
+          Value: oncoomics-agent
+        - Key: environment
+          Value: !Ref Environment
+
+  AuroraCluster:
+    Type: AWS::RDS::DBCluster
+    DeletionPolicy: Snapshot
+    UpdateReplacePolicy: Snapshot
+    Properties:
+      DBClusterIdentifier: !Sub "oncoomics-aurora-${Environment}"
+      Engine: aurora-postgresql
+      DatabaseName: !Ref DBName
+      MasterUsername: !Ref DBUsername
+      MasterUserPassword: !Ref DBPassword
+      DBSubnetGroupName: !Ref DBSubnetGroup
+      VpcSecurityGroupIds:
+        - !Ref DBSecurityGroup
+      ServerlessV2ScalingConfiguration:
+        MinCapacity: 0.5
+        MaxCapacity: 4
+      BackupRetentionPeriod: 1
+      CopyTagsToSnapshot: true
+      DeletionProtection: false
+      Tags:
+        - Key: project
+          Value: oncoomics-agent
+        - Key: environment
+          Value: !Ref Environment
+
+  AuroraWriter:
+    Type: AWS::RDS::DBInstance
+    Properties:
+      DBClusterIdentifier: !Ref AuroraCluster
+      DBInstanceClass: db.serverless
+      Engine: aurora-postgresql
+      PubliclyAccessible: false
+      Tags:
+        - Key: project
+          Value: oncoomics-agent
+        - Key: environment
+          Value: !Ref Environment
+
+Outputs:
+  ClusterEndpointAddress:
+    Value: !GetAtt AuroraCluster.Endpoint.Address
+  ClusterEndpointPort:
+    Value: !GetAtt AuroraCluster.Endpoint.Port
+  DBSecurityGroupId:
+    Value: !Ref DBSecurityGroup
+

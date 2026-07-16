@@ -1,0 +1,57 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Cost guardrail for OncoOmics Agent development.
+
+Parameters:
+  BudgetLimitUSD:
+    Type: Number
+    Default: 5
+    MinValue: 1
+    Description: Monthly budget threshold in USD.
+  AlertEmail:
+    Type: String
+    Description: Email address for budget notifications.
+
+Resources:
+  MonthlyCostBudget:
+    Type: AWS::Budgets::Budget
+    Properties:
+      Budget:
+        BudgetName: oncoomics-agent-dev-monthly-budget
+        BudgetLimit:
+          Amount: !Ref BudgetLimitUSD
+          Unit: USD
+        BudgetType: COST
+        TimeUnit: MONTHLY
+        CostFilters:
+          TagKeyValue:
+            - user:project$oncoomics-agent
+      NotificationsWithSubscribers:
+        - Notification:
+            NotificationType: ACTUAL
+            ComparisonOperator: GREATER_THAN
+            Threshold: 50
+            ThresholdType: PERCENTAGE
+          Subscribers:
+            - SubscriptionType: EMAIL
+              Address: !Ref AlertEmail
+        - Notification:
+            NotificationType: ACTUAL
+            ComparisonOperator: GREATER_THAN
+            Threshold: 90
+            ThresholdType: PERCENTAGE
+          Subscribers:
+            - SubscriptionType: EMAIL
+              Address: !Ref AlertEmail
+        - Notification:
+            NotificationType: FORECASTED
+            ComparisonOperator: GREATER_THAN
+            Threshold: 100
+            ThresholdType: PERCENTAGE
+          Subscribers:
+            - SubscriptionType: EMAIL
+              Address: !Ref AlertEmail
+
+Outputs:
+  BudgetName:
+    Value: oncoomics-agent-dev-monthly-budget
+

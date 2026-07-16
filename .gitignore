@@ -17,4 +17,12 @@ data/processed/
 *.csv
 *.tsv
 *.parquet
-
+*.h5ad
+*.h5
+*.loom
+*.mtx
+*.rds
+*.Rds
+*.RData
+infra/**/*.local.json
+infra/**/*.params.json

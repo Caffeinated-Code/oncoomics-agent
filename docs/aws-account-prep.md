@@ -9,11 +9,14 @@ I do not need secrets pasted into chat. I need the local machine to be authentic
 Run or prepare to run:
 
 ```bash
+aws --version
 aws configure
 aws sts get-caller-identity
 ```
 
 The second command should return the intended AWS account and IAM identity.
+
+If `aws --version` fails, install AWS CLI first. The repo includes `scripts/check_aws_prereqs.sh` for the local verification step.
 
 ## Recommended Region
 
@@ -64,4 +67,3 @@ Before creating infrastructure:
 - Use the smallest practical PostgreSQL database option.
 - Create read-only database credentials for the agent.
 - Tear down nonessential resources if the project is paused.
-

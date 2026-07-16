@@ -134,6 +134,7 @@ See [Customization Guide](docs/customization-guide.md).
 - [Database Primer](docs/database-primer.md)
 - [AWS Primer](docs/aws-primer.md)
 - [AWS Account Prep](docs/aws-account-prep.md)
+- [AWS Implementation Plan](docs/aws-implementation-plan.md)
 - [Execution Plan](docs/execution-plan.md)
 - [Customization Guide](docs/customization-guide.md)
 - [Scientific References](docs/scientific-references.md)

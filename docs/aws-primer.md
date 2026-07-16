@@ -69,3 +69,6 @@ These can be later extensions, but they are not needed to prove the project.
 - Tag every resource: `project=oncoomics-agent`
 - Delete or stop nonessential resources after demos
 
+## Implementation Groundwork
+
+See [AWS Implementation Plan](aws-implementation-plan.md) for the current deployment order and CloudFormation templates.
