@@ -2,67 +2,79 @@
 
 ## Summary
 
-Build a cost-conscious AWS bioinformatics project that curates a focused public cancer multi-omics dataset into PostgreSQL and exposes it through an AI agent. The project starts with text-based database Q&A, then adds voice after the SQL and data layer are reliable.
+Build **OncoOmics Agent: NSCLC Atlas Edition**, a cost-conscious AWS project that curates public lung single-cell atlas data into PostgreSQL summary tables and exposes the database through a safe AI agent.
 
-## Phase 1: Project Foundation
+The first implementation prioritizes text-based database Q&A. Voice chat is added after the data model, SQL queries, and agent guardrails are reliable.
 
-- Write primers for biology, database design, and AWS cost-aware architecture.
-- Define the first biological question and supported question set.
-- Keep v1 focused on breast cancer, selected cancer genes, and processed public data.
-- Track all public sources and data transformations.
+## Phase 1: Repo And Scientific Framing
 
-## Phase 2: Public Data Curation
+- Center the project on NSCLC single-cell atlas exploration.
+- Use HLCA as the lung reference context and LuCA as the NSCLC tumor atlas source.
+- Use TRACERx/PEACE as biological motivation for tumor evolution and metastasis, not as the first ingestion target.
+- Explain why the database stores summaries rather than raw single-cell matrices.
 
-- Select source datasets from cBioPortal, GDC, and CPTAC or Proteomic Data Commons.
-- Download or query processed public data only.
-- Keep selected genes, cancer types, samples, and omics layers.
-- Create cleaned local CSV files for mutation, expression, copy number, proteomics, clinical metadata, and source provenance.
+## Phase 2: Data Source Reconnaissance
 
-## Phase 3: Local SQL Database
+- Confirm downloadable LuCA/CELLxGENE files, metadata fields, and licensing.
+- Select a small gene panel covering immune checkpoints, tumor drivers, EMT/invasion, myeloid inflammation, proliferation, and hypoxia.
+- Identify harmonized fields for sample, disease, tissue, cell type, dataset, and cell counts.
+- Decide whether HLCA is used as source data in v1 or only as reference documentation.
 
-- Create a PostgreSQL schema with studies, patients, samples, genes, omics tables, clinical attributes, and source provenance.
-- Load curated CSV files locally.
-- Write benchmark SQL queries for the biological questions.
-- Validate sample joins and missing-data behavior.
+## Phase 3: Local Curation
 
-## Phase 4: AWS Deployment
+- Download or access public atlas files locally.
+- Generate summary tables:
+  - expression by gene and cell type
+  - expression by gene, cell type, and disease/sample group
+  - cell-type abundance by sample or dataset
+  - dataset/sample/cell-type metadata
+  - source provenance
+- Keep raw large files outside Git and out of PostgreSQL.
 
-- Create AWS Budget and billing alerts before infrastructure.
-- Store curated source files in S3.
-- Deploy a small RDS PostgreSQL database.
-- Load curated data into RDS.
-- Use least-privilege database credentials for application access.
+## Phase 4: Local PostgreSQL
 
-## Phase 5: Backend And Agent
+- Create the normalized atlas schema.
+- Load curated summary tables.
+- Write benchmark SQL queries for the MVP biological questions.
+- Validate that every answer can cite a dataset/source file.
 
-- Build a small backend API for schema inspection, safe SQL execution, cohort summaries, and gene multi-omics profiles.
-- Add an AI agent that calls backend tools instead of guessing.
-- Require read-only SQL, row limits, and visible source provenance.
-- Return answers with query text, source tables, and caveats.
+## Phase 5: AWS Deployment
 
-## Phase 6: Voice Layer
+- Configure AWS CLI locally.
+- Create an AWS Budget before deploying resources.
+- Create an S3 bucket for curated source files and manifests.
+- Deploy a small RDS PostgreSQL or Aurora PostgreSQL database using the most cost-effective free-plan-compatible option.
+- Load curated summaries into the AWS database.
+- Use least-privilege credentials for app access.
 
-- Add speech-to-text after text chat works.
-- Add concise text-to-speech summaries.
-- Keep detailed evidence in the visual UI.
+## Phase 6: Backend And AI Agent
+
+- Build read-only API endpoints for schema inspection, safe SQL execution, gene lookup, cell-type summaries, and source provenance.
+- Build an agent that calls tools rather than answering from memory.
+- Enforce `SELECT`-only queries, row limits, timeouts, and visible SQL.
+- Return "not available in this curated database" when a question asks for unsupported data.
+
+## Phase 7: Voice Interface
+
+- Add speech-to-text after text Q&A works.
+- Keep spoken answers concise.
+- Show SQL, tables, plots, and provenance visually.
 
 ## MVP Questions
 
-- Which selected genes are most frequently mutated in breast cancer?
-- For TP53, how does RNA expression differ between mutant and wildtype samples?
-- Is protein abundance available for TP53 or related selected genes?
-- Which samples have mutation, RNA, and clinical data?
-- Which samples have mutation, RNA, and protein data?
-- What clinical subtypes are represented?
-- What SQL query produced this answer?
-- What public source did this answer come from?
+- Which NSCLC cell types express `CD274` / PD-L1 most highly?
+- Which T cell populations express `PDCD1`, `CTLA4`, `LAG3`, or `TIGIT`?
+- Which myeloid cell types express `S100A8`, `S100A9`, `CXCL8`, `IL1B`, or `SPP1`?
+- Which malignant epithelial or stromal compartments express EMT genes such as `VIM`, `ZEB1`, `SNAI1`, and `MMP9`?
+- How do selected tumor-driver genes such as `EGFR`, `KRAS`, `MET`, and `MYC` vary by cell type?
+- What dataset, source file, and SQL query produced this answer?
 
 ## Acceptance Criteria
 
-- The repository explains the biology, database, AWS design, and implementation plan.
-- The first curated dataset is public and reproducible.
-- SQL queries answer at least five MVP biological questions.
-- AWS resources are tagged and budget-protected.
-- The agent never answers database questions without querying tools or explicitly stating that data is unavailable.
-- Answers include enough provenance for a reader to reproduce the result.
+- The repo clearly explains the biology, data sources, database design, AWS plan, and customization path.
+- Curated data is public, processed, and reproducible.
+- PostgreSQL answers at least five MVP questions using summary tables.
+- AWS resources are budget-protected and tagged.
+- The agent never fabricates unsupported database answers.
+- Every biological answer includes SQL and source provenance.
 

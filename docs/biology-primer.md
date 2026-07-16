@@ -1,68 +1,95 @@
-# Biology Primer: Why Cancer Multi-Omics?
+# Biology Primer: NSCLC, Cell Atlases, And The Tumor Microenvironment
 
-## Why This Project Exists
+## The Biological Setting
 
-Cancer biology is not explained by one data layer. A tumor may contain a DNA mutation, but the downstream effect may appear as altered RNA expression, changed protein abundance, pathway activation, clinical subtype, or survival difference. Public cancer datasets contain many of these layers, but they are spread across portals and often require technical expertise to combine.
+Non-small cell lung cancer (NSCLC) is not one uniform mass of tumor cells. A tumor sample can contain malignant epithelial cells, T cells, B cells, macrophages, neutrophils, fibroblasts, endothelial cells, airway epithelial cells, and other lung-resident populations.
 
-This project builds a bridge between a biological question and the structured data needed to answer it.
+Single-cell RNA sequencing helps separate those populations and ask:
 
-## Core Biological Question
+- Which cells express a gene?
+- Is expression tumor-cell-specific or microenvironment-driven?
+- Which immune populations look activated, exhausted, suppressive, or inflammatory?
+- Which stromal or epithelial programs may relate to invasion, metastasis, or resistance?
 
-The first version focuses on:
+## Why Single-Cell Data?
 
-> How do alterations in key cancer genes relate to RNA expression, protein abundance, copy number, and clinical context?
-
-Example questions the agent should eventually answer:
-
-- Which selected genes are most frequently altered in breast cancer?
-- Do TP53-mutant tumors show different RNA expression than TP53-wildtype tumors?
-- Is there protein-level evidence for a gene in the same or related cohort?
-- Which samples have mutation, expression, and clinical data available?
-- Which public sources contributed to this answer?
-
-## Why Oncology?
-
-Oncology is a strong starting point because:
-
-- Cancer has mature public datasets.
-- Many questions naturally require multi-omics reasoning.
-- Results are relevant to academic, clinical, biotech, and pharma audiences.
-- Public cancer resources have enough structure for SQL and API workflows.
-
-Useful public resources include:
-
-- [NCI Genomic Data Commons](https://gdc.cancer.gov/)
-- [cBioPortal](https://www.cbioportal.org/)
-- [NCI Proteomic Data Commons](https://proteomic.datacommons.cancer.gov/)
-- [CPTAC](https://proteomics.cancer.gov/programs/cptac)
-
-## What "Multi-Omics" Means Here
+Bulk RNA-seq averages expression across many cell types. That is useful, but it can hide the source of a signal.
 
 ```mermaid
-flowchart TB
-    DNA["DNA<br/>mutation, copy number"] --> RNA["RNA<br/>gene expression"]
-    RNA --> Protein["Protein<br/>abundance"]
-    Protein --> Phenotype["Phenotype<br/>subtype, stage, survival"]
-    DNA --> Methylation["Methylation<br/>gene regulation"]
-    Methylation --> RNA
+flowchart LR
+    Bulk["Bulk tumor RNA<br/>one mixed average"] --> Hidden["Hard to tell<br/>which cell type drives signal"]
+    SingleCell["Single-cell atlas<br/>cell-level profiles"] --> Clear["Cell-type-specific<br/>gene expression patterns"]
 ```
 
-For the first build, "multi-omics" means integrating at least three of:
+For example, a high `CD274` / PD-L1 signal may come from malignant cells, macrophages, dendritic cells, or another compartment. A single-cell atlas lets us ask that directly.
 
-- mutation status
-- copy number alteration
-- RNA expression
-- protein abundance
-- clinical metadata
+## Why NSCLC?
 
-## Recommended Initial Scope
+NSCLC is a strong first disease focus because it connects multiple advanced biology themes:
 
-Start small and biologically coherent:
+- tumor evolution
+- immune evasion
+- epithelial plasticity
+- stromal remodeling
+- metastasis
+- therapy resistance
 
-- Cancer type: breast cancer first
-- Optional second cohort: ovarian cancer
-- Genes: TP53, PIK3CA, BRCA1, BRCA2, ERBB2, PTEN, EGFR, KRAS, MYC, CDKN2A
-- Data layers: mutation, copy number, RNA expression, protein abundance where available, clinical metadata
+TRACERx and PEACE studies provide the motivating biological story: lung cancer evolves across space and time, and metastasis is shaped by subclonal selection and tumor microenvironment context. This project uses that story to motivate public atlas questions, while keeping v1 data ingestion focused on easier-to-use public single-cell atlas resources.
 
-The goal is not to claim a new biological discovery in v1. The goal is to create a reliable research interface that can reproduce and explain database-backed observations.
+## What Counts As Multi-Omics Here?
+
+The first build is single-cell transcriptomics plus metadata. It is still an omics integration project because it connects expression with:
+
+- cell type
+- disease state
+- sample metadata
+- tumor or non-tumor compartment
+- atlas provenance
+- biological gene programs
+
+Later versions can add mutation, copy number, spatial, proteomic, or clinical outcome tables where public access and licensing allow.
+
+## V1 Gene Themes
+
+```mermaid
+mindmap
+  root((NSCLC atlas genes))
+    Immune checkpoint
+      CD274
+      PDCD1
+      CTLA4
+      LAG3
+      TIGIT
+    Tumor drivers
+      EGFR
+      KRAS
+      MET
+      ALK
+      MYC
+    EMT and invasion
+      VIM
+      EPCAM
+      ZEB1
+      SNAI1
+      MMP9
+    Myeloid inflammation
+      S100A8
+      S100A9
+      CXCL8
+      IL1B
+      SPP1
+    Proliferation and hypoxia
+      MKI67
+      TOP2A
+      VEGFA
+      HIF1A
+```
+
+## Example Questions
+
+- Which NSCLC cell types express PD-L1 most strongly?
+- Are exhaustion markers concentrated in T cells?
+- Which myeloid populations express inflammatory genes?
+- Do malignant epithelial cells show EMT-associated expression?
+- Which results are from LuCA versus HLCA-derived sources?
 

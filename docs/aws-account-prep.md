@@ -1,51 +1,67 @@
 # AWS Account Prep
 
-This is what we need before implementing the AWS portion.
+This file describes what is needed before implementing the AWS portion of **OncoOmics Agent: NSCLC Atlas Edition**.
 
-## Required From The AWS Account
+## What I Need From Your AWS Account
 
-- An AWS account where you can create S3, RDS, IAM, Lambda, and budget resources.
-- Console access with permission to view Billing and Cost Management.
-- A default region. Recommended: `us-east-1` or the region closest to you, as long as the chosen services are available.
-- AWS CLI configured locally, or willingness to configure it during implementation.
+I do not need secrets pasted into chat. I need the local machine to be authenticated with AWS CLI.
+
+Run or prepare to run:
+
+```bash
+aws configure
+aws sts get-caller-identity
+```
+
+The second command should return the intended AWS account and IAM identity.
+
+## Recommended Region
+
+Use:
+
+```text
+us-east-1
+```
+
+This region is broadly supported and usually convenient for demos. If you prefer another region, keep the whole project in that one region.
+
+## IAM Permissions Needed
+
+The IAM user or role should be able to manage project resources for:
+
+- S3
+- RDS or Aurora PostgreSQL
+- IAM roles and policies for the app
+- Lambda and API Gateway, if serverless is used
+- CloudWatch logs
+- AWS Budgets or billing alerts
+
+Root credentials should not be used for day-to-day implementation.
 
 ## Safety Setup First
 
-Before creating project resources:
+Before creating infrastructure:
 
-- Confirm whether the account is on the newer credit/free-plan model or a legacy free-tier model.
-- Create an AWS Budget with email alerts.
-- Enable billing alerts.
-- Decide the maximum monthly spend tolerance for the project.
-- Create a project-specific IAM user or role rather than using root credentials.
+- Confirm whether the account is on AWS Free plan, Paid plan with credits, or an older free-tier setup.
+- Create a budget alert, recommended threshold: `$5`.
+- Enable MFA on the AWS account.
+- Tag resources with `project=oncoomics-agent`.
+- Store credentials locally or in AWS-managed services, never in Git.
 
-## Credentials We Should Not Share In The Repo
-
-Never commit:
+## Secrets That Must Never Be Committed
 
 - AWS access keys
-- secret access keys
+- AWS secret access keys
 - database passwords
-- `.env` files with real credentials
-- downloaded controlled-access biomedical data
+- `.env` files with real values
+- controlled-access biomedical data
+- raw patient-level data with restricted licenses
 
-Use local environment variables or AWS Secrets Manager later if needed.
+## Implementation Defaults
 
-## Minimum Local Checks
-
-When implementation starts, run:
-
-```bash
-aws sts get-caller-identity
-aws configure list
-```
-
-This confirms the local machine can reach the intended AWS account without exposing secrets in the repository.
-
-## Decisions Needed Tomorrow
-
-- AWS region to use.
-- Monthly budget alert threshold.
-- Whether to use RDS immediately or start with local PostgreSQL first.
-- Whether the first deploy target is Lambda or a small FastAPI service.
+- Start local-first.
+- Upload only curated public summary files to S3.
+- Use the smallest practical PostgreSQL database option.
+- Create read-only database credentials for the agent.
+- Tear down nonessential resources if the project is paused.
 

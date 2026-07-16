@@ -1,98 +1,89 @@
-# Database Primer: Turning Public Omics Data Into SQL
+# Database Primer: SQL For A Single-Cell Atlas Agent
 
-## Why A Database?
+## Why SQL Instead Of A Raw Matrix?
 
-Public omics data often arrives as files, API responses, matrix tables, and metadata records. A relational database gives the project a stable way to join samples, genes, assays, and clinical attributes.
+Single-cell datasets can contain millions of cells and tens of thousands of genes. A full raw matrix is not a good first target for a small AWS PostgreSQL database.
 
-The database should answer questions like:
+For this project, PostgreSQL stores **curated summaries** that are easy to query and explain:
 
-> For TP53 in breast cancer, compare mutant and wildtype samples by RNA expression and protein abundance.
+- average expression by gene and cell type
+- percent of cells expressing each gene
+- cell-type abundance by sample or disease group
+- sample and dataset metadata
+- source provenance
 
-That requires joining:
+The raw or downloaded atlas files can live outside the database, usually in local storage or S3.
 
-- sample metadata
-- gene identifiers
-- mutation calls
-- expression values
-- protein values
-- clinical annotations
-
-## Conceptual Data Model
+## Conceptual Schema
 
 ```mermaid
 erDiagram
-    STUDIES ||--o{ SAMPLES : contains
-    PATIENTS ||--o{ SAMPLES : provides
-    GENES ||--o{ MUTATIONS : has
-    GENES ||--o{ EXPRESSION : measured_as
-    GENES ||--o{ COPY_NUMBER : measured_as
-    GENES ||--o{ PROTEOMICS : measured_as
-    SAMPLES ||--o{ MUTATIONS : has
-    SAMPLES ||--o{ EXPRESSION : has
-    SAMPLES ||--o{ COPY_NUMBER : has
-    SAMPLES ||--o{ PROTEOMICS : has
-    PATIENTS ||--o{ CLINICAL_ATTRIBUTES : has
+    DATASETS ||--o{ SAMPLES : contains
+    SAMPLES ||--o{ CELL_GROUPS : summarizes
+    CELL_TYPES ||--o{ CELL_GROUPS : labels
+    GENES ||--o{ EXPRESSION_SUMMARIES : measured_for
+    CELL_GROUPS ||--o{ EXPRESSION_SUMMARIES : has
+    DATASETS ||--o{ SOURCE_FILES : documents
+    SAMPLES ||--o{ SAMPLE_METADATA : has
 ```
 
-## Initial Tables
+## Core Tables
 
-- `studies`: source study or cohort metadata
-- `patients`: public patient or case identifiers
-- `samples`: sample-level metadata and cancer type
-- `genes`: approved gene symbols and identifiers
-- `mutations`: selected gene mutation calls
-- `expression`: selected gene RNA expression values
-- `copy_number`: selected gene copy-number calls or values
-- `proteomics`: selected gene protein abundance values where available
-- `clinical_attributes`: flexible clinical annotations
-- `source_files`: provenance for every imported file
-- `query_logs`: optional record of agent queries for debugging and evaluation
-
-## Why Not Load Everything?
-
-The portfolio version should curate a focused slice. Large raw sequencing and proteomics files are expensive to store, slow to process, and unnecessary for demonstrating the core system.
-
-Use processed public tables first:
-
-- selected cancer types
-- selected genes
-- selected assay layers
-- selected clinical fields
-
-This keeps the database understandable and inexpensive.
+- `datasets`: atlas or study-level source metadata
+- `source_files`: downloaded file names, URLs, versions, licenses, and checksums
+- `samples`: sample-level metadata such as disease, tissue, assay, and source
+- `sample_metadata`: flexible key-value metadata for fields that vary across sources
+- `cell_types`: harmonized cell type names and hierarchy
+- `cell_groups`: sample-by-cell-type groups used for summary statistics
+- `genes`: gene symbols and stable identifiers
+- `expression_summaries`: mean expression, percent expressed, and cell counts
+- `cell_type_abundance`: optional per-sample cell-type abundance summaries
+- `query_logs`: optional agent query traces for evaluation
 
 ## Example Query
 
+Question:
+
+> Which cell types have the highest CD274 expression in NSCLC samples?
+
+SQL shape:
+
 ```sql
 SELECT
-  s.cancer_type,
-  g.symbol,
-  CASE WHEN m.sample_id IS NULL THEN 'wildtype_or_no_selected_mutation'
-       ELSE 'mutated'
-  END AS mutation_group,
-  AVG(e.expression_value) AS avg_rna_expression,
-  AVG(p.protein_abundance) AS avg_protein_abundance,
-  COUNT(DISTINCT s.sample_id) AS sample_count
-FROM samples s
-JOIN genes g ON g.symbol = 'TP53'
-LEFT JOIN mutations m
-  ON m.sample_id = s.sample_id
- AND m.gene_id = g.gene_id
-LEFT JOIN expression e
-  ON e.sample_id = s.sample_id
- AND e.gene_id = g.gene_id
-LEFT JOIN proteomics p
-  ON p.sample_id = s.sample_id
- AND p.gene_id = g.gene_id
-WHERE s.cancer_type = 'Breast Invasive Carcinoma'
-GROUP BY s.cancer_type, g.symbol, mutation_group;
+  ct.cell_type_name,
+  AVG(es.mean_expression) AS avg_expression,
+  AVG(es.percent_expressed) AS avg_percent_expressed,
+  SUM(es.n_cells) AS total_cells
+FROM expression_summaries es
+JOIN genes g ON g.gene_id = es.gene_id
+JOIN cell_groups cg ON cg.cell_group_id = es.cell_group_id
+JOIN cell_types ct ON ct.cell_type_id = cg.cell_type_id
+JOIN samples s ON s.sample_id = cg.sample_id
+WHERE g.symbol = 'CD274'
+  AND s.disease = 'non-small cell lung cancer'
+GROUP BY ct.cell_type_name
+HAVING SUM(es.n_cells) >= 50
+ORDER BY avg_expression DESC
+LIMIT 10;
 ```
 
-## Database Design Principles
+## Why This Is Agent-Friendly
 
-- Keep biological entities explicit: studies, patients, samples, genes.
-- Keep omics measurements separate by assay type.
-- Preserve source provenance for every row.
-- Store only public, processed, non-controlled data in v1.
-- Add row limits and read-only database credentials for the agent.
+The schema has clear biological nouns:
+
+- datasets
+- samples
+- cell types
+- genes
+- expression summaries
+
+That makes it easier for an AI agent to map natural language to SQL safely.
+
+## Guardrails
+
+- Use read-only database credentials for the agent.
+- Only allow `SELECT` queries from the agent.
+- Add query timeouts and row limits.
+- Keep unsupported questions honest: return "not available in this curated database" instead of guessing.
+- Always return source provenance with scientific answers.
 
