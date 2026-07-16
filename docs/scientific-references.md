@@ -1,6 +1,6 @@
 # Scientific References
 
-This page keeps the project grounded in public sources. Use it when writing primers, validating dataset choices, or explaining why a biological question matters.
+This page keeps the project grounded in public sources.
 
 ## Core Dataset References
 
@@ -24,10 +24,9 @@ This page keeps the project grounded in public sources. Use it when writing prim
 - AWS Lambda pricing: [AWS Lambda Pricing](https://aws.amazon.com/lambda/pricing/)
 - Amazon S3 pricing: [Amazon S3 Pricing](https://aws.amazon.com/s3/pricing/)
 
-## How To Use References In This Repo
+## Reference Use
 
 - Use dataset portals for dataset size, access, and metadata claims.
 - Use peer-reviewed papers for biological interpretation.
 - Use AWS documentation for cost and service claims.
 - Mark exploratory interpretations as hypotheses until reproduced from the curated database.
-

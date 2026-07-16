@@ -11,7 +11,7 @@ This repo is for readers who want to:
 - practice SQL, AWS, and data curation with a real biomedical use case
 - see how to keep AI-generated scientific answers grounded in queryable evidence
 
-The writing aims to be direct, reproducible, and easy to navigate. No hidden prompt text, draft instructions, or AI meta-commentary should appear in reader-facing docs.
+The writing aims to be direct, reproducible, and easy to navigate.
 
 ## Why This Project?
 
@@ -136,19 +136,7 @@ See [Customization Guide](docs/customization-guide.md).
 - [AWS Account Prep](docs/aws-account-prep.md)
 - [Execution Plan](docs/execution-plan.md)
 - [Customization Guide](docs/customization-guide.md)
-- [Evidence And Writing Standards](docs/evidence-and-writing-standards.md)
 - [Scientific References](docs/scientific-references.md)
-
-## Repository Quality Standard
-
-This project should read like a polished scientific software repo, not a chat transcript.
-
-- Keep docs concise and navigable.
-- Separate facts, design choices, and future work.
-- Cite sources for biological claims and dataset descriptions.
-- Never include prompts, chain-of-thought, private notes, or drafting instructions in content.
-- Make every agent answer traceable to SQL, curated tables, and source provenance.
-- Prefer small reproducible examples over broad claims.
 
 ## AWS Cost-Conscious Plan
 
