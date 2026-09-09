@@ -40,6 +40,14 @@ erDiagram
 - `cell_type_abundance`: optional per-sample cell-type abundance summaries
 - `query_logs`: optional agent query traces for evaluation
 
+The current implementation uses these concrete tables:
+
+- `gene_expression_summary`: TCGA LUAD/LUSC gene-panel RNA z-score summaries
+- `mutation_summary`: TCGA LUAD/LUSC mutation frequency summaries
+- `cna_summary`: TCGA LUAD/LUSC discrete copy-number summaries
+- `atlas_source_summaries`: LuCA and HLCA source records
+- `canned_questions`: vetted read-only SQL examples for the query agent
+
 ## Example Query
 
 Question:
@@ -79,11 +87,10 @@ The schema has clear biological nouns:
 
 That makes it easier for an AI agent to map natural language to SQL safely.
 
-## Guardrails
+## Query Safety Rules
 
 - Use read-only database credentials for the agent.
 - Only allow `SELECT` queries from the agent.
 - Add query timeouts and row limits.
 - Keep unsupported questions honest: return "not available in this curated database" instead of guessing.
 - Always return source provenance with scientific answers.
-

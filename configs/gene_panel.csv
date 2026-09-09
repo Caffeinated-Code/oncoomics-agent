@@ -1,0 +1,31 @@
+symbol,entrez_gene_id,theme,reason
+CD274,29126,immune_checkpoint,PD-L1 ligand; central immune-evasion marker
+PDCD1,5133,immune_checkpoint,PD-1 receptor; T-cell exhaustion marker
+CTLA4,1493,immune_checkpoint,T-cell inhibitory receptor
+LAG3,3902,immune_checkpoint,T-cell exhaustion and checkpoint biology
+TIGIT,201633,immune_checkpoint,T-cell and NK-cell inhibitory receptor
+HAVCR2,84868,immune_checkpoint,TIM-3; exhausted T-cell and myeloid context
+EGFR,1956,tumor_driver,canonical LUAD driver and therapeutic target
+KRAS,3845,tumor_driver,canonical LUAD driver
+MET,4233,tumor_driver,amplification and exon 14 skipping context
+ALK,238,tumor_driver,rearranged oncogene in LUAD subset
+MYC,4609,tumor_driver,proliferation and amplification biology
+EPCAM,4072,epithelial_state,epithelial tumor and epithelial compartment marker
+VIM,7431,emt_invasion,mesenchymal and EMT-associated marker
+ZEB1,6935,emt_invasion,EMT transcription factor
+SNAI1,6615,emt_invasion,EMT transcription factor
+MMP9,4318,emt_invasion,invasion and matrix remodeling
+S100A8,6279,myeloid_inflammation,inflammatory myeloid marker
+S100A9,6280,myeloid_inflammation,inflammatory myeloid marker
+CXCL8,3576,myeloid_inflammation,neutrophil and inflammatory chemokine
+IL1B,3553,myeloid_inflammation,inflammasome-associated cytokine
+SPP1,6696,myeloid_inflammation,SPP1 macrophage and tissue-remodeling program
+MKI67,4288,proliferation,cycling-cell marker
+TOP2A,7153,proliferation,cell-cycle and proliferation marker
+VEGFA,7422,hypoxia_angiogenesis,angiogenesis and hypoxia-associated biology
+HIF1A,3091,hypoxia_angiogenesis,hypoxia transcriptional regulator
+HLA-A,3105,antigen_presentation,MHC-I antigen presentation
+HLA-B,3106,antigen_presentation,MHC-I antigen presentation
+B2M,567,antigen_presentation,MHC-I stability and immune escape
+JAK1,3716,interferon_signaling,interferon signaling and checkpoint response biology
+JAK2,3717,interferon_signaling,interferon signaling and immune selection

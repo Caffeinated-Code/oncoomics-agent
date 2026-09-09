@@ -59,6 +59,17 @@ How to use in v1:
 - No raw FASTQ, BAM, CRAM, or massive `.h5ad` files in Git.
 - Source license and provenance must be recorded before ingestion.
 
+## Implemented V1 Sources
+
+The current local build ingests compact public cBioPortal data from:
+
+- `luad_tcga_pan_can_atlas_2018`
+- `lusc_tcga_pan_can_atlas_2018`
+
+These sources provide mutation, RNA expression, copy-number, methylation, RPPA, and structural-variant profile availability. The implemented scripts currently summarize mutation, RNA expression z-scores, and discrete GISTIC copy-number calls for the curated NSCLC gene panel.
+
+LuCA and HLCA are recorded as source records in the database. Their full single-cell matrices are kept out of the first database build because v1 is designed to stay small, inspectable, and AWS-friendly.
+
 ## Citation And Provenance Fields
 
 Every imported source should be tracked with:

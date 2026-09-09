@@ -9,6 +9,9 @@ This page keeps the project grounded in public sources.
 - LuCA GitHub: [Single-cell Lung Cancer Atlas](https://github.com/icbi-lab/luca)
 - LuCA CELLxGENE collection: [The single-cell lung cancer atlas](https://cellxgene.cziscience.com/collections/edb893ee-4066-4128-9aec-5eb2b03f8287)
 - LuCA paper: [High-resolution single-cell atlas reveals diversity and plasticity of tissue-resident neutrophils in non-small cell lung cancer](https://www.cell.com/cancer-cell/fulltext/S1535-6108%2822%2900499-8)
+- cBioPortal LUAD TCGA PanCancer Atlas: [Lung Adenocarcinoma TCGA PanCancer Atlas](https://www.cbioportal.org/study/summary?id=luad_tcga_pan_can_atlas_2018)
+- cBioPortal LUSC TCGA PanCancer Atlas: [Lung Squamous Cell Carcinoma TCGA PanCancer Atlas](https://www.cbioportal.org/study/summary?id=lusc_tcga_pan_can_atlas_2018)
+- TCGA PanCancer Atlas publication portal: [The Cancer Genome Atlas PanCancer Atlas](https://gdc.cancer.gov/about-data/publications/pancanatlas)
 
 ## Biological Motivation
 

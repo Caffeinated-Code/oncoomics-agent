@@ -1,0 +1,777 @@
+mutation_id,dataset_id,sample_id,patient_id,gene_id,symbol,protein_change,mutation_type,chromosome,start_position,variant_type,keyword
+33c86f702b9765f966cb,luad_tcga_pan_can_atlas_2018,TCGA-05-4244-01,TCGA-05-4244,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+3bc02ab516260c7e203b,luad_tcga_pan_can_atlas_2018,TCGA-05-4249-01,TCGA-05-4249,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+69afb19cdd69dbdf0a21,luad_tcga_pan_can_atlas_2018,TCGA-05-4250-01,TCGA-05-4250,3717,JAK2,D820Y,Missense_Mutation,9,5081748,SNP,JAK2 D820 missense
+2f2fd57bcce84220f916,luad_tcga_pan_can_atlas_2018,TCGA-05-4250-01,TCGA-05-4250,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+59e051a465e1df9c8692,luad_tcga_pan_can_atlas_2018,TCGA-05-4250-01,TCGA-05-4250,6935,ZEB1,H279Y,Missense_Mutation,10,31809098,SNP,ZEB1 H279 missense
+b48c90b7db712fa6d7e5,luad_tcga_pan_can_atlas_2018,TCGA-05-4250-01,TCGA-05-4250,7153,TOP2A,G448V,Missense_Mutation,17,38564376,SNP,TOP2A G448 missense
+1f847ed3cc8e45e3278b,luad_tcga_pan_can_atlas_2018,TCGA-05-4382-01,TCGA-05-4382,238,ALK,V349F,Missense_Mutation,2,29754890,SNP,ALK V349 missense
+d10f1a1da4c98a68afec,luad_tcga_pan_can_atlas_2018,TCGA-05-4382-01,TCGA-05-4382,1956,EGFR,E545Q,Missense_Mutation,7,55231427,SNP,EGFR E545 missense
+1ec55f791dc4d5f8f9cd,luad_tcga_pan_can_atlas_2018,TCGA-05-4382-01,TCGA-05-4382,1956,EGFR,R222L,Missense_Mutation,7,55220275,SNP,EGFR R222 missense
+8bea52d5e3b04fc5d526,luad_tcga_pan_can_atlas_2018,TCGA-05-4382-01,TCGA-05-4382,4318,MMP9,R546W,Missense_Mutation,20,44642321,SNP,MMP9 R546 missense
+53e4955e7e5b8f8b72d5,luad_tcga_pan_can_atlas_2018,TCGA-05-4390-01,TCGA-05-4390,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+bb0981543f1c87b2063d,luad_tcga_pan_can_atlas_2018,TCGA-05-4395-01,TCGA-05-4395,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+06afd519af6a45a53029,luad_tcga_pan_can_atlas_2018,TCGA-05-4396-01,TCGA-05-4396,3716,JAK1,G1023C,Missense_Mutation,1,65303688,SNP,JAK1 G1023 missense
+02a442adbffac1081c3f,luad_tcga_pan_can_atlas_2018,TCGA-05-4396-01,TCGA-05-4396,3717,JAK2,W659L,Missense_Mutation,9,5077564,SNP,JAK2 W659 missense
+f076aad6eae559b6929a,luad_tcga_pan_can_atlas_2018,TCGA-05-4396-01,TCGA-05-4396,7422,VEGFA,R108L,Missense_Mutation,6,43746204,SNP,VEGFA R108 missense
+23b1658a912c56a36054,luad_tcga_pan_can_atlas_2018,TCGA-05-4397-01,TCGA-05-4397,238,ALK,L80M,Missense_Mutation,2,30143288,SNP,ALK L80 missense
+661c35c0933e81710864,luad_tcga_pan_can_atlas_2018,TCGA-05-4398-01,TCGA-05-4398,4318,MMP9,Q43H,Missense_Mutation,20,44637694,SNP,MMP9 Q43 missense
+9052a48ff0b01ec94586,luad_tcga_pan_can_atlas_2018,TCGA-05-4402-01,TCGA-05-4402,1956,EGFR,I759N,Missense_Mutation,7,55242506,SNP,EGFR I759 missense
+c9f29590c95f5dd5b787,luad_tcga_pan_can_atlas_2018,TCGA-05-4402-01,TCGA-05-4402,1956,EGFR,T751_I759delinsN,In_Frame_Del,7,55242482,DEL,
+c09ba46f65763c001f7d,luad_tcga_pan_can_atlas_2018,TCGA-05-4403-01,TCGA-05-4403,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+04f5bbccb8c567057bf5,luad_tcga_pan_can_atlas_2018,TCGA-05-4403-01,TCGA-05-4403,4233,MET,H476Y,Missense_Mutation,7,116380037,SNP,MET H476 missense
+06e2aa0544828c6f6c5c,luad_tcga_pan_can_atlas_2018,TCGA-05-4405-01,TCGA-05-4405,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+7c0134b0bdef421aeff9,luad_tcga_pan_can_atlas_2018,TCGA-05-4405-01,TCGA-05-4405,4288,MKI67,G2318C,Missense_Mutation,10,129903152,SNP,MKI67 G2318 missense
+750c706ecf8e7c2f73e2,luad_tcga_pan_can_atlas_2018,TCGA-05-4410-01,TCGA-05-4410,238,ALK,T1102I,Missense_Mutation,2,29446262,SNP,ALK T1102 missense
+334a8a12af83a4002004,luad_tcga_pan_can_atlas_2018,TCGA-05-4410-01,TCGA-05-4410,1956,EGFR,R377S,Missense_Mutation,7,55224350,SNP,EGFR R377 missense
+9f6fc66082be4f69d67f,luad_tcga_pan_can_atlas_2018,TCGA-05-4415-01,TCGA-05-4415,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+9158e0a9eafcf5fa81be,luad_tcga_pan_can_atlas_2018,TCGA-05-4415-01,TCGA-05-4415,7153,TOP2A,E712V,Missense_Mutation,17,38560655,SNP,TOP2A E712 missense
+8e82659903d13dc040b4,luad_tcga_pan_can_atlas_2018,TCGA-05-4417-01,TCGA-05-4417,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+270ef1475fc79fd1ce7b,luad_tcga_pan_can_atlas_2018,TCGA-05-4418-01,TCGA-05-4418,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+857e03aae0bd3649d364,luad_tcga_pan_can_atlas_2018,TCGA-05-4420-01,TCGA-05-4420,4318,MMP9,T264N,Missense_Mutation,20,44639923,SNP,MMP9 T264 missense
+ffb9f409c2e680dd3023,luad_tcga_pan_can_atlas_2018,TCGA-05-4424-01,TCGA-05-4424,1493,CTLA4,A168E,Missense_Mutation,2,204736146,SNP,CTLA4 A168 missense
+fab85b6afd4a20f0dc49,luad_tcga_pan_can_atlas_2018,TCGA-05-4424-01,TCGA-05-4424,4288,MKI67,R1271K,Missense_Mutation,10,129906292,SNP,MKI67 R1271 missense
+e7786150c9e2adc277b3,luad_tcga_pan_can_atlas_2018,TCGA-05-4424-01,TCGA-05-4424,6935,ZEB1,M390I,Missense_Mutation,10,31809433,SNP,ZEB1 M390 missense
+c02ff1f46f4a4de638fe,luad_tcga_pan_can_atlas_2018,TCGA-05-4424-01,TCGA-05-4424,6935,ZEB1,P863R,Missense_Mutation,10,31810851,SNP,ZEB1 P863 missense
+83e13848fedfc2f623a0,luad_tcga_pan_can_atlas_2018,TCGA-05-4427-01,TCGA-05-4427,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+6ff568f16ef4d6c92f13,luad_tcga_pan_can_atlas_2018,TCGA-05-4432-01,TCGA-05-4432,238,ALK,X263_splice,Splice_Site,2,29917881,SNP,ALK truncating
+7bed94380a2933410415,luad_tcga_pan_can_atlas_2018,TCGA-05-4432-01,TCGA-05-4432,238,ALK,G263V,Missense_Mutation,2,29917880,SNP,ALK G263 missense
+43fa957ecb0ed3921804,luad_tcga_pan_can_atlas_2018,TCGA-05-4432-01,TCGA-05-4432,7431,VIM,E239K,Missense_Mutation,10,17275676,SNP,VIM E239 missense
+5a31db42d5051159c84c,luad_tcga_pan_can_atlas_2018,TCGA-05-4433-01,TCGA-05-4433,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+c8126f443173b03ba17e,luad_tcga_pan_can_atlas_2018,TCGA-05-5423-01,TCGA-05-5423,1956,EGFR,L833F,Missense_Mutation,7,55259441,SNP,EGFR L833 missense
+675cb9fd82026fddef2a,luad_tcga_pan_can_atlas_2018,TCGA-05-5423-01,TCGA-05-5423,1956,EGFR,L861Q,Missense_Mutation,7,55259524,SNP,EGFR L861 missense
+c9edf90ae960192e8734,luad_tcga_pan_can_atlas_2018,TCGA-17-Z001-01,TCGA-17-Z001,238,ALK,S711R,Missense_Mutation,2,29474042,SNP,ALK S711 missense
+fe9d4adc07cf68df143c,luad_tcga_pan_can_atlas_2018,TCGA-17-Z004-01,TCGA-17-Z004,4288,MKI67,Y1737D,Missense_Mutation,10,129904895,SNP,MKI67 Y1737 missense
+1fd841fe107b7ae5484d,luad_tcga_pan_can_atlas_2018,TCGA-17-Z010-01,TCGA-17-Z010,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+24452e8c64fe9600f301,luad_tcga_pan_can_atlas_2018,TCGA-17-Z010-01,TCGA-17-Z010,4233,MET,R1279I,Missense_Mutation,7,116435746,SNP,MET R1279 missense
+c5c87f1afcb18fab7136,luad_tcga_pan_can_atlas_2018,TCGA-17-Z010-01,TCGA-17-Z010,4318,MMP9,G404C,Missense_Mutation,20,44641101,SNP,MMP9 G404 missense
+c38154379b6b01850b18,luad_tcga_pan_can_atlas_2018,TCGA-17-Z014-01,TCGA-17-Z014,3845,KRAS,Q61L,Missense_Mutation,12,25380276,SNP,KRAS Q61 missense
+2154d3fcd1108136a3bf,luad_tcga_pan_can_atlas_2018,TCGA-17-Z015-01,TCGA-17-Z015,3716,JAK1,M991Wfs*27,Frame_Shift_Del,1,65303784,DEL,JAK1 truncating
+f693b147288ac7b9dcec,luad_tcga_pan_can_atlas_2018,TCGA-17-Z015-01,TCGA-17-Z015,4288,MKI67,D2315Y,Missense_Mutation,10,129903161,SNP,MKI67 D2315 missense
+3c527778bd183805da35,luad_tcga_pan_can_atlas_2018,TCGA-17-Z015-01,TCGA-17-Z015,4288,MKI67,E2314G,Missense_Mutation,10,129903163,SNP,MKI67 E2314 missense
+437c99b6079777a4a44d,luad_tcga_pan_can_atlas_2018,TCGA-17-Z015-01,TCGA-17-Z015,6935,ZEB1,D1023H,Missense_Mutation,10,31815884,SNP,ZEB1 D1023 missense
+dfd5dee41ef7db1f6f14,luad_tcga_pan_can_atlas_2018,TCGA-17-Z016-01,TCGA-17-Z016,6935,ZEB1,P812T,Missense_Mutation,10,31810697,SNP,ZEB1 P812 missense
+add5269cc8e83f3ed943,luad_tcga_pan_can_atlas_2018,TCGA-17-Z017-01,TCGA-17-Z017,3845,KRAS,G13C,Missense_Mutation,12,25398282,SNP,KRAS G13 missense
+2659de8383b21955e35e,luad_tcga_pan_can_atlas_2018,TCGA-17-Z020-01,TCGA-17-Z020,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+e4a23e0f1de98c9f11f1,luad_tcga_pan_can_atlas_2018,TCGA-17-Z022-01,TCGA-17-Z022,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+e078a0f83956d3feddd6,luad_tcga_pan_can_atlas_2018,TCGA-17-Z025-01,TCGA-17-Z025,238,ALK,E297*,Nonsense_Mutation,2,29917779,SNP,ALK truncating
+41aed903e34c55688cde,luad_tcga_pan_can_atlas_2018,TCGA-17-Z026-01,TCGA-17-Z026,1956,EGFR,G721V,Missense_Mutation,7,55241714,SNP,EGFR G721 missense
+230abdb62b57630151ad,luad_tcga_pan_can_atlas_2018,TCGA-17-Z026-01,TCGA-17-Z026,29126,CD274,S93Y,Missense_Mutation,9,5457304,SNP,CD274 S93 missense
+6ead224f25595df54319,luad_tcga_pan_can_atlas_2018,TCGA-17-Z030-01,TCGA-17-Z030,3902,LAG3,E370Q,Missense_Mutation,12,6886480,SNP,LAG3 E370 missense
+6168f7faf024fc9bc6cf,luad_tcga_pan_can_atlas_2018,TCGA-17-Z031-01,TCGA-17-Z031,238,ALK,S440C,Missense_Mutation,2,29551311,SNP,ALK S440 missense
+4fc9a04505d002102cdd,luad_tcga_pan_can_atlas_2018,TCGA-17-Z031-01,TCGA-17-Z031,3106,HLA-B,A159S,Missense_Mutation,6,31324088,SNP,HLA-B A159 missense
+d5b2b3dc3b3f1386efab,luad_tcga_pan_can_atlas_2018,TCGA-17-Z031-01,TCGA-17-Z031,6279,S100A8,Q69*,Nonsense_Mutation,1,153362656,SNP,S100A8 truncating
+589f2ea59f077013bfca,luad_tcga_pan_can_atlas_2018,TCGA-17-Z031-01,TCGA-17-Z031,6935,ZEB1,P891L,Missense_Mutation,10,31812931,SNP,ZEB1 P891 missense
+a45a56390a0b1f3d1fc2,luad_tcga_pan_can_atlas_2018,TCGA-17-Z032-01,TCGA-17-Z032,1956,EGFR,E746_A750del,In_Frame_Del,7,55242465,DEL,
+1dcc212593c666e5a485,luad_tcga_pan_can_atlas_2018,TCGA-17-Z033-01,TCGA-17-Z033,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+8384177790188a612b81,luad_tcga_pan_can_atlas_2018,TCGA-17-Z036-01,TCGA-17-Z036,238,ALK,P542R,Missense_Mutation,2,29541192,SNP,ALK P542 missense
+20637a7d901cb5234dd3,luad_tcga_pan_can_atlas_2018,TCGA-17-Z036-01,TCGA-17-Z036,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+9ab0f0e61f4bb88db870,luad_tcga_pan_can_atlas_2018,TCGA-17-Z037-01,TCGA-17-Z037,3845,KRAS,G12A,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+a52410a971b27d983ee5,luad_tcga_pan_can_atlas_2018,TCGA-17-Z042-01,TCGA-17-Z042,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+22f6cd05d9a7e7f06467,luad_tcga_pan_can_atlas_2018,TCGA-17-Z043-01,TCGA-17-Z043,238,ALK,S260I,Missense_Mutation,2,29940452,SNP,ALK S260 missense
+48e11a371c1d8cb8a845,luad_tcga_pan_can_atlas_2018,TCGA-17-Z043-01,TCGA-17-Z043,4318,MMP9,N261S,Missense_Mutation,20,44639914,SNP,MMP9 N261 missense
+d71c08476d7496d06deb,luad_tcga_pan_can_atlas_2018,TCGA-17-Z045-01,TCGA-17-Z045,567,B2M,S40*,Nonsense_Mutation,15,45007672,SNP,B2M truncating
+49bcac09f97906765209,luad_tcga_pan_can_atlas_2018,TCGA-17-Z045-01,TCGA-17-Z045,6935,ZEB1,D1095H,Missense_Mutation,10,31816100,SNP,ZEB1 D1095 missense
+1ef42d7b097a673c3a6a,luad_tcga_pan_can_atlas_2018,TCGA-17-Z047-01,TCGA-17-Z047,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+c512ae321eb3112f080e,luad_tcga_pan_can_atlas_2018,TCGA-17-Z048-01,TCGA-17-Z048,1956,EGFR,D770_N771insGL,In_Frame_Ins,7,55249012,INS,
+800faacc257b8229a878,luad_tcga_pan_can_atlas_2018,TCGA-17-Z049-01,TCGA-17-Z049,3716,JAK1,K351R,Missense_Mutation,1,65330594,SNP,JAK1 K351 missense
+106a912abdfb0f72411c,luad_tcga_pan_can_atlas_2018,TCGA-17-Z049-01,TCGA-17-Z049,5133,PDCD1,S109R,Missense_Mutation,2,242794882,SNP,PDCD1 S109 missense
+b9812765f6a03d8ea385,luad_tcga_pan_can_atlas_2018,TCGA-17-Z050-01,TCGA-17-Z050,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+e69840372de80bc92691,luad_tcga_pan_can_atlas_2018,TCGA-17-Z060-01,TCGA-17-Z060,3845,KRAS,G12D,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+8bf8fc5267664a805eff,luad_tcga_pan_can_atlas_2018,TCGA-35-3615-01,TCGA-35-3615,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+e823763a337c026ba6b9,luad_tcga_pan_can_atlas_2018,TCGA-35-4123-01,TCGA-35-4123,6935,ZEB1,K515Q,Missense_Mutation,10,31809806,SNP,ZEB1 K515 missense
+3ca43e2ad9a527b41c4c,luad_tcga_pan_can_atlas_2018,TCGA-38-4625-01,TCGA-38-4625,3716,JAK1,A272S,Missense_Mutation,1,65332725,SNP,JAK1 A272 missense
+30f12c16531752c82222,luad_tcga_pan_can_atlas_2018,TCGA-38-4626-01,TCGA-38-4626,238,ALK,D460Y,Missense_Mutation,2,29551252,SNP,ALK D460 missense
+4f7a3ff5bb82fbc52291,luad_tcga_pan_can_atlas_2018,TCGA-38-4627-01,TCGA-38-4627,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+ded5e669a462b1327061,luad_tcga_pan_can_atlas_2018,TCGA-38-4627-01,TCGA-38-4627,1956,EGFR,L62R,Missense_Mutation,7,55210075,SNP,EGFR L62 missense
+923f92010b9aec886a57,luad_tcga_pan_can_atlas_2018,TCGA-38-4628-01,TCGA-38-4628,1956,EGFR,E746_A750del,In_Frame_Del,7,55242465,DEL,
+b62dd845c1b19d1922d6,luad_tcga_pan_can_atlas_2018,TCGA-38-4632-01,TCGA-38-4632,6935,ZEB1,A437S,Missense_Mutation,10,31809572,SNP,ZEB1 A437 missense
+27adadfbd5f740804879,luad_tcga_pan_can_atlas_2018,TCGA-38-6178-01,TCGA-38-6178,1956,EGFR,E746_A750del,In_Frame_Del,7,55242465,DEL,
+d59c13442d273080633c,luad_tcga_pan_can_atlas_2018,TCGA-44-2656-01,TCGA-44-2656,238,ALK,Q453H,Missense_Mutation,2,29551271,SNP,ALK Q453 missense
+b71c73039d7dd3aaa61d,luad_tcga_pan_can_atlas_2018,TCGA-44-2656-01,TCGA-44-2656,4318,MMP9,P21L,Missense_Mutation,20,44637627,SNP,MMP9 P21 missense
+e3b01268e7350c8158e1,luad_tcga_pan_can_atlas_2018,TCGA-44-2656-01,TCGA-44-2656,6935,ZEB1,P794S,Missense_Mutation,10,31810643,SNP,ZEB1 P794 missense
+5281f3a7a0dccdcd63b4,luad_tcga_pan_can_atlas_2018,TCGA-44-2657-01,TCGA-44-2657,4233,MET,N315S,Missense_Mutation,7,116340082,SNP,MET N315 missense
+2bda2bdea25fd0e21756,luad_tcga_pan_can_atlas_2018,TCGA-44-2659-01,TCGA-44-2659,84868,HAVCR2,G86V,Missense_Mutation,5,156533775,SNP,HAVCR2 G86 missense
+ca49d5fce4cf41b93d92,luad_tcga_pan_can_atlas_2018,TCGA-44-3398-01,TCGA-44-3398,3106,HLA-B,G261A,Missense_Mutation,6,31323207,SNP,HLA-B G261 missense
+c2bf1e9d6973ab8a9195,luad_tcga_pan_can_atlas_2018,TCGA-44-3917-01,TCGA-44-3917,3845,KRAS,G12S,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+c82bef813631e7830d2e,luad_tcga_pan_can_atlas_2018,TCGA-44-4112-01,TCGA-44-4112,238,ALK,E467D,Missense_Mutation,2,29551229,SNP,ALK E467 missense
+a869114274e2fa5b72d3,luad_tcga_pan_can_atlas_2018,TCGA-44-4112-01,TCGA-44-4112,4072,EPCAM,G263V,Missense_Mutation,2,47607038,SNP,EPCAM G263 missense
+e8061a9de7d527edeb59,luad_tcga_pan_can_atlas_2018,TCGA-44-5644-01,TCGA-44-5644,6696,SPP1,A16S,Missense_Mutation,4,88898093,SNP,SPP1 A16 missense
+e740d299232f13adfff9,luad_tcga_pan_can_atlas_2018,TCGA-44-5645-01,TCGA-44-5645,1956,EGFR,A767_V769dup,In_Frame_Ins,7,55248998,INS,
+f22c347b6722336c9e5b,luad_tcga_pan_can_atlas_2018,TCGA-44-6144-01,TCGA-44-6144,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+8f143f5d560ec60b6132,luad_tcga_pan_can_atlas_2018,TCGA-44-6145-01,TCGA-44-6145,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+0cafe3a46143092ca9ec,luad_tcga_pan_can_atlas_2018,TCGA-44-6146-01,TCGA-44-6146,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+8f4f07801590b511b5f9,luad_tcga_pan_can_atlas_2018,TCGA-44-6774-01,TCGA-44-6774,6615,SNAI1,Q134*,Nonsense_Mutation,20,48600678,SNP,SNAI1 truncating
+9fa710705c642aa3ee4b,luad_tcga_pan_can_atlas_2018,TCGA-44-6776-01,TCGA-44-6776,238,ALK,N871K,Missense_Mutation,2,29455189,SNP,ALK N871 missense
+6837f921d879ae4f7963,luad_tcga_pan_can_atlas_2018,TCGA-44-6776-01,TCGA-44-6776,3845,KRAS,G12D,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+055df04992b4341c3457,luad_tcga_pan_can_atlas_2018,TCGA-44-6777-01,TCGA-44-6777,238,ALK,S439I,Missense_Mutation,2,29551314,SNP,ALK S439 missense
+4c8ca57c0c1d110c1b21,luad_tcga_pan_can_atlas_2018,TCGA-44-6777-01,TCGA-44-6777,3902,LAG3,P300H,Missense_Mutation,12,6884556,SNP,LAG3 P300 missense
+b46057c84381eb65ce9f,luad_tcga_pan_can_atlas_2018,TCGA-44-6779-01,TCGA-44-6779,4072,EPCAM,A210T,Missense_Mutation,2,47606164,SNP,EPCAM A210 missense
+196760f01028871713e4,luad_tcga_pan_can_atlas_2018,TCGA-44-7659-01,TCGA-44-7659,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+d2472d5a55512fc9ae4a,luad_tcga_pan_can_atlas_2018,TCGA-44-7661-01,TCGA-44-7661,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+d46347559229eb2d24d2,luad_tcga_pan_can_atlas_2018,TCGA-44-7662-01,TCGA-44-7662,238,ALK,E1016D,Missense_Mutation,2,29449807,SNP,ALK E1016 missense
+50d78475d8f6c909c5fd,luad_tcga_pan_can_atlas_2018,TCGA-44-7662-01,TCGA-44-7662,6935,ZEB1,K964*,Nonsense_Mutation,10,31815707,SNP,ZEB1 truncating
+7877e53044eb82d2a4ac,luad_tcga_pan_can_atlas_2018,TCGA-44-7670-01,TCGA-44-7670,238,ALK,G446R,Missense_Mutation,2,29551294,SNP,ALK G446 missense
+8c21eb9910b69e5d2592,luad_tcga_pan_can_atlas_2018,TCGA-44-7671-01,TCGA-44-7671,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+be287b2167c3f742828d,luad_tcga_pan_can_atlas_2018,TCGA-44-7671-01,TCGA-44-7671,4233,MET,T660R,Missense_Mutation,7,116397705,SNP,MET T660 missense
+82c50b8a6135bcd63f9b,luad_tcga_pan_can_atlas_2018,TCGA-44-7671-01,TCGA-44-7671,6935,ZEB1,E855A,Missense_Mutation,10,31810827,SNP,ZEB1 E855 missense
+eeb3ce5d4355d4aa7fe9,luad_tcga_pan_can_atlas_2018,TCGA-44-7671-01,TCGA-44-7671,7431,VIM,E225*,Nonsense_Mutation,10,17275634,SNP,VIM truncating
+ccfc0d39ff6322c120e6,luad_tcga_pan_can_atlas_2018,TCGA-44-7672-01,TCGA-44-7672,3845,KRAS,G12A,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+0e8aa39c47e8761a42ec,luad_tcga_pan_can_atlas_2018,TCGA-44-8117-01,TCGA-44-8117,3845,KRAS,L19F,Missense_Mutation,12,25398262,SNP,KRAS L19 missense
+25b48d71b59cd400a3ae,luad_tcga_pan_can_atlas_2018,TCGA-44-A47A-01,TCGA-44-A47A,3845,KRAS,G12D,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+34088830358a04620ce5,luad_tcga_pan_can_atlas_2018,TCGA-44-A47F-01,TCGA-44-A47F,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+b1a2e47664624797c0c7,luad_tcga_pan_can_atlas_2018,TCGA-44-A47G-01,TCGA-44-A47G,4233,MET,X1010_splice,Splice_Site,7,116412045,SNP,MET truncating
+96b6d8c6c0ce8dd072d0,luad_tcga_pan_can_atlas_2018,TCGA-44-A47G-01,TCGA-44-A47G,4609,MYC,M116V,Missense_Mutation,8,128750809,SNP,MYC M116 missense
+02bbb7e7057158afd0fa,luad_tcga_pan_can_atlas_2018,TCGA-44-A4SU-01,TCGA-44-A4SU,1956,EGFR,G719C,Missense_Mutation,7,55241707,SNP,EGFR G719 missense
+e507789a507f8e7257b0,luad_tcga_pan_can_atlas_2018,TCGA-44-A4SU-01,TCGA-44-A4SU,1956,EGFR,S768I,Missense_Mutation,7,55249005,SNP,EGFR S768 missense
+949fa199e2d974520473,luad_tcga_pan_can_atlas_2018,TCGA-49-4487-01,TCGA-49-4487,4288,MKI67,G378C,Missense_Mutation,10,129913540,SNP,MKI67 G378 missense
+1fff4afa1e6b42bdc884,luad_tcga_pan_can_atlas_2018,TCGA-49-4487-01,TCGA-49-4487,4288,MKI67,R1698T,Missense_Mutation,10,129905011,SNP,MKI67 R1698 missense
+e4ca4b0f2a27d971b531,luad_tcga_pan_can_atlas_2018,TCGA-49-4490-01,TCGA-49-4490,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+e04369047e5624ec0749,luad_tcga_pan_can_atlas_2018,TCGA-49-4494-01,TCGA-49-4494,1956,EGFR,T790M,Missense_Mutation,7,55249071,SNP,EGFR T790 missense
+0d908569b3293718001e,luad_tcga_pan_can_atlas_2018,TCGA-49-4494-01,TCGA-49-4494,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+7048c7e79af714f7763f,luad_tcga_pan_can_atlas_2018,TCGA-49-4501-01,TCGA-49-4501,1956,EGFR,E746_A750del,In_Frame_Del,7,55242466,DEL,
+7d9ccd577d4def564d57,luad_tcga_pan_can_atlas_2018,TCGA-49-4505-01,TCGA-49-4505,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+3e944ba15ee0aa722493,luad_tcga_pan_can_atlas_2018,TCGA-49-4505-01,TCGA-49-4505,4288,MKI67,D2894Y,Missense_Mutation,10,129901424,SNP,MKI67 D2894 missense
+f0a634d42bd10bea398a,luad_tcga_pan_can_atlas_2018,TCGA-49-4506-01,TCGA-49-4506,3845,KRAS,G13D,Missense_Mutation,12,25398281,SNP,KRAS G13 missense
+0c8a34a6b405837b93b4,luad_tcga_pan_can_atlas_2018,TCGA-49-4510-01,TCGA-49-4510,3845,KRAS,G12D,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+8a40da96316235faa3e4,luad_tcga_pan_can_atlas_2018,TCGA-49-4510-01,TCGA-49-4510,6615,SNAI1,R15L,Missense_Mutation,20,48599640,SNP,SNAI1 R15 missense
+4de3f3dee81077c3557f,luad_tcga_pan_can_atlas_2018,TCGA-49-4514-01,TCGA-49-4514,3717,JAK2,Q1112*,Nonsense_Mutation,9,5126726,SNP,JAK2 truncating
+1c6efaabb0af987e31ca,luad_tcga_pan_can_atlas_2018,TCGA-49-6743-01,TCGA-49-6743,6935,ZEB1,N19S,Missense_Mutation,10,31608219,SNP,ZEB1 N19 missense
+4da074722d17f341ce99,luad_tcga_pan_can_atlas_2018,TCGA-49-6745-01,TCGA-49-6745,4233,MET,X1010_splice,Splice_Site,7,116412044,SNP,MET truncating
+bb2911165e55e2d57aa4,luad_tcga_pan_can_atlas_2018,TCGA-49-6761-01,TCGA-49-6761,4233,MET,S441C,Missense_Mutation,7,116371843,SNP,MET S441 missense
+1a30b43637c471e6af05,luad_tcga_pan_can_atlas_2018,TCGA-49-6761-01,TCGA-49-6761,29126,CD274,G110V,Missense_Mutation,9,5457355,SNP,CD274 G110 missense
+ee83238239a7bd14a335,luad_tcga_pan_can_atlas_2018,TCGA-49-6767-01,TCGA-49-6767,4318,MMP9,S273C,Missense_Mutation,20,44639949,SNP,MMP9 S273 missense
+61fea7b2ac1f202121c2,luad_tcga_pan_can_atlas_2018,TCGA-49-6767-01,TCGA-49-6767,6615,SNAI1,C185*,Nonsense_Mutation,20,48600833,SNP,SNAI1 truncating
+af64c09111cd76c8bc93,luad_tcga_pan_can_atlas_2018,TCGA-49-AARE-01,TCGA-49-AARE,3717,JAK2,E106V,Missense_Mutation,9,5029873,SNP,JAK2 E106 missense
+bc82db8ee3b1d4bc9541,luad_tcga_pan_can_atlas_2018,TCGA-49-AARE-01,TCGA-49-AARE,6935,ZEB1,D52H,Missense_Mutation,10,31750061,SNP,ZEB1 D52 missense
+05bd627d8d526d4b40e6,luad_tcga_pan_can_atlas_2018,TCGA-49-AARN-01,TCGA-49-AARN,3902,LAG3,A38S,Missense_Mutation,12,6882411,SNP,LAG3 A38 missense
+9196cc6ed595bfc7efb4,luad_tcga_pan_can_atlas_2018,TCGA-49-AARO-01,TCGA-49-AARO,3845,KRAS,G12A,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+0ad80cc7fe31abf2e050,luad_tcga_pan_can_atlas_2018,TCGA-49-AARQ-01,TCGA-49-AARQ,3091,HIF1A,A456S,Missense_Mutation,14,62204921,SNP,HIF1A A456 missense
+c9647cd0e973d70a7ed6,luad_tcga_pan_can_atlas_2018,TCGA-49-AARQ-01,TCGA-49-AARQ,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+f0da001bc18c944bb783,luad_tcga_pan_can_atlas_2018,TCGA-49-AARQ-01,TCGA-49-AARQ,6935,ZEB1,E957*,Nonsense_Mutation,10,31815686,SNP,ZEB1 truncating
+35436e8c3ea59eba816a,luad_tcga_pan_can_atlas_2018,TCGA-4B-A93V-01,TCGA-4B-A93V,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+cd255d8b6316952dba09,luad_tcga_pan_can_atlas_2018,TCGA-50-5049-01,TCGA-50-5049,6935,ZEB1,K493R,Missense_Mutation,10,31809741,SNP,ZEB1 K493 missense
+6a838c4fd202e59ba3c4,luad_tcga_pan_can_atlas_2018,TCGA-50-5051-01,TCGA-50-5051,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+74f4272c262f786f60e5,luad_tcga_pan_can_atlas_2018,TCGA-50-5066-01,TCGA-50-5066,1956,EGFR,X210_splice,Splice_Region,7,55220240,SNP,
+0c5351a44293a5f093aa,luad_tcga_pan_can_atlas_2018,TCGA-50-5072-01,TCGA-50-5072,3716,JAK1,L1153F,Missense_Mutation,1,65300251,SNP,JAK1 L1153 missense
+376861d5a664f2022e81,luad_tcga_pan_can_atlas_2018,TCGA-50-5930-01,TCGA-50-5930,238,ALK,R753L,Missense_Mutation,2,29462643,SNP,ALK R753 missense
+c99743d99bd6735d7172,luad_tcga_pan_can_atlas_2018,TCGA-50-5930-01,TCGA-50-5930,238,ALK,L566F,Missense_Mutation,2,29519873,SNP,ALK L566 missense
+e392b77b65881a00e302,luad_tcga_pan_can_atlas_2018,TCGA-50-5930-01,TCGA-50-5930,238,ALK,L1424I,Missense_Mutation,2,29416683,SNP,ALK L1424 missense
+4468629c4104c039fd15,luad_tcga_pan_can_atlas_2018,TCGA-50-5930-01,TCGA-50-5930,4233,MET,X861_splice,Splice_Site,7,116403323,SNP,MET truncating
+fd17c3a603cc7b3ce1bf,luad_tcga_pan_can_atlas_2018,TCGA-50-5932-01,TCGA-50-5932,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+8fd3195ac8d1e73c064b,luad_tcga_pan_can_atlas_2018,TCGA-50-5932-01,TCGA-50-5932,4288,MKI67,K2100E,Missense_Mutation,10,129903806,SNP,MKI67 K2100 missense
+54a7a6cf67845f1b8c31,luad_tcga_pan_can_atlas_2018,TCGA-50-5932-01,TCGA-50-5932,4288,MKI67,S1604*,Nonsense_Mutation,10,129905293,SNP,MKI67 truncating
+e752236fa97a23516f25,luad_tcga_pan_can_atlas_2018,TCGA-50-5933-01,TCGA-50-5933,3091,HIF1A,E269*,Nonsense_Mutation,14,62199167,SNP,HIF1A truncating
+5224aca442e117438d32,luad_tcga_pan_can_atlas_2018,TCGA-50-5933-01,TCGA-50-5933,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+8e76cd5d1247620f6680,luad_tcga_pan_can_atlas_2018,TCGA-50-5933-01,TCGA-50-5933,4233,MET,C98F,Missense_Mutation,7,116339431,SNP,MET C98 missense
+1c761d4c3912e5f72d51,luad_tcga_pan_can_atlas_2018,TCGA-50-5936-01,TCGA-50-5936,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+ccb7db2734ee57d9ae11,luad_tcga_pan_can_atlas_2018,TCGA-50-5941-01,TCGA-50-5941,3845,KRAS,G12A,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+1ad26b618b6fa391ac9b,luad_tcga_pan_can_atlas_2018,TCGA-50-5941-01,TCGA-50-5941,29126,CD274,T277S,Missense_Mutation,9,5466808,SNP,CD274 T277 missense
+dfa98c8624f66ab0cdeb,luad_tcga_pan_can_atlas_2018,TCGA-50-5944-01,TCGA-50-5944,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+752ff4ae1d28516dd8fc,luad_tcga_pan_can_atlas_2018,TCGA-50-5946-01,TCGA-50-5946,238,ALK,E374*,Nonsense_Mutation,2,29754815,SNP,ALK truncating
+1c6fb36ed8cee5a63bc3,luad_tcga_pan_can_atlas_2018,TCGA-50-6591-01,TCGA-50-6591,1956,EGFR,L833V,Missense_Mutation,7,55259439,SNP,EGFR L833 missense
+1081b313cda4d3eb38f1,luad_tcga_pan_can_atlas_2018,TCGA-50-6591-01,TCGA-50-6591,1956,EGFR,K754_I759del,In_Frame_Del,7,55242490,DEL,
+073f138714a5328ef0fd,luad_tcga_pan_can_atlas_2018,TCGA-50-6595-01,TCGA-50-6595,1956,EGFR,G719A,Missense_Mutation,7,55241708,SNP,EGFR G719 missense
+66bd2098b63522562aeb,luad_tcga_pan_can_atlas_2018,TCGA-50-6595-01,TCGA-50-6595,1956,EGFR,S768I,Missense_Mutation,7,55249005,SNP,EGFR S768 missense
+10cd1359987338138600,luad_tcga_pan_can_atlas_2018,TCGA-50-6597-01,TCGA-50-6597,3105,HLA-A,Q165*,Nonsense_Mutation,6,29911194,SNP,HLA-A truncating
+122def9d7e8004d8883f,luad_tcga_pan_can_atlas_2018,TCGA-50-6597-01,TCGA-50-6597,4233,MET,X1009_splice,Splice_Site,7,116412042,DEL,MET truncating
+0fc8ae3e1fb7bbe6f820,luad_tcga_pan_can_atlas_2018,TCGA-50-6673-01,TCGA-50-6673,1956,EGFR,H773dup,In_Frame_Ins,7,55249017,INS,
+99fde1b43dbf536f6691,luad_tcga_pan_can_atlas_2018,TCGA-50-7109-01,TCGA-50-7109,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+64d1702b686a61353be5,luad_tcga_pan_can_atlas_2018,TCGA-50-8459-01,TCGA-50-8459,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+6e2a7e7720093cb072db,luad_tcga_pan_can_atlas_2018,TCGA-53-7626-01,TCGA-53-7626,7153,TOP2A,R1443S,Missense_Mutation,17,38546355,SNP,TOP2A R1443 missense
+e9ef10f5b8876dd3662e,luad_tcga_pan_can_atlas_2018,TCGA-53-7813-01,TCGA-53-7813,3717,JAK2,E725*,Nonsense_Mutation,9,5080270,SNP,JAK2 truncating
+15a2d7bec94562d336cf,luad_tcga_pan_can_atlas_2018,TCGA-53-7813-01,TCGA-53-7813,3845,KRAS,G12A,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+b8cb035451d5b1aa9e24,luad_tcga_pan_can_atlas_2018,TCGA-53-7813-01,TCGA-53-7813,4288,MKI67,G530V,Missense_Mutation,10,129911758,SNP,MKI67 G530 missense
+2d6e37a1ecb77fd6437f,luad_tcga_pan_can_atlas_2018,TCGA-55-1592-01,TCGA-55-1592,238,ALK,S565P,Missense_Mutation,2,29519878,SNP,ALK S565 missense
+3d4ba396e4dfb9b989cb,luad_tcga_pan_can_atlas_2018,TCGA-55-1592-01,TCGA-55-1592,4288,MKI67,E880*,Nonsense_Mutation,10,129907466,SNP,MKI67 truncating
+7d01df3d3daaa91ed749,luad_tcga_pan_can_atlas_2018,TCGA-55-1592-01,TCGA-55-1592,6935,ZEB1,Y843C,Missense_Mutation,10,31810791,SNP,ZEB1 Y843 missense
+a547705385710ca27bc1,luad_tcga_pan_can_atlas_2018,TCGA-55-1595-01,TCGA-55-1595,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+cc829f1925cd50095a83,luad_tcga_pan_can_atlas_2018,TCGA-55-6642-01,TCGA-55-6642,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+1ba7b52d81fff4457459,luad_tcga_pan_can_atlas_2018,TCGA-55-6712-01,TCGA-55-6712,4233,MET,E1314G,Missense_Mutation,7,116435946,SNP,MET E1314 missense
+7812f96ee94f53cde1ea,luad_tcga_pan_can_atlas_2018,TCGA-55-6968-01,TCGA-55-6968,1956,EGFR,E866K,Missense_Mutation,7,55259538,SNP,EGFR E866 missense
+85169daaf9c0d17c5943,luad_tcga_pan_can_atlas_2018,TCGA-55-6968-01,TCGA-55-6968,4288,MKI67,R1836T,Missense_Mutation,10,129904597,SNP,MKI67 R1836 missense
+acee2067e97b50f7a2b3,luad_tcga_pan_can_atlas_2018,TCGA-55-6970-01,TCGA-55-6970,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+fdbbbe21cd3d00268883,luad_tcga_pan_can_atlas_2018,TCGA-55-6975-01,TCGA-55-6975,3845,KRAS,G13C,Missense_Mutation,12,25398282,SNP,KRAS G13 missense
+fca55e5ef55227f0f83e,luad_tcga_pan_can_atlas_2018,TCGA-55-6978-01,TCGA-55-6978,238,ALK,P158H,Missense_Mutation,2,30143053,SNP,ALK P158 missense
+9614d0663f7a497d57f3,luad_tcga_pan_can_atlas_2018,TCGA-55-6978-01,TCGA-55-6978,4233,MET,X1010_splice,Splice_Site,7,116412044,SNP,MET truncating
+3764ad63e001abc34314,luad_tcga_pan_can_atlas_2018,TCGA-55-6979-01,TCGA-55-6979,3716,JAK1,P517H,Missense_Mutation,1,65321290,SNP,JAK1 P517 missense
+b816f3720f54c5ec2dad,luad_tcga_pan_can_atlas_2018,TCGA-55-6980-01,TCGA-55-6980,1956,EGFR,E709_T710delinsD,In_Frame_Del,7,55241679,DEL,
+cbf2096debbc1a78b44e,luad_tcga_pan_can_atlas_2018,TCGA-55-6981-01,TCGA-55-6981,1956,EGFR,L747_T751del,In_Frame_Del,7,55242468,DEL,
+966ca17414b1e6acfe5c,luad_tcga_pan_can_atlas_2018,TCGA-55-6982-01,TCGA-55-6982,4233,MET,X1010_splice,Splice_Site,7,116412042,DEL,MET truncating
+389270b52a40db547ba6,luad_tcga_pan_can_atlas_2018,TCGA-55-6983-01,TCGA-55-6983,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+f193784a9a6ae8314b7c,luad_tcga_pan_can_atlas_2018,TCGA-55-6984-01,TCGA-55-6984,3845,KRAS,G12A,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+3686041638a24d86d103,luad_tcga_pan_can_atlas_2018,TCGA-55-7281-01,TCGA-55-7281,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+82e7d0053868db21c0a4,luad_tcga_pan_can_atlas_2018,TCGA-55-7281-01,TCGA-55-7281,4288,MKI67,L258Q,Missense_Mutation,10,129913899,SNP,MKI67 L258 missense
+27f651917e3d418d8e22,luad_tcga_pan_can_atlas_2018,TCGA-55-7281-01,TCGA-55-7281,6935,ZEB1,E1119G,Missense_Mutation,10,31816173,SNP,ZEB1 E1119 missense
+bde364ee22f0322a1b35,luad_tcga_pan_can_atlas_2018,TCGA-55-7283-01,TCGA-55-7283,3105,HLA-A,W157*,Frame_Shift_Del,6,29911171,DEL,HLA-A truncating
+a90ff862a32ba80ff974,luad_tcga_pan_can_atlas_2018,TCGA-55-7283-01,TCGA-55-7283,3845,KRAS,G12S,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+3ba42ffd05b7d7a5b6e8,luad_tcga_pan_can_atlas_2018,TCGA-55-7283-01,TCGA-55-7283,6935,ZEB1,H1010N,Missense_Mutation,10,31815845,SNP,ZEB1 H1010 missense
+46e63690ef0139318862,luad_tcga_pan_can_atlas_2018,TCGA-55-7284-01,TCGA-55-7284,3845,KRAS,G12D,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+643e08c9507e0ddedb58,luad_tcga_pan_can_atlas_2018,TCGA-55-7570-01,TCGA-55-7570,1956,EGFR,V300M,Missense_Mutation,7,55223531,SNP,EGFR V300 missense
+3822ed17b783b287e1d5,luad_tcga_pan_can_atlas_2018,TCGA-55-7573-01,TCGA-55-7573,1956,EGFR,K754E,Missense_Mutation,7,55242490,SNP,EGFR K754 missense
+b8240bfc750a28716f8a,luad_tcga_pan_can_atlas_2018,TCGA-55-7573-01,TCGA-55-7573,1956,EGFR,L747_E749del,In_Frame_Del,7,55242466,DEL,
+ced89905834e86667bb2,luad_tcga_pan_can_atlas_2018,TCGA-55-7574-01,TCGA-55-7574,3716,JAK1,E284K,Missense_Mutation,1,65332689,SNP,JAK1 E284 missense
+c0e941437f561c0c3cc7,luad_tcga_pan_can_atlas_2018,TCGA-55-7576-01,TCGA-55-7576,3717,JAK2,F265L,Missense_Mutation,9,5054743,SNP,JAK2 F265 missense
+94a60c480683e2644a24,luad_tcga_pan_can_atlas_2018,TCGA-55-7576-01,TCGA-55-7576,3717,JAK2,Q238K,Missense_Mutation,9,5054660,SNP,JAK2 Q238 missense
+fe4dedc9f14d1b3eda39,luad_tcga_pan_can_atlas_2018,TCGA-55-7576-01,TCGA-55-7576,3717,JAK2,F265V,Missense_Mutation,9,5054741,SNP,JAK2 F265 missense
+c1c26012051c179e2aec,luad_tcga_pan_can_atlas_2018,TCGA-55-7576-01,TCGA-55-7576,3845,KRAS,G12S,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+16243774dad547586b32,luad_tcga_pan_can_atlas_2018,TCGA-55-7725-01,TCGA-55-7725,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+8e4dabf904b688502b77,luad_tcga_pan_can_atlas_2018,TCGA-55-7726-01,TCGA-55-7726,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+46b5c287766e127feeb7,luad_tcga_pan_can_atlas_2018,TCGA-55-7727-01,TCGA-55-7727,3717,JAK2,R122L,Missense_Mutation,9,5044417,SNP,JAK2 R122 missense
+08eb817b0f5571087c11,luad_tcga_pan_can_atlas_2018,TCGA-55-7727-01,TCGA-55-7727,4288,MKI67,R2377K,Missense_Mutation,10,129902974,SNP,MKI67 R2377 missense
+b6117fef59b73d44b744,luad_tcga_pan_can_atlas_2018,TCGA-55-7728-01,TCGA-55-7728,238,ALK,G875R,Missense_Mutation,2,29455179,SNP,ALK G875 missense
+40f3c4e292c27e02b0e1,luad_tcga_pan_can_atlas_2018,TCGA-55-7728-01,TCGA-55-7728,238,ALK,R401*,Nonsense_Mutation,2,29606679,SNP,ALK truncating
+758a4047f5396e396497,luad_tcga_pan_can_atlas_2018,TCGA-55-7728-01,TCGA-55-7728,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+9f66a3346c3f2ec507af,luad_tcga_pan_can_atlas_2018,TCGA-55-7815-01,TCGA-55-7815,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+57dd7174d10f76fb740d,luad_tcga_pan_can_atlas_2018,TCGA-55-7907-01,TCGA-55-7907,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+aa31c5671d1b07c450f9,luad_tcga_pan_can_atlas_2018,TCGA-55-7907-01,TCGA-55-7907,7153,TOP2A,I921T,Missense_Mutation,17,38556818,SNP,TOP2A I921 missense
+ba3f96691d1f0fecdda8,luad_tcga_pan_can_atlas_2018,TCGA-55-7910-01,TCGA-55-7910,3845,KRAS,G13C,Missense_Mutation,12,25398282,SNP,KRAS G13 missense
+48b6ab3d25fd2c52cc33,luad_tcga_pan_can_atlas_2018,TCGA-55-7911-01,TCGA-55-7911,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+70b667a67878ea574dc4,luad_tcga_pan_can_atlas_2018,TCGA-55-7911-01,TCGA-55-7911,3845,KRAS,K88*,Nonsense_Mutation,12,25380196,SNP,KRAS truncating
+6107b9c4c62e706262bf,luad_tcga_pan_can_atlas_2018,TCGA-55-7914-01,TCGA-55-7914,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+d1c8c960d2019b804a37,luad_tcga_pan_can_atlas_2018,TCGA-55-7994-01,TCGA-55-7994,238,ALK,T1258Nfs*104,Frame_Shift_Del,2,29432714,DEL,ALK truncating
+daf75cc67210e1ced9c3,luad_tcga_pan_can_atlas_2018,TCGA-55-7994-01,TCGA-55-7994,238,ALK,R1436H,Missense_Mutation,2,29416646,SNP,ALK R1436 missense
+183b2a548acd1e436f11,luad_tcga_pan_can_atlas_2018,TCGA-55-7994-01,TCGA-55-7994,238,ALK,G926E,Missense_Mutation,2,29451788,SNP,ALK G926 missense
+56321bfd8122e5057900,luad_tcga_pan_can_atlas_2018,TCGA-55-7994-01,TCGA-55-7994,3716,JAK1,M19V,Missense_Mutation,1,65349110,SNP,JAK1 M19 missense
+ed7d24758c645a3bd310,luad_tcga_pan_can_atlas_2018,TCGA-55-7994-01,TCGA-55-7994,201633,TIGIT,G209W,Missense_Mutation,3,114026868,SNP,TIGIT G209 missense
+8cd4ede11b25bd354b8c,luad_tcga_pan_can_atlas_2018,TCGA-55-7995-01,TCGA-55-7995,238,ALK,C480Y,Missense_Mutation,2,29543724,SNP,ALK C480 missense
+05b27ec37ef3559b2b3e,luad_tcga_pan_can_atlas_2018,TCGA-55-8089-01,TCGA-55-8089,238,ALK,T1117N,Missense_Mutation,2,29446217,SNP,ALK T1117 missense
+1a5c526df1319e96bca3,luad_tcga_pan_can_atlas_2018,TCGA-55-8089-01,TCGA-55-8089,567,B2M,E19*,Nonsense_Mutation,15,45003799,SNP,B2M truncating
+1c24e86f81da4a0b3124,luad_tcga_pan_can_atlas_2018,TCGA-55-8089-01,TCGA-55-8089,4288,MKI67,R193K,Missense_Mutation,10,129914094,SNP,MKI67 R193 missense
+20b56c6ad8e2a8c5d2f0,luad_tcga_pan_can_atlas_2018,TCGA-55-8090-01,TCGA-55-8090,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+2fac6709ca1081c6591e,luad_tcga_pan_can_atlas_2018,TCGA-55-8094-01,TCGA-55-8094,3845,KRAS,G13C,Missense_Mutation,12,25398282,SNP,KRAS G13 missense
+df243dd592f7ebc4b43a,luad_tcga_pan_can_atlas_2018,TCGA-55-8096-01,TCGA-55-8096,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+e21ef4187317c766532e,luad_tcga_pan_can_atlas_2018,TCGA-55-8096-01,TCGA-55-8096,7153,TOP2A,K1289N,Missense_Mutation,17,38548934,SNP,TOP2A K1289 missense
+083842490d15596228db,luad_tcga_pan_can_atlas_2018,TCGA-55-8097-01,TCGA-55-8097,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+a5793a4e7b7ac14013f3,luad_tcga_pan_can_atlas_2018,TCGA-55-8097-01,TCGA-55-8097,84868,HAVCR2,S105I,Missense_Mutation,5,156533718,SNP,HAVCR2 S105 missense
+8e6dae04524f31e0c599,luad_tcga_pan_can_atlas_2018,TCGA-55-8203-01,TCGA-55-8203,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+180ea8dea485cc3868e4,luad_tcga_pan_can_atlas_2018,TCGA-55-8203-01,TCGA-55-8203,201633,TIGIT,T112I,Missense_Mutation,3,114014665,SNP,TIGIT T112 missense
+c18157cc27d8b3ccd1cc,luad_tcga_pan_can_atlas_2018,TCGA-55-8205-01,TCGA-55-8205,238,ALK,S426C,Missense_Mutation,2,29606604,SNP,ALK S426 missense
+8582465ad01b098661c6,luad_tcga_pan_can_atlas_2018,TCGA-55-8206-01,TCGA-55-8206,1956,EGFR,E746_A750del,In_Frame_Del,7,55242466,DEL,
+c45f1269d751683f885b,luad_tcga_pan_can_atlas_2018,TCGA-55-8207-01,TCGA-55-8207,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+bf5dab25f6790344c039,luad_tcga_pan_can_atlas_2018,TCGA-55-8207-01,TCGA-55-8207,4288,MKI67,A813E,Missense_Mutation,10,129907666,SNP,MKI67 A813 missense
+3fd5e2e55b0b9ee5a98d,luad_tcga_pan_can_atlas_2018,TCGA-55-8299-01,TCGA-55-8299,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+2df248454b3261967fe7,luad_tcga_pan_can_atlas_2018,TCGA-55-8301-01,TCGA-55-8301,6935,ZEB1,V878L,Missense_Mutation,10,31812891,SNP,ZEB1 V878 missense
+8e59228bdbfa53dd20e7,luad_tcga_pan_can_atlas_2018,TCGA-55-8301-01,TCGA-55-8301,7431,VIM,X209_splice,Splice_Region,10,17275583,SNP,
+25bb3f264b7431871a9e,luad_tcga_pan_can_atlas_2018,TCGA-55-8302-01,TCGA-55-8302,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+40448714cc8412f76a26,luad_tcga_pan_can_atlas_2018,TCGA-55-8506-01,TCGA-55-8506,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+1ead420a7e85d355e888,luad_tcga_pan_can_atlas_2018,TCGA-55-8506-01,TCGA-55-8506,6696,SPP1,D109A,Missense_Mutation,4,88902736,SNP,SPP1 D109 missense
+94813d0ecee101ee8b4d,luad_tcga_pan_can_atlas_2018,TCGA-55-8506-01,TCGA-55-8506,84868,HAVCR2,P301T,Missense_Mutation,5,156514118,SNP,HAVCR2 P301 missense
+3b329cc77611e3feba63,luad_tcga_pan_can_atlas_2018,TCGA-55-8506-01,TCGA-55-8506,84868,HAVCR2,P301Q,Missense_Mutation,5,156514117,SNP,HAVCR2 P301 missense
+8803e59090626a661e87,luad_tcga_pan_can_atlas_2018,TCGA-55-8507-01,TCGA-55-8507,6696,SPP1,N59T,Missense_Mutation,4,88901546,SNP,SPP1 N59 missense
+846bc6a1333b5b36a2a7,luad_tcga_pan_can_atlas_2018,TCGA-55-8508-01,TCGA-55-8508,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+17a7d1d2fc9dfbb8ee77,luad_tcga_pan_can_atlas_2018,TCGA-55-8511-01,TCGA-55-8511,4233,MET,R412H,Missense_Mutation,7,116371756,SNP,MET R412 missense
+5642462cc8e8918881fc,luad_tcga_pan_can_atlas_2018,TCGA-55-8512-01,TCGA-55-8512,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+096706212669f0f3af51,luad_tcga_pan_can_atlas_2018,TCGA-55-8514-01,TCGA-55-8514,3845,KRAS,G12A,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+bf08b3508e717154eb71,luad_tcga_pan_can_atlas_2018,TCGA-55-8615-01,TCGA-55-8615,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+8a2841327c608c031e4d,luad_tcga_pan_can_atlas_2018,TCGA-55-8616-01,TCGA-55-8616,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+43572c95c57e05e0ad85,luad_tcga_pan_can_atlas_2018,TCGA-55-8616-01,TCGA-55-8616,5133,PDCD1,R104L,Missense_Mutation,2,242794898,SNP,PDCD1 R104 missense
+c0c1548890fb88318145,luad_tcga_pan_can_atlas_2018,TCGA-55-8616-01,TCGA-55-8616,6935,ZEB1,P350L,Missense_Mutation,10,31809312,SNP,ZEB1 P350 missense
+a0e6d86447c7f106e301,luad_tcga_pan_can_atlas_2018,TCGA-55-A48X-01,TCGA-55-A48X,6615,SNAI1,I44T,Missense_Mutation,20,48600409,SNP,SNAI1 I44 missense
+2cdc8cf0c64f025fa3ec,luad_tcga_pan_can_atlas_2018,TCGA-55-A48Y-01,TCGA-55-A48Y,4318,MMP9,S240F,Missense_Mutation,20,44639851,SNP,MMP9 S240 missense
+9121a6b279e17ec45905,luad_tcga_pan_can_atlas_2018,TCGA-55-A48Z-01,TCGA-55-A48Z,1956,EGFR,G719A,Missense_Mutation,7,55241708,SNP,EGFR G719 missense
+1b769b261879363a5af5,luad_tcga_pan_can_atlas_2018,TCGA-55-A490-01,TCGA-55-A490,3717,JAK2,R1122L,Missense_Mutation,9,5126757,SNP,JAK2 R1122 missense
+d4554312007bbb44457e,luad_tcga_pan_can_atlas_2018,TCGA-55-A490-01,TCGA-55-A490,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+3e88938d98efadf58ecd,luad_tcga_pan_can_atlas_2018,TCGA-55-A491-01,TCGA-55-A491,3105,HLA-A,T252P,Missense_Mutation,6,29912033,SNP,HLA-A T252 missense
+ded9c8c32d92080d6e24,luad_tcga_pan_can_atlas_2018,TCGA-55-A491-01,TCGA-55-A491,4288,MKI67,L2290F,Missense_Mutation,10,129903234,SNP,MKI67 L2290 missense
+5c15c6799f00d122e148,luad_tcga_pan_can_atlas_2018,TCGA-55-A492-01,TCGA-55-A492,84868,HAVCR2,S21F,Missense_Mutation,5,156533970,SNP,HAVCR2 S21 missense
+2807dbecbfda28dd09bb,luad_tcga_pan_can_atlas_2018,TCGA-55-A494-01,TCGA-55-A494,3845,KRAS,G12D,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+4270dfd63f6162e2a004,luad_tcga_pan_can_atlas_2018,TCGA-55-A494-01,TCGA-55-A494,4288,MKI67,D77H,Missense_Mutation,10,129921203,SNP,MKI67 D77 missense
+2f8627b6a4485203cf07,luad_tcga_pan_can_atlas_2018,TCGA-55-A4DF-01,TCGA-55-A4DF,3105,HLA-A,R7Q,Missense_Mutation,6,29910350,SNP,HLA-A R7 missense
+d242d7819f68b95046e6,luad_tcga_pan_can_atlas_2018,TCGA-55-A4DF-01,TCGA-55-A4DF,4288,MKI67,S1131C,Missense_Mutation,10,129906712,SNP,MKI67 S1131 missense
+a46e50661879fccc53cf,luad_tcga_pan_can_atlas_2018,TCGA-55-A4DF-01,TCGA-55-A4DF,6935,ZEB1,A905G,Missense_Mutation,10,31812973,SNP,ZEB1 A905 missense
+9f4d6e440c4aded8cb06,luad_tcga_pan_can_atlas_2018,TCGA-55-A4DG-01,TCGA-55-A4DG,567,B2M,M1?,Translation_Start_Site,15,45003745,SNP,B2M truncating
+1f31fe4ba565f1d2d81e,luad_tcga_pan_can_atlas_2018,TCGA-55-A4DG-01,TCGA-55-A4DG,6935,ZEB1,P463T,Missense_Mutation,10,31809650,SNP,ZEB1 P463 missense
+2b6e3b1b8cf7fe2084e8,luad_tcga_pan_can_atlas_2018,TCGA-55-A57B-01,TCGA-55-A57B,1956,EGFR,L747_T751del,In_Frame_Del,7,55242468,DEL,
+668bc7d4472049b9dce3,luad_tcga_pan_can_atlas_2018,TCGA-62-8394-01,TCGA-62-8394,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+30d2d6d93ec4287e7339,luad_tcga_pan_can_atlas_2018,TCGA-62-8398-01,TCGA-62-8398,3845,KRAS,G12D,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+83238451c0ca69d12de9,luad_tcga_pan_can_atlas_2018,TCGA-62-8402-01,TCGA-62-8402,1956,EGFR,E746_A750del,In_Frame_Del,7,55242465,DEL,
+4ac065d009c8f61245bc,luad_tcga_pan_can_atlas_2018,TCGA-62-A46O-01,TCGA-62-A46O,6280,S100A9,W88*,Nonsense_Mutation,1,153333232,SNP,S100A9 truncating
+c49320742f3afba7e917,luad_tcga_pan_can_atlas_2018,TCGA-62-A46O-01,TCGA-62-A46O,201633,TIGIT,A147G,Missense_Mutation,3,114018492,SNP,TIGIT A147 missense
+1d84e652747162c25fcf,luad_tcga_pan_can_atlas_2018,TCGA-62-A46R-01,TCGA-62-A46R,3845,KRAS,G12A,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+2d2443891cef0418d2ac,luad_tcga_pan_can_atlas_2018,TCGA-62-A46R-01,TCGA-62-A46R,4288,MKI67,R2903*,Nonsense_Mutation,10,129901397,SNP,MKI67 truncating
+3b2c9c2ae1cc58c47e24,luad_tcga_pan_can_atlas_2018,TCGA-62-A46S-01,TCGA-62-A46S,3845,KRAS,G13D,Missense_Mutation,12,25398281,SNP,KRAS G13 missense
+c7900f0efe462740bcf6,luad_tcga_pan_can_atlas_2018,TCGA-62-A46U-01,TCGA-62-A46U,1956,EGFR,E746_A750del,In_Frame_Del,7,55242466,DEL,
+b5f17d7f73ba580eb6c8,luad_tcga_pan_can_atlas_2018,TCGA-62-A46V-01,TCGA-62-A46V,6935,ZEB1,M979I,Missense_Mutation,10,31815754,SNP,ZEB1 M979 missense
+366c264944c47098d7ac,luad_tcga_pan_can_atlas_2018,TCGA-64-1677-01,TCGA-64-1677,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+3d4223c39231641d9296,luad_tcga_pan_can_atlas_2018,TCGA-64-1679-01,TCGA-64-1679,84868,HAVCR2,P115A,Missense_Mutation,5,156533689,SNP,HAVCR2 P115 missense
+c7911dc058c283d3b062,luad_tcga_pan_can_atlas_2018,TCGA-64-1681-01,TCGA-64-1681,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+b15053952db7c3ab6583,luad_tcga_pan_can_atlas_2018,TCGA-64-5774-01,TCGA-64-5774,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+e0fa612ad189bd25ae9f,luad_tcga_pan_can_atlas_2018,TCGA-64-5774-01,TCGA-64-5774,6935,ZEB1,G1061W,Missense_Mutation,10,31815998,SNP,ZEB1 G1061 missense
+85c2aae313e126184cdd,luad_tcga_pan_can_atlas_2018,TCGA-64-5775-01,TCGA-64-5775,3845,KRAS,Q61L,Missense_Mutation,12,25380276,SNP,KRAS Q61 missense
+469b8f432791db9fab96,luad_tcga_pan_can_atlas_2018,TCGA-64-5778-01,TCGA-64-5778,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+d393276d0d5a2a91cd33,luad_tcga_pan_can_atlas_2018,TCGA-64-5779-01,TCGA-64-5779,6935,ZEB1,P267Q,Missense_Mutation,10,31809063,SNP,ZEB1 P267 missense
+0663ce234b3428546de8,luad_tcga_pan_can_atlas_2018,TCGA-64-5781-01,TCGA-64-5781,238,ALK,H1475Q,Missense_Mutation,2,29416528,SNP,ALK H1475 missense
+6b4bd7185adc28dbdc6f,luad_tcga_pan_can_atlas_2018,TCGA-64-5781-01,TCGA-64-5781,4233,MET,Y1235H,Missense_Mutation,7,116423428,SNP,MET Y1235 missense
+a37725135c85cc69759d,luad_tcga_pan_can_atlas_2018,TCGA-64-5781-01,TCGA-64-5781,29126,CD274,H233Y,Missense_Mutation,9,5465513,SNP,CD274 H233 missense
+a9aafb16905437969887,luad_tcga_pan_can_atlas_2018,TCGA-64-5815-01,TCGA-64-5815,3845,KRAS,Q61L,Missense_Mutation,12,25380276,SNP,KRAS Q61 missense
+cf749a6a7c439c6860e7,luad_tcga_pan_can_atlas_2018,TCGA-67-3770-01,TCGA-67-3770,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+3dad5dc0ba9981f1bdb6,luad_tcga_pan_can_atlas_2018,TCGA-67-3770-01,TCGA-67-3770,4288,MKI67,K1734*,Nonsense_Mutation,10,129904904,SNP,MKI67 truncating
+73ddcee2aee6dc251d79,luad_tcga_pan_can_atlas_2018,TCGA-67-3771-01,TCGA-67-3771,3716,JAK1,K496N,Missense_Mutation,1,65321352,SNP,JAK1 K496 missense
+da3716d8cab52ed02a0d,luad_tcga_pan_can_atlas_2018,TCGA-67-3771-01,TCGA-67-3771,4288,MKI67,K2330*,Nonsense_Mutation,10,129903116,SNP,MKI67 truncating
+a0c027820feb5129f4ea,luad_tcga_pan_can_atlas_2018,TCGA-67-3772-01,TCGA-67-3772,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+d228bcad1770c3dd892b,luad_tcga_pan_can_atlas_2018,TCGA-67-3773-01,TCGA-67-3773,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+b4b8d9f51ac5cb4918bb,luad_tcga_pan_can_atlas_2018,TCGA-67-3774-01,TCGA-67-3774,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+cdcd8749677d137506a4,luad_tcga_pan_can_atlas_2018,TCGA-67-3774-01,TCGA-67-3774,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+d04f7160daaa898d8e74,luad_tcga_pan_can_atlas_2018,TCGA-67-4679-01,TCGA-67-4679,3845,KRAS,G12A,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+216bf536013fd4210b51,luad_tcga_pan_can_atlas_2018,TCGA-67-6217-01,TCGA-67-6217,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+f3a458beaedc2a1df195,luad_tcga_pan_can_atlas_2018,TCGA-69-7760-01,TCGA-69-7760,1956,EGFR,E709_T710delinsD,In_Frame_Del,7,55241679,DEL,
+98bd9d51277f946e2c18,luad_tcga_pan_can_atlas_2018,TCGA-69-7761-01,TCGA-69-7761,6935,ZEB1,P777A,Missense_Mutation,10,31810592,SNP,ZEB1 P777 missense
+5aaa7f5e9b32cba4163b,luad_tcga_pan_can_atlas_2018,TCGA-69-7763-01,TCGA-69-7763,7422,VEGFA,R82L,Missense_Mutation,6,43745332,SNP,VEGFA R82 missense
+95d1caf89bb0c9e0bf23,luad_tcga_pan_can_atlas_2018,TCGA-69-7765-01,TCGA-69-7765,1956,EGFR,Q486*,Nonsense_Mutation,7,55227989,SNP,EGFR truncating
+71204c2e0939c0515403,luad_tcga_pan_can_atlas_2018,TCGA-69-7973-01,TCGA-69-7973,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+61bbc2b3de5b63b2044d,luad_tcga_pan_can_atlas_2018,TCGA-69-7973-01,TCGA-69-7973,6935,ZEB1,S167*,Nonsense_Mutation,10,31799619,SNP,ZEB1 truncating
+2b8726be62a6ebbf9318,luad_tcga_pan_can_atlas_2018,TCGA-69-7974-01,TCGA-69-7974,567,B2M,F82Ifs*20,Frame_Shift_Del,15,45007794,DEL,B2M truncating
+d6705aea6458ea1d4c0f,luad_tcga_pan_can_atlas_2018,TCGA-69-7974-01,TCGA-69-7974,3845,KRAS,Q61H,Missense_Mutation,12,25380275,SNP,KRAS Q61 missense
+10dea6dfbc14bd3ea233,luad_tcga_pan_can_atlas_2018,TCGA-69-7978-01,TCGA-69-7978,3717,JAK2,E271Q,Missense_Mutation,9,5054759,SNP,JAK2 E271 missense
+342d2b4d03462fbf6a27,luad_tcga_pan_can_atlas_2018,TCGA-69-7978-01,TCGA-69-7978,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+099118734cf9dd2f25b8,luad_tcga_pan_can_atlas_2018,TCGA-69-7980-01,TCGA-69-7980,3717,JAK2,Y114C,Missense_Mutation,9,5029897,SNP,JAK2 Y114 missense
+a3a8eac1e5900a4d0e51,luad_tcga_pan_can_atlas_2018,TCGA-69-7980-01,TCGA-69-7980,3845,KRAS,G12A,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+bf83f34315732afd9a09,luad_tcga_pan_can_atlas_2018,TCGA-69-7980-01,TCGA-69-7980,6696,SPP1,V163A,Missense_Mutation,4,88902898,SNP,SPP1 V163 missense
+b521f5421cb33d39256f,luad_tcga_pan_can_atlas_2018,TCGA-69-8253-01,TCGA-69-8253,3845,KRAS,G12D,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+31378eafe429fec7eb0a,luad_tcga_pan_can_atlas_2018,TCGA-69-8253-01,TCGA-69-8253,4609,MYC,S161L,Missense_Mutation,8,128750945,SNP,MYC S161 missense
+99c47a2007f0ce93ef1b,luad_tcga_pan_can_atlas_2018,TCGA-69-8254-01,TCGA-69-8254,3845,KRAS,G12D,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+e2461c3af2b2a1548b24,luad_tcga_pan_can_atlas_2018,TCGA-69-8254-01,TCGA-69-8254,6935,ZEB1,D352V,Missense_Mutation,10,31809318,SNP,ZEB1 D352 missense
+d91fa796b81e91f4b714,luad_tcga_pan_can_atlas_2018,TCGA-71-8520-01,TCGA-71-8520,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+10d93d2cb8cc9b664fb3,luad_tcga_pan_can_atlas_2018,TCGA-71-8520-01,TCGA-71-8520,1956,EGFR,L62R,Missense_Mutation,7,55210075,SNP,EGFR L62 missense
+4abd3d3b4c4b3dc1feb7,luad_tcga_pan_can_atlas_2018,TCGA-73-4662-01,TCGA-73-4662,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+8ebf868f5c2a47598774,luad_tcga_pan_can_atlas_2018,TCGA-73-4662-01,TCGA-73-4662,201633,TIGIT,D83E,Missense_Mutation,3,114014579,SNP,TIGIT D83 missense
+2d1213ddbe394d672076,luad_tcga_pan_can_atlas_2018,TCGA-73-4666-01,TCGA-73-4666,6935,ZEB1,Q392K,Missense_Mutation,10,31809437,SNP,ZEB1 Q392 missense
+de52f6d9cfb16bf43651,luad_tcga_pan_can_atlas_2018,TCGA-73-4670-01,TCGA-73-4670,3845,KRAS,A146P,Missense_Mutation,12,25378562,SNP,KRAS A146 missense
+d70c44df72c39bc06b48,luad_tcga_pan_can_atlas_2018,TCGA-73-4670-01,TCGA-73-4670,7153,TOP2A,E1209D,Missense_Mutation,17,38552628,SNP,TOP2A E1209 missense
+039232a9f657ffa2afc1,luad_tcga_pan_can_atlas_2018,TCGA-73-4677-01,TCGA-73-4677,3845,KRAS,G12A,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+9e26ed0346099dc51284,luad_tcga_pan_can_atlas_2018,TCGA-73-7498-01,TCGA-73-7498,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+eb6ee1436aafb571cd2b,luad_tcga_pan_can_atlas_2018,TCGA-73-A9RS-01,TCGA-73-A9RS,4288,MKI67,E1351K,Missense_Mutation,10,129906053,SNP,MKI67 E1351 missense
+916c3163bcf2fb2f5135,luad_tcga_pan_can_atlas_2018,TCGA-73-A9RS-01,TCGA-73-A9RS,7431,VIM,D259Y,Missense_Mutation,10,17275823,SNP,VIM D259 missense
+af382fcb2f5920c405fb,luad_tcga_pan_can_atlas_2018,TCGA-73-A9RS-01,TCGA-73-A9RS,84868,HAVCR2,R69W,Missense_Mutation,5,156533827,SNP,HAVCR2 R69 missense
+fb75197c6ea8e8e1352e,luad_tcga_pan_can_atlas_2018,TCGA-75-5122-01,TCGA-75-5122,4233,MET,X1010_splice,Splice_Site,7,116412045,SNP,MET truncating
+3bcc82eeae90126e1c2e,luad_tcga_pan_can_atlas_2018,TCGA-75-5126-01,TCGA-75-5126,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+9534905449c33ff73f9a,luad_tcga_pan_can_atlas_2018,TCGA-75-5126-01,TCGA-75-5126,4288,MKI67,E234*,Nonsense_Mutation,10,129913972,SNP,MKI67 truncating
+ff95a8d2790bdfb3ac27,luad_tcga_pan_can_atlas_2018,TCGA-75-5146-01,TCGA-75-5146,3717,JAK2,G180A,Missense_Mutation,9,5050756,SNP,JAK2 G180 missense
+627ab79069c60768c05b,luad_tcga_pan_can_atlas_2018,TCGA-75-6205-01,TCGA-75-6205,4233,MET,Y1003*,Nonsense_Mutation,7,116412024,SNP,MET truncating
+5b09c9717b3f61b7609a,luad_tcga_pan_can_atlas_2018,TCGA-75-6206-01,TCGA-75-6206,3845,KRAS,G13D,Missense_Mutation,12,25398281,SNP,KRAS G13 missense
+16727f89ccbc220d0ae8,luad_tcga_pan_can_atlas_2018,TCGA-75-6207-01,TCGA-75-6207,1956,EGFR,E746_A750del,In_Frame_Del,7,55242465,DEL,
+49406104b89164e33bca,luad_tcga_pan_can_atlas_2018,TCGA-75-6212-01,TCGA-75-6212,1956,EGFR,L747_A750delinsP,In_Frame_Del,7,55242469,DEL,
+f399d8f3ac36e7ab75ed,luad_tcga_pan_can_atlas_2018,TCGA-75-6214-01,TCGA-75-6214,4609,MYC,K66N,Missense_Mutation,8,128750661,SNP,MYC K66 missense
+bf7ae69c60cfc0b4c255,luad_tcga_pan_can_atlas_2018,TCGA-75-6214-01,TCGA-75-6214,6615,SNAI1,P136L,Missense_Mutation,20,48600685,SNP,SNAI1 P136 missense
+cd03b397b4a263482b8d,luad_tcga_pan_can_atlas_2018,TCGA-75-6214-01,TCGA-75-6214,6935,ZEB1,E787Q,Missense_Mutation,10,31810622,SNP,ZEB1 E787 missense
+b02ab577a5b81509aa71,luad_tcga_pan_can_atlas_2018,TCGA-75-7025-01,TCGA-75-7025,1956,EGFR,E746_A750del,In_Frame_Del,7,55242465,DEL,
+f02bd3f1b54c8af5466b,luad_tcga_pan_can_atlas_2018,TCGA-75-7027-01,TCGA-75-7027,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+5849ace314144053f351,luad_tcga_pan_can_atlas_2018,TCGA-75-7030-01,TCGA-75-7030,3845,KRAS,G12D,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+3a0da48c18c0f392a8e6,luad_tcga_pan_can_atlas_2018,TCGA-78-7145-01,TCGA-78-7145,3845,KRAS,G12D,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+a14e3aec435ea080ea9e,luad_tcga_pan_can_atlas_2018,TCGA-78-7145-01,TCGA-78-7145,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+5555c1d9e284092eb650,luad_tcga_pan_can_atlas_2018,TCGA-78-7146-01,TCGA-78-7146,6935,ZEB1,L185M,Missense_Mutation,10,31799672,SNP,ZEB1 L185 missense
+0005bb4dd340b7a70d21,luad_tcga_pan_can_atlas_2018,TCGA-78-7147-01,TCGA-78-7147,1956,EGFR,L387M,Missense_Mutation,7,55224477,SNP,EGFR L387 missense
+defdc9eab87c1bc20ddc,luad_tcga_pan_can_atlas_2018,TCGA-78-7147-01,TCGA-78-7147,1956,EGFR,L861Q,Missense_Mutation,7,55259524,SNP,EGFR L861 missense
+e08c7f46995865245b03,luad_tcga_pan_can_atlas_2018,TCGA-78-7147-01,TCGA-78-7147,1956,EGFR,D1083Efs*11,Frame_Shift_Del,7,55270296,DEL,EGFR truncating
+37de31630fd8c53fb21d,luad_tcga_pan_can_atlas_2018,TCGA-78-7148-01,TCGA-78-7148,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+44d10821854d21b5c07e,luad_tcga_pan_can_atlas_2018,TCGA-78-7148-01,TCGA-78-7148,4288,MKI67,S336I,Missense_Mutation,10,129913665,SNP,MKI67 S336 missense
+c45586bf50338c12ee23,luad_tcga_pan_can_atlas_2018,TCGA-78-7154-01,TCGA-78-7154,238,ALK,L216V,Missense_Mutation,2,30142880,SNP,ALK L216 missense
+34b25e7ec4c2340704fe,luad_tcga_pan_can_atlas_2018,TCGA-78-7155-01,TCGA-78-7155,1956,EGFR,Q432H,Missense_Mutation,7,55225444,SNP,EGFR Q432 missense
+84b3e377096cc99ccc3e,luad_tcga_pan_can_atlas_2018,TCGA-78-7155-01,TCGA-78-7155,1956,EGFR,K754I,Missense_Mutation,7,55242491,SNP,EGFR K754 missense
+e6c3b2af2e862ed004b4,luad_tcga_pan_can_atlas_2018,TCGA-78-7155-01,TCGA-78-7155,1956,EGFR,G901V,Missense_Mutation,7,55266410,SNP,EGFR G901 missense
+a2ba3bb91c209839a913,luad_tcga_pan_can_atlas_2018,TCGA-78-7155-01,TCGA-78-7155,3716,JAK1,D426Y,Missense_Mutation,1,65325846,SNP,JAK1 D426 missense
+85aa21c41a43083dfcf2,luad_tcga_pan_can_atlas_2018,TCGA-78-7155-01,TCGA-78-7155,201633,TIGIT,A145D,Missense_Mutation,3,114018486,SNP,TIGIT A145 missense
+4b87f575e30a620b9200,luad_tcga_pan_can_atlas_2018,TCGA-78-7158-01,TCGA-78-7158,1956,EGFR,L907M,Missense_Mutation,7,55266427,SNP,EGFR L907 missense
+9f885905e6522a6dc09e,luad_tcga_pan_can_atlas_2018,TCGA-78-7158-01,TCGA-78-7158,3716,JAK1,P1050T,Missense_Mutation,1,65301891,SNP,JAK1 P1050 missense
+22fadec99518d32a92b3,luad_tcga_pan_can_atlas_2018,TCGA-78-7160-01,TCGA-78-7160,3845,KRAS,G12D,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+156d252b153c1aaa47ec,luad_tcga_pan_can_atlas_2018,TCGA-78-7161-01,TCGA-78-7161,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+6cafeff90d850e65cdbf,luad_tcga_pan_can_atlas_2018,TCGA-78-7162-01,TCGA-78-7162,6935,ZEB1,D1023N,Missense_Mutation,10,31815884,SNP,ZEB1 D1023 missense
+ab74bf5e27d216355006,luad_tcga_pan_can_atlas_2018,TCGA-78-7163-01,TCGA-78-7163,4072,EPCAM,D98E,Missense_Mutation,2,47601056,SNP,EPCAM D98 missense
+77697dd1bff5d60a58ba,luad_tcga_pan_can_atlas_2018,TCGA-78-7166-01,TCGA-78-7166,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+1cdedeef6d0b2e026c04,luad_tcga_pan_can_atlas_2018,TCGA-78-7167-01,TCGA-78-7167,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+ae1bfac5d3c5e353dafc,luad_tcga_pan_can_atlas_2018,TCGA-78-7167-01,TCGA-78-7167,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+a2f8e11e6f42ec4dfe72,luad_tcga_pan_can_atlas_2018,TCGA-78-7220-01,TCGA-78-7220,238,ALK,A1251D,Missense_Mutation,2,29432736,SNP,ALK A1251 missense
+a2741527d80f72e6b6dc,luad_tcga_pan_can_atlas_2018,TCGA-78-7536-01,TCGA-78-7536,1493,CTLA4,C35Y,Missense_Mutation,2,204732769,SNP,CTLA4 C35 missense
+438433624b7004a8bbea,luad_tcga_pan_can_atlas_2018,TCGA-78-7536-01,TCGA-78-7536,1493,CTLA4,A44V,Missense_Mutation,2,204735330,SNP,CTLA4 A44 missense
+d61d40dbbb6b690000ee,luad_tcga_pan_can_atlas_2018,TCGA-78-7536-01,TCGA-78-7536,5133,PDCD1,T205N,Missense_Mutation,2,242794114,SNP,PDCD1 T205 missense
+dfcb41d5686301b7c31e,luad_tcga_pan_can_atlas_2018,TCGA-78-7536-01,TCGA-78-7536,7153,TOP2A,N1149K,Missense_Mutation,17,38555031,SNP,TOP2A N1149 missense
+858c55de729878c52608,luad_tcga_pan_can_atlas_2018,TCGA-78-7539-01,TCGA-78-7539,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+f8c4b536cbefb808164d,luad_tcga_pan_can_atlas_2018,TCGA-78-7539-01,TCGA-78-7539,7153,TOP2A,S1045F,Missense_Mutation,17,38556186,SNP,TOP2A S1045 missense
+d135215cd8ea48481165,luad_tcga_pan_can_atlas_2018,TCGA-78-7540-01,TCGA-78-7540,3716,JAK1,L994F,Missense_Mutation,1,65303773,SNP,JAK1 L994 missense
+22750867207745431a1a,luad_tcga_pan_can_atlas_2018,TCGA-78-7540-01,TCGA-78-7540,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+df6ec5c3f569cf3a4471,luad_tcga_pan_can_atlas_2018,TCGA-78-8640-01,TCGA-78-8640,4288,MKI67,P2066A,Missense_Mutation,10,129903908,SNP,MKI67 P2066 missense
+50e8fd2c24ee166b69f8,luad_tcga_pan_can_atlas_2018,TCGA-78-8640-01,TCGA-78-8640,6935,ZEB1,Q345L,Missense_Mutation,10,31809297,SNP,ZEB1 Q345 missense
+c17d44839b6c42407a2a,luad_tcga_pan_can_atlas_2018,TCGA-78-8655-01,TCGA-78-8655,3845,KRAS,G12S,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+907e332bc48525bafbab,luad_tcga_pan_can_atlas_2018,TCGA-78-8662-01,TCGA-78-8662,4072,EPCAM,X62_splice,Splice_Site,2,47600710,SNP,EPCAM truncating
+7d4f135651150176d746,luad_tcga_pan_can_atlas_2018,TCGA-80-5608-01,TCGA-80-5608,3845,KRAS,G12A,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+aec1f25d12edd23bb971,luad_tcga_pan_can_atlas_2018,TCGA-80-5608-01,TCGA-80-5608,201633,TIGIT,G39S,Missense_Mutation,3,114014445,SNP,TIGIT G39 missense
+c10ecccdb5d411ac0cc7,luad_tcga_pan_can_atlas_2018,TCGA-83-5908-01,TCGA-83-5908,3845,KRAS,G12A,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+f4d60e72f421132736c4,luad_tcga_pan_can_atlas_2018,TCGA-86-6851-01,TCGA-86-6851,567,B2M,E70*,Nonsense_Mutation,15,45007761,SNP,B2M truncating
+e5b3e4eae815a1e62d33,luad_tcga_pan_can_atlas_2018,TCGA-86-6851-01,TCGA-86-6851,3553,IL1B,Y184*,Nonsense_Mutation,2,113588914,SNP,IL1B truncating
+c95283a94665ac048313,luad_tcga_pan_can_atlas_2018,TCGA-86-6851-01,TCGA-86-6851,4288,MKI67,G1779V,Missense_Mutation,10,129904768,SNP,MKI67 G1779 missense
+52eff663563773241bc9,luad_tcga_pan_can_atlas_2018,TCGA-86-6851-01,TCGA-86-6851,84868,HAVCR2,L18F,Missense_Mutation,5,156535943,SNP,HAVCR2 L18 missense
+6bb1f141f5f450ba22be,luad_tcga_pan_can_atlas_2018,TCGA-86-7713-01,TCGA-86-7713,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+fbdcda85cd139f0666b0,luad_tcga_pan_can_atlas_2018,TCGA-86-7953-01,TCGA-86-7953,3845,KRAS,G12D,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+6d1dd1b8d46610c7896a,luad_tcga_pan_can_atlas_2018,TCGA-86-7955-01,TCGA-86-7955,84868,HAVCR2,I264F,Missense_Mutation,5,156514229,SNP,HAVCR2 I264 missense
+c00ab8eba2ee9ccb5e0a,luad_tcga_pan_can_atlas_2018,TCGA-86-8054-01,TCGA-86-8054,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+7e7094bbe8f32cdbf4c1,luad_tcga_pan_can_atlas_2018,TCGA-86-8055-01,TCGA-86-8055,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+c146543baa39c8a2b207,luad_tcga_pan_can_atlas_2018,TCGA-86-8056-01,TCGA-86-8056,3845,KRAS,G12D,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+3ea71614427a42474002,luad_tcga_pan_can_atlas_2018,TCGA-86-8073-01,TCGA-86-8073,4318,MMP9,X275_splice,Splice_Site,20,44640211,SNP,MMP9 truncating
+cc6bc86894c9984a99fe,luad_tcga_pan_can_atlas_2018,TCGA-86-8073-01,TCGA-86-8073,5133,PDCD1,S109I,Missense_Mutation,2,242794883,SNP,PDCD1 S109 missense
+120dc7b79c05cf6d9c6a,luad_tcga_pan_can_atlas_2018,TCGA-86-8074-01,TCGA-86-8074,1956,EGFR,E746_A750del,In_Frame_Del,7,55242465,DEL,
+650833eb5da5d978a41f,luad_tcga_pan_can_atlas_2018,TCGA-86-8075-01,TCGA-86-8075,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+a5a95b46ff01a49ac591,luad_tcga_pan_can_atlas_2018,TCGA-86-8076-01,TCGA-86-8076,3845,KRAS,G12D,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+5c46788f4a1801c8c236,luad_tcga_pan_can_atlas_2018,TCGA-86-8279-01,TCGA-86-8279,4072,EPCAM,E137A,Missense_Mutation,2,47601172,SNP,EPCAM E137 missense
+0bcdbf9a0ce621ef1a4d,luad_tcga_pan_can_atlas_2018,TCGA-86-8280-01,TCGA-86-8280,1956,EGFR,E746_A750del,In_Frame_Del,7,55242465,DEL,
+bbf36edb52d0c2ecd326,luad_tcga_pan_can_atlas_2018,TCGA-86-8358-01,TCGA-86-8358,4233,MET,L317I,Missense_Mutation,7,116340087,SNP,MET L317 missense
+56bc053142bb1323bc6d,luad_tcga_pan_can_atlas_2018,TCGA-86-8359-01,TCGA-86-8359,3845,KRAS,G12A,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+77e72f70e382254ef2ad,luad_tcga_pan_can_atlas_2018,TCGA-86-8585-01,TCGA-86-8585,6935,ZEB1,T996I,Missense_Mutation,10,31815804,SNP,ZEB1 T996 missense
+ef072dbbb31a7a5d8b73,luad_tcga_pan_can_atlas_2018,TCGA-86-8585-01,TCGA-86-8585,6935,ZEB1,P794A,Missense_Mutation,10,31810643,SNP,ZEB1 P794 missense
+6583c58d8ee06bc32ae8,luad_tcga_pan_can_atlas_2018,TCGA-86-8668-01,TCGA-86-8668,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+68345506b1953fc01040,luad_tcga_pan_can_atlas_2018,TCGA-86-8674-01,TCGA-86-8674,3845,KRAS,G13C,Missense_Mutation,12,25398282,SNP,KRAS G13 missense
+849b35efbeeb29e9eaf6,luad_tcga_pan_can_atlas_2018,TCGA-86-A456-01,TCGA-86-A456,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+b4a63560c81fc32a0729,luad_tcga_pan_can_atlas_2018,TCGA-86-A456-01,TCGA-86-A456,6935,ZEB1,P687T,Missense_Mutation,10,31810322,SNP,ZEB1 P687 missense
+e1b4c8f8ca363da70f7d,luad_tcga_pan_can_atlas_2018,TCGA-86-A4JF-01,TCGA-86-A4JF,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+8d6917004d6b4c7041c1,luad_tcga_pan_can_atlas_2018,TCGA-86-A4JF-01,TCGA-86-A4JF,3902,LAG3,H218Ifs*4,Frame_Shift_Del,12,6883896,DEL,LAG3 truncating
+e94981491366705eea33,luad_tcga_pan_can_atlas_2018,TCGA-86-A4JF-01,TCGA-86-A4JF,4609,MYC,P74T,Missense_Mutation,8,128750683,SNP,MYC P74 missense
+d2b0bf655fa2d17ce9f8,luad_tcga_pan_can_atlas_2018,TCGA-86-A4JF-01,TCGA-86-A4JF,7431,VIM,L234*,Frame_Shift_Del,10,17275658,DEL,VIM truncating
+615063c9ff2dd96ee012,luad_tcga_pan_can_atlas_2018,TCGA-86-A4P7-01,TCGA-86-A4P7,1956,EGFR,E709_T710delinsD,In_Frame_Del,7,55241679,DEL,
+401297bf983380fe38aa,luad_tcga_pan_can_atlas_2018,TCGA-91-6828-01,TCGA-91-6828,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+5f9b59ecc50bd4eadbb5,luad_tcga_pan_can_atlas_2018,TCGA-91-6829-01,TCGA-91-6829,3716,JAK1,S1141C,Missense_Mutation,1,65300289,SNP,JAK1 S1141 missense
+fd5ec3395e9efedaa5da,luad_tcga_pan_can_atlas_2018,TCGA-91-6829-01,TCGA-91-6829,4288,MKI67,E1969K,Missense_Mutation,10,129904199,SNP,MKI67 E1969 missense
+8ab34d97ff5e011977ca,luad_tcga_pan_can_atlas_2018,TCGA-91-6835-01,TCGA-91-6835,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+5fc3f54917a732162427,luad_tcga_pan_can_atlas_2018,TCGA-91-6836-01,TCGA-91-6836,238,ALK,L1318M,Missense_Mutation,2,29420529,SNP,ALK L1318 missense
+ea72d9129ffb3231fe39,luad_tcga_pan_can_atlas_2018,TCGA-91-6836-01,TCGA-91-6836,3845,KRAS,G12A,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+37f6885fc600f1277bb6,luad_tcga_pan_can_atlas_2018,TCGA-91-6849-01,TCGA-91-6849,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+5fdd89689ce8e3ae1798,luad_tcga_pan_can_atlas_2018,TCGA-93-7347-01,TCGA-93-7347,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+05b6ffac340feecf4fba,luad_tcga_pan_can_atlas_2018,TCGA-93-7348-01,TCGA-93-7348,4233,MET,X1010_splice,Splice_Site,7,116412044,SNP,MET truncating
+6ccae43017c7d140b492,luad_tcga_pan_can_atlas_2018,TCGA-93-8067-01,TCGA-93-8067,567,B2M,E89G,Missense_Mutation,15,45007819,SNP,B2M E89 missense
+db47cddd320063a3e0e6,luad_tcga_pan_can_atlas_2018,TCGA-93-8067-01,TCGA-93-8067,567,B2M,E89*,Nonsense_Mutation,15,45007818,SNP,B2M truncating
+8dc3461547e2e4a35005,luad_tcga_pan_can_atlas_2018,TCGA-93-8067-01,TCGA-93-8067,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+87b10c0db3bea2c2cb2f,luad_tcga_pan_can_atlas_2018,TCGA-93-A4JO-01,TCGA-93-A4JO,3845,KRAS,G12D,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+2e79ca095d1ac4839e6f,luad_tcga_pan_can_atlas_2018,TCGA-93-A4JO-01,TCGA-93-A4JO,6935,ZEB1,K964R,Missense_Mutation,10,31815708,SNP,ZEB1 K964 missense
+f126eb816280e356f021,luad_tcga_pan_can_atlas_2018,TCGA-93-A4JP-01,TCGA-93-A4JP,1956,EGFR,L861Q,Missense_Mutation,7,55259524,SNP,EGFR L861 missense
+120f348aad975aa0664a,luad_tcga_pan_can_atlas_2018,TCGA-93-A4JQ-01,TCGA-93-A4JQ,4288,MKI67,T534N,Missense_Mutation,10,129911746,SNP,MKI67 T534 missense
+e9b9e3a2b8ff58f9af01,luad_tcga_pan_can_atlas_2018,TCGA-95-7039-01,TCGA-95-7039,1956,EGFR,S921R,Missense_Mutation,7,55266471,SNP,EGFR S921 missense
+a72eb406db4951f19638,luad_tcga_pan_can_atlas_2018,TCGA-95-7039-01,TCGA-95-7039,3845,KRAS,D33E,Missense_Mutation,12,25398220,SNP,KRAS D33 missense
+50adf32995381220073d,luad_tcga_pan_can_atlas_2018,TCGA-95-7039-01,TCGA-95-7039,84868,HAVCR2,L127F,Missense_Mutation,5,156533651,SNP,HAVCR2 L127 missense
+998e3e10e075fcb22e97,luad_tcga_pan_can_atlas_2018,TCGA-95-7043-01,TCGA-95-7043,7431,VIM,Q314*,Nonsense_Mutation,10,17276749,SNP,VIM truncating
+ea08fc8c7e8716fa8f28,luad_tcga_pan_can_atlas_2018,TCGA-95-7562-01,TCGA-95-7562,3106,HLA-B,Y109del,In_Frame_Del,6,31324481,DEL,HLA-B 109-109 deletion
+d5da733265284d92ed15,luad_tcga_pan_can_atlas_2018,TCGA-95-7562-01,TCGA-95-7562,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+50089e2d5616d173e2d4,luad_tcga_pan_can_atlas_2018,TCGA-95-7567-01,TCGA-95-7567,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+bf2d3cfc82d5c31af06d,luad_tcga_pan_can_atlas_2018,TCGA-95-7947-01,TCGA-95-7947,1956,EGFR,I91V,Missense_Mutation,7,55211028,SNP,EGFR I91 missense
+8274e40ec16580b3b7a2,luad_tcga_pan_can_atlas_2018,TCGA-95-7947-01,TCGA-95-7947,1956,EGFR,R1052I,Missense_Mutation,7,55269468,SNP,EGFR R1052 missense
+3300e7755b486de1b1a3,luad_tcga_pan_can_atlas_2018,TCGA-95-7947-01,TCGA-95-7947,3105,HLA-A,D63Y,Missense_Mutation,6,29910647,SNP,HLA-A D63 missense
+31277726b36b8f4ff92e,luad_tcga_pan_can_atlas_2018,TCGA-95-A4VK-01,TCGA-95-A4VK,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+95838f56f0fb7df3d9a2,luad_tcga_pan_can_atlas_2018,TCGA-95-A4VN-01,TCGA-95-A4VN,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+2b8ce75ce1363c52b52c,luad_tcga_pan_can_atlas_2018,TCGA-95-A4VP-01,TCGA-95-A4VP,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+c2fd93e1524098abf29f,luad_tcga_pan_can_atlas_2018,TCGA-97-7554-01,TCGA-97-7554,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+a15ec3f0831e313aaad6,luad_tcga_pan_can_atlas_2018,TCGA-97-7937-01,TCGA-97-7937,6935,ZEB1,S875*,Nonsense_Mutation,10,31812883,SNP,ZEB1 truncating
+f5413173d38483a3bcf8,luad_tcga_pan_can_atlas_2018,TCGA-97-7938-01,TCGA-97-7938,238,ALK,E1299*,Nonsense_Mutation,2,29430080,SNP,ALK truncating
+55cbbf30df0ba7f3d337,luad_tcga_pan_can_atlas_2018,TCGA-97-7938-01,TCGA-97-7938,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+f8d19e99e96f9bc25347,luad_tcga_pan_can_atlas_2018,TCGA-97-7941-01,TCGA-97-7941,3717,JAK2,R228*,Nonsense_Mutation,9,5054630,SNP,JAK2 truncating
+6c5ace1fc50ec619ee9d,luad_tcga_pan_can_atlas_2018,TCGA-97-7941-01,TCGA-97-7941,3845,KRAS,G12A,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+2078ba75ba9fd01c5d0f,luad_tcga_pan_can_atlas_2018,TCGA-97-8171-01,TCGA-97-8171,1956,EGFR,E746_A750del,In_Frame_Del,7,55242465,DEL,
+50300808b7b26e3a6574,luad_tcga_pan_can_atlas_2018,TCGA-97-8172-01,TCGA-97-8172,1956,EGFR,G627*,Nonsense_Mutation,7,55233129,SNP,EGFR truncating
+4c5aba0f44a87be2e89b,luad_tcga_pan_can_atlas_2018,TCGA-97-8176-01,TCGA-97-8176,3845,KRAS,G12S,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+dd755a893e90d4f8fdba,luad_tcga_pan_can_atlas_2018,TCGA-97-8176-01,TCGA-97-8176,4233,MET,D208Y,Missense_Mutation,7,116339760,SNP,MET D208 missense
+d65d75a1289aeb99f4e8,luad_tcga_pan_can_atlas_2018,TCGA-97-8177-01,TCGA-97-8177,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+e5a29a9973cb8ca6b786,luad_tcga_pan_can_atlas_2018,TCGA-97-8179-01,TCGA-97-8179,3845,KRAS,L19F,Missense_Mutation,12,25398262,SNP,KRAS L19 missense
+ed3f821208880b9acaea,luad_tcga_pan_can_atlas_2018,TCGA-97-8179-01,TCGA-97-8179,5133,PDCD1,S137R,Missense_Mutation,2,242794798,SNP,PDCD1 S137 missense
+deef8f3b288a29c96b42,luad_tcga_pan_can_atlas_2018,TCGA-97-8547-01,TCGA-97-8547,1956,EGFR,E746_A750del,In_Frame_Del,7,55242465,DEL,
+d73ab43565dd5e55be1e,luad_tcga_pan_can_atlas_2018,TCGA-97-8552-01,TCGA-97-8552,1956,EGFR,E746_A750del,In_Frame_Del,7,55242466,DEL,
+e0af1812694f2811fccf,luad_tcga_pan_can_atlas_2018,TCGA-97-A4M0-01,TCGA-97-A4M0,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+6518e003285c6b1fd658,luad_tcga_pan_can_atlas_2018,TCGA-97-A4M0-01,TCGA-97-A4M0,4288,MKI67,A2310S,Missense_Mutation,10,129903176,SNP,MKI67 A2310 missense
+63f7eafba77b8ec1810c,luad_tcga_pan_can_atlas_2018,TCGA-97-A4M1-01,TCGA-97-A4M1,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+ee44f500feb1879dd881,luad_tcga_pan_can_atlas_2018,TCGA-97-A4M3-01,TCGA-97-A4M3,4288,MKI67,D2558Y,Missense_Mutation,10,129902432,SNP,MKI67 D2558 missense
+1df049b01dc69249063d,luad_tcga_pan_can_atlas_2018,TCGA-97-A4M3-01,TCGA-97-A4M3,7153,TOP2A,R296K,Missense_Mutation,17,38567973,SNP,TOP2A R296 missense
+2c9b36381680b3174371,luad_tcga_pan_can_atlas_2018,TCGA-97-A4M5-01,TCGA-97-A4M5,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+82c1ff398d8882ad9627,luad_tcga_pan_can_atlas_2018,TCGA-97-A4M5-01,TCGA-97-A4M5,7153,TOP2A,G1039R,Missense_Mutation,17,38556205,SNP,TOP2A G1039 missense
+387cd9dbc418e3787464,luad_tcga_pan_can_atlas_2018,TCGA-97-A4M6-01,TCGA-97-A4M6,1956,EGFR,E746_A750del,In_Frame_Del,7,55242465,DEL,
+bfc0d436ca5a35ed98fa,luad_tcga_pan_can_atlas_2018,TCGA-97-A4M7-01,TCGA-97-A4M7,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+5072c6f5af79c1649161,luad_tcga_pan_can_atlas_2018,TCGA-99-8025-01,TCGA-99-8025,3716,JAK1,E8G,Missense_Mutation,1,65349142,SNP,JAK1 E8 missense
+bf251016c88c485c28ae,luad_tcga_pan_can_atlas_2018,TCGA-99-8025-01,TCGA-99-8025,3845,KRAS,G13C,Missense_Mutation,12,25398282,SNP,KRAS G13 missense
+ddb5a32d1f0c5b0e0850,luad_tcga_pan_can_atlas_2018,TCGA-99-8028-01,TCGA-99-8028,3717,JAK2,D869N,Missense_Mutation,9,5089707,SNP,JAK2 D869 missense
+9f9e3e12ab1af80227ad,luad_tcga_pan_can_atlas_2018,TCGA-99-8028-01,TCGA-99-8028,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+a8805a59c6c66629e73e,luad_tcga_pan_can_atlas_2018,TCGA-99-8028-01,TCGA-99-8028,84868,HAVCR2,E275D,Missense_Mutation,5,156514194,SNP,HAVCR2 E275 missense
+f27b7bd924b83ca1c6d4,luad_tcga_pan_can_atlas_2018,TCGA-99-8032-01,TCGA-99-8032,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+ef385038825bc3aab76e,luad_tcga_pan_can_atlas_2018,TCGA-99-8033-01,TCGA-99-8033,3845,KRAS,G13C,Missense_Mutation,12,25398282,SNP,KRAS G13 missense
+ad9c1c4528de1eb0fe99,luad_tcga_pan_can_atlas_2018,TCGA-99-8033-01,TCGA-99-8033,7153,TOP2A,N258Y,Missense_Mutation,17,38569028,SNP,TOP2A N258 missense
+7fe31a98b6032eea966f,luad_tcga_pan_can_atlas_2018,TCGA-J2-8192-01,TCGA-J2-8192,1956,EGFR,E746_A750del,In_Frame_Del,7,55242466,DEL,
+d178ae1116d5c26f09d0,luad_tcga_pan_can_atlas_2018,TCGA-J2-8194-01,TCGA-J2-8194,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+a395103f404fad1543c6,luad_tcga_pan_can_atlas_2018,TCGA-J2-A4AE-01,TCGA-J2-A4AE,4233,MET,D1010fs,Frame_Shift_Del,7,116412043,DEL,MET truncating
+a6075f0e76da180f766e,luad_tcga_pan_can_atlas_2018,TCGA-J2-A4AG-01,TCGA-J2-A4AG,3845,KRAS,G12D,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+84b978fbb22ff5492015,luad_tcga_pan_can_atlas_2018,TCGA-L9-A443-01,TCGA-L9-A443,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+8bb7ce48fa94c4ccdb50,luad_tcga_pan_can_atlas_2018,TCGA-L9-A443-01,TCGA-L9-A443,6696,SPP1,T42S,Missense_Mutation,4,88901228,SNP,SPP1 T42 missense
+04c9bab1bba6892b933f,luad_tcga_pan_can_atlas_2018,TCGA-L9-A50W-01,TCGA-L9-A50W,1956,EGFR,T790M,Missense_Mutation,7,55249071,SNP,EGFR T790 missense
+cefa316b1a5f0867ff0f,luad_tcga_pan_can_atlas_2018,TCGA-L9-A50W-01,TCGA-L9-A50W,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+167a555df0e6ecfdb4ec,luad_tcga_pan_can_atlas_2018,TCGA-L9-A7SV-01,TCGA-L9-A7SV,567,B2M,L15Ffs*41,Frame_Shift_Del,15,45003781,DEL,B2M truncating
+a65f574fa0ea8fabf77d,luad_tcga_pan_can_atlas_2018,TCGA-L9-A7SV-01,TCGA-L9-A7SV,3553,IL1B,P173T,Missense_Mutation,2,113588949,SNP,IL1B P173 missense
+3b706cb70ead12e73fef,luad_tcga_pan_can_atlas_2018,TCGA-L9-A7SV-01,TCGA-L9-A7SV,201633,TIGIT,S97W,Missense_Mutation,3,114014620,SNP,TIGIT S97 missense
+0d432e693e9babca02b3,luad_tcga_pan_can_atlas_2018,TCGA-L9-A8F4-01,TCGA-L9-A8F4,238,ALK,G640V,Missense_Mutation,2,29498087,SNP,ALK G640 missense
+b6ebe5fcc1f0095d2838,luad_tcga_pan_can_atlas_2018,TCGA-MN-A4N4-01,TCGA-MN-A4N4,6935,ZEB1,E610K,Missense_Mutation,10,31810091,SNP,ZEB1 E610 missense
+29c06569114307ebeebb,luad_tcga_pan_can_atlas_2018,TCGA-MN-A4N5-01,TCGA-MN-A4N5,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+dc74aedd62da183f2d8d,luad_tcga_pan_can_atlas_2018,TCGA-MP-A4SV-01,TCGA-MP-A4SV,3717,JAK2,D146H,Missense_Mutation,9,5044488,SNP,JAK2 D146 missense
+a7071d20278b27e4ec18,luad_tcga_pan_can_atlas_2018,TCGA-MP-A4SW-01,TCGA-MP-A4SW,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+710e07b28b6a5a47dd69,luad_tcga_pan_can_atlas_2018,TCGA-MP-A4SY-01,TCGA-MP-A4SY,3845,KRAS,G12D,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+e1d6115458f176de233f,luad_tcga_pan_can_atlas_2018,TCGA-MP-A4T2-01,TCGA-MP-A4T2,6935,ZEB1,S583Ffs*7,Frame_Shift_Del,10,31810011,DEL,ZEB1 truncating
+3daf82223fd4b88a4a94,luad_tcga_pan_can_atlas_2018,TCGA-MP-A4T4-01,TCGA-MP-A4T4,238,ALK,Y635*,Nonsense_Mutation,2,29498275,SNP,ALK truncating
+18da3b8d6aed541aad33,luad_tcga_pan_can_atlas_2018,TCGA-MP-A4T4-01,TCGA-MP-A4T4,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+b4e87ab2ab4cac1839e3,luad_tcga_pan_can_atlas_2018,TCGA-MP-A4T4-01,TCGA-MP-A4T4,7153,TOP2A,E644*,Nonsense_Mutation,17,38562659,SNP,TOP2A truncating
+8928d1ceda9f1e11f26f,luad_tcga_pan_can_atlas_2018,TCGA-MP-A4T6-01,TCGA-MP-A4T6,1956,EGFR,L747_A750delinsP,In_Frame_Del,7,55242469,DEL,
+cd6b0193006c7b67ed88,luad_tcga_pan_can_atlas_2018,TCGA-MP-A4T7-01,TCGA-MP-A4T7,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+f18b3602a228c0b2d881,luad_tcga_pan_can_atlas_2018,TCGA-MP-A4T8-01,TCGA-MP-A4T8,3717,JAK2,Q760H,Missense_Mutation,9,5080377,SNP,JAK2 Q760 missense
+00218eda7804961d4e1d,luad_tcga_pan_can_atlas_2018,TCGA-MP-A4T8-01,TCGA-MP-A4T8,3845,KRAS,G12D,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+ec34451004dff5f150ba,luad_tcga_pan_can_atlas_2018,TCGA-MP-A4T9-01,TCGA-MP-A4T9,1956,EGFR,L858R,Missense_Mutation,7,55259515,SNP,EGFR L858 missense
+52fb6a6f9997c4a66090,luad_tcga_pan_can_atlas_2018,TCGA-MP-A4TA-01,TCGA-MP-A4TA,4288,MKI67,A2188S,Missense_Mutation,10,129903542,SNP,MKI67 A2188 missense
+321793c3d35fc74c30d4,luad_tcga_pan_can_atlas_2018,TCGA-MP-A4TD-01,TCGA-MP-A4TD,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+bb72a3471b76179e0938,luad_tcga_pan_can_atlas_2018,TCGA-MP-A4TE-01,TCGA-MP-A4TE,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+fa15e9855d38de81c67d,luad_tcga_pan_can_atlas_2018,TCGA-MP-A4TF-01,TCGA-MP-A4TF,567,B2M,M1?,Translation_Start_Site,15,45003745,SNP,B2M truncating
+e91641bdb37b5b5896a3,luad_tcga_pan_can_atlas_2018,TCGA-MP-A4TF-01,TCGA-MP-A4TF,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+73ee6680ff9276198c9a,luad_tcga_pan_can_atlas_2018,TCGA-MP-A4TH-01,TCGA-MP-A4TH,567,B2M,Y46C,Missense_Mutation,15,45007690,SNP,B2M Y46 missense
+67b4cb53a4161db8d818,luad_tcga_pan_can_atlas_2018,TCGA-MP-A4TI-01,TCGA-MP-A4TI,238,ALK,G452W,Missense_Mutation,2,29551276,SNP,ALK G452 missense
+3a774244cedea94f7be7,luad_tcga_pan_can_atlas_2018,TCGA-MP-A4TI-01,TCGA-MP-A4TI,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+b8f04cb491c9d785d82a,luad_tcga_pan_can_atlas_2018,TCGA-MP-A4TK-01,TCGA-MP-A4TK,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+98998375f8e7b289d036,luad_tcga_pan_can_atlas_2018,TCGA-MP-A5C7-01,TCGA-MP-A5C7,238,ALK,P999T,Missense_Mutation,2,29449860,SNP,ALK P999 missense
+920149b96fa60a03c22f,luad_tcga_pan_can_atlas_2018,TCGA-MP-A5C7-01,TCGA-MP-A5C7,3091,HIF1A,P45Hfs*6,Frame_Shift_Del,14,62187197,DEL,HIF1A truncating
+b8ef934d91ee6f5cf8d1,luad_tcga_pan_can_atlas_2018,TCGA-NJ-A4YG-01,TCGA-NJ-A4YG,3845,KRAS,G12D,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+30edaf3c39d76883839c,luad_tcga_pan_can_atlas_2018,TCGA-NJ-A4YI-01,TCGA-NJ-A4YI,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+2824a93916d10ec2a43e,luad_tcga_pan_can_atlas_2018,TCGA-NJ-A4YI-01,TCGA-NJ-A4YI,6935,ZEB1,A13S,Missense_Mutation,10,31608200,SNP,ZEB1 A13 missense
+0da495c29aa6631d4716,luad_tcga_pan_can_atlas_2018,TCGA-NJ-A4YP-01,TCGA-NJ-A4YP,3845,KRAS,L19F,Missense_Mutation,12,25398262,SNP,KRAS L19 missense
+6b329b9e2dd36e43e612,luad_tcga_pan_can_atlas_2018,TCGA-NJ-A4YQ-01,TCGA-NJ-A4YQ,4318,MMP9,T259K,Missense_Mutation,20,44639908,SNP,MMP9 T259 missense
+7921c432e817f7d4ea44,luad_tcga_pan_can_atlas_2018,TCGA-NJ-A55O-01,TCGA-NJ-A55O,3845,KRAS,G12C,Missense_Mutation,12,25398285,SNP,KRAS G12 missense
+3074fc7dfaab63c5e3d7,luad_tcga_pan_can_atlas_2018,TCGA-NJ-A55R-01,TCGA-NJ-A55R,3845,KRAS,G12A,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+e70dfa2a2609601d91b3,lusc_tcga_pan_can_atlas_2018,TCGA-18-3406-01,TCGA-18-3406,4288,MKI67,L2197V,Missense_Mutation,10,129903515,SNP,MKI67 L2197 missense
+a9eb826b403b1f28512d,lusc_tcga_pan_can_atlas_2018,TCGA-18-3410-01,TCGA-18-3410,3106,HLA-B,A319E,Missense_Mutation,6,31322940,SNP,HLA-B A319 missense
+90b183ad6ee1adfd77be,lusc_tcga_pan_can_atlas_2018,TCGA-18-3410-01,TCGA-18-3410,6935,ZEB1,A905P,Missense_Mutation,10,31812972,SNP,ZEB1 A905 missense
+357b7f0c3aae45ada258,lusc_tcga_pan_can_atlas_2018,TCGA-18-3411-01,TCGA-18-3411,7422,VEGFA,P183H,Missense_Mutation,6,43749695,SNP,VEGFA P183 missense
+da254d22f7a63310f6af,lusc_tcga_pan_can_atlas_2018,TCGA-18-3412-01,TCGA-18-3412,6615,SNAI1,P47L,Missense_Mutation,20,48600418,SNP,SNAI1 P47 missense
+aa78863b09d8b9aa6d27,lusc_tcga_pan_can_atlas_2018,TCGA-18-3414-01,TCGA-18-3414,1493,CTLA4,M90I,Missense_Mutation,2,204735469,SNP,CTLA4 M90 missense
+1a235398718e6372d491,lusc_tcga_pan_can_atlas_2018,TCGA-18-3416-01,TCGA-18-3416,238,ALK,P1260Q,Missense_Mutation,2,29432709,SNP,ALK P1260 missense
+5ca029beb4159f71e782,lusc_tcga_pan_can_atlas_2018,TCGA-18-3416-01,TCGA-18-3416,238,ALK,L1145M,Missense_Mutation,2,29445400,SNP,ALK L1145 missense
+1c36c4c00a6c18f8b4d9,lusc_tcga_pan_can_atlas_2018,TCGA-18-3416-01,TCGA-18-3416,4288,MKI67,V889M,Missense_Mutation,10,129907439,SNP,MKI67 V889 missense
+ebe12a82e4bbbe66d239,lusc_tcga_pan_can_atlas_2018,TCGA-18-3417-01,TCGA-18-3417,1956,EGFR,X297_splice,Splice_Region,7,55223520,SNP,
+fac925fcbb8d47e2a2e9,lusc_tcga_pan_can_atlas_2018,TCGA-18-3421-01,TCGA-18-3421,4233,MET,Q328K,Missense_Mutation,7,116340120,SNP,MET Q328 missense
+b87f9271d26c0295398f,lusc_tcga_pan_can_atlas_2018,TCGA-21-1071-01,TCGA-21-1071,4233,MET,T1096S,Missense_Mutation,7,116417470,SNP,MET T1096 missense
+9af6d0f38c3ec4b291ca,lusc_tcga_pan_can_atlas_2018,TCGA-21-1079-01,TCGA-21-1079,238,ALK,T1512K,Missense_Mutation,2,29416418,SNP,ALK T1512 missense
+4f50f7362ec2c014d882,lusc_tcga_pan_can_atlas_2018,TCGA-21-1079-01,TCGA-21-1079,3105,HLA-A,R135C,Missense_Mutation,6,29911104,SNP,HLA-A R135 missense
+04962e28345d715814e9,lusc_tcga_pan_can_atlas_2018,TCGA-21-1079-01,TCGA-21-1079,3717,JAK2,M483I,Missense_Mutation,9,5069144,SNP,JAK2 M483 missense
+e3f12133b80fba2f815d,lusc_tcga_pan_can_atlas_2018,TCGA-21-5782-01,TCGA-21-5782,3105,HLA-A,X207_splice,Splice_Site,6,29911898,SNP,HLA-A truncating
+e7ea6dec53654a950934,lusc_tcga_pan_can_atlas_2018,TCGA-21-5782-01,TCGA-21-5782,3717,JAK2,P58Hfs*30,Frame_Shift_Del,9,5022154,DEL,JAK2 truncating
+6256d7ce7e637c886462,lusc_tcga_pan_can_atlas_2018,TCGA-21-5782-01,TCGA-21-5782,7431,VIM,F15L,Missense_Mutation,10,17271466,SNP,VIM F15 missense
+13a23d75d2c7570e2198,lusc_tcga_pan_can_atlas_2018,TCGA-21-5783-01,TCGA-21-5783,3845,KRAS,V14I,Missense_Mutation,12,25398279,SNP,KRAS V14 missense
+b9c1d432ff33b97d232a,lusc_tcga_pan_can_atlas_2018,TCGA-21-5783-01,TCGA-21-5783,6696,SPP1,D183H,Missense_Mutation,4,88903650,SNP,SPP1 D183 missense
+ae1abb70bc90588a3019,lusc_tcga_pan_can_atlas_2018,TCGA-21-5783-01,TCGA-21-5783,6935,ZEB1,L39Q,Missense_Mutation,10,31750023,SNP,ZEB1 L39 missense
+7d0b747da0417eab2b0f,lusc_tcga_pan_can_atlas_2018,TCGA-22-4595-01,TCGA-22-4595,567,B2M,M1?,Translation_Start_Site,15,45003747,SNP,B2M truncating
+b3c2ac5938afc62bec39,lusc_tcga_pan_can_atlas_2018,TCGA-22-4599-01,TCGA-22-4599,4318,MMP9,W385L,Missense_Mutation,20,44640932,SNP,MMP9 W385 missense
+f9e68fe48e5f8698ba7c,lusc_tcga_pan_can_atlas_2018,TCGA-22-4599-01,TCGA-22-4599,84868,HAVCR2,R155M,Missense_Mutation,5,156531691,SNP,HAVCR2 R155 missense
+67885630ea9a05b9f245,lusc_tcga_pan_can_atlas_2018,TCGA-22-4601-01,TCGA-22-4601,1956,EGFR,P1019L,Missense_Mutation,7,55268990,SNP,EGFR P1019 missense
+a73f469644df82b3b635,lusc_tcga_pan_can_atlas_2018,TCGA-22-4604-01,TCGA-22-4604,4072,EPCAM,P3S,Missense_Mutation,2,47596651,SNP,EPCAM P3 missense
+25880d111c9048d9e3cf,lusc_tcga_pan_can_atlas_2018,TCGA-22-4609-01,TCGA-22-4609,1956,EGFR,S229C,Missense_Mutation,7,55220295,SNP,EGFR S229 missense
+a53dcfe36540166b8e16,lusc_tcga_pan_can_atlas_2018,TCGA-22-4613-01,TCGA-22-4613,238,ALK,P1112Q,Missense_Mutation,2,29446232,SNP,ALK P1112 missense
+0626887a16e907f4a714,lusc_tcga_pan_can_atlas_2018,TCGA-22-4613-01,TCGA-22-4613,7431,VIM,L340M,Missense_Mutation,10,17277177,SNP,VIM L340 missense
+0dbee2dae9e90e051f81,lusc_tcga_pan_can_atlas_2018,TCGA-22-5473-01,TCGA-22-5473,4288,MKI67,S507F,Missense_Mutation,10,129911827,SNP,MKI67 S507 missense
+0b39e584c3998e5a4f48,lusc_tcga_pan_can_atlas_2018,TCGA-22-5480-01,TCGA-22-5480,567,B2M,P34Ffs*15,Frame_Shift_Del,15,45007653,DEL,B2M truncating
+65db57ecc53574f46f4d,lusc_tcga_pan_can_atlas_2018,TCGA-22-5483-01,TCGA-22-5483,6696,SPP1,R244K,Missense_Mutation,4,88903834,SNP,SPP1 R244 missense
+db9b348071a54bd35020,lusc_tcga_pan_can_atlas_2018,TCGA-22-5485-01,TCGA-22-5485,84868,HAVCR2,V75L,Missense_Mutation,5,156533809,SNP,HAVCR2 V75 missense
+7fb0e76961916709e0f7,lusc_tcga_pan_can_atlas_2018,TCGA-22-5491-01,TCGA-22-5491,3716,JAK1,E123*,Nonsense_Mutation,1,65339169,SNP,JAK1 truncating
+ff939efc600d0568176c,lusc_tcga_pan_can_atlas_2018,TCGA-33-4566-01,TCGA-33-4566,1956,EGFR,X1039_splice,Splice_Region,7,55269425,SNP,
+955f624177f9467905d6,lusc_tcga_pan_can_atlas_2018,TCGA-33-4566-01,TCGA-33-4566,4318,MMP9,D707E,Missense_Mutation,20,44645004,SNP,MMP9 D707 missense
+8679a4fc4976751d8517,lusc_tcga_pan_can_atlas_2018,TCGA-33-4583-01,TCGA-33-4583,3553,IL1B,L41I,Missense_Mutation,2,113591131,SNP,IL1B L41 missense
+0fffb4930edbef3b0e28,lusc_tcga_pan_can_atlas_2018,TCGA-33-4583-01,TCGA-33-4583,4288,MKI67,D1421H,Missense_Mutation,10,129905843,SNP,MKI67 D1421 missense
+e292c214a77c94abcaa7,lusc_tcga_pan_can_atlas_2018,TCGA-33-4587-01,TCGA-33-4587,7431,VIM,R222L,Missense_Mutation,10,17275626,SNP,VIM R222 missense
+e5389cbbc6c14f786d3d,lusc_tcga_pan_can_atlas_2018,TCGA-33-4589-01,TCGA-33-4589,3717,JAK2,F209L,Missense_Mutation,9,5054575,SNP,JAK2 F209 missense
+67aea5c269c8e368310d,lusc_tcga_pan_can_atlas_2018,TCGA-33-6738-01,TCGA-33-6738,84868,HAVCR2,G196V,Missense_Mutation,5,156522406,SNP,HAVCR2 G196 missense
+32fed51648a4c52b2231,lusc_tcga_pan_can_atlas_2018,TCGA-33-AAS8-01,TCGA-33-AAS8,4318,MMP9,R24H,Missense_Mutation,20,44637636,SNP,MMP9 R24 missense
+34a859028d0db63853ee,lusc_tcga_pan_can_atlas_2018,TCGA-33-AAS8-01,TCGA-33-AAS8,4318,MMP9,L555F,Missense_Mutation,20,44642348,SNP,MMP9 L555 missense
+ddc88fc329c6eefe6eef,lusc_tcga_pan_can_atlas_2018,TCGA-33-AASD-01,TCGA-33-AASD,238,ALK,R353S,Missense_Mutation,2,29754876,SNP,ALK R353 missense
+30c07c5c16d78500cedb,lusc_tcga_pan_can_atlas_2018,TCGA-34-5927-01,TCGA-34-5927,3717,JAK2,X547_splice,Splice_Site,9,5070053,SNP,JAK2 truncating
+e92efdd06998db100d60,lusc_tcga_pan_can_atlas_2018,TCGA-34-5929-01,TCGA-34-5929,567,B2M,S72*,Nonsense_Mutation,15,45007768,SNP,B2M truncating
+25319df145d0a50c3d0f,lusc_tcga_pan_can_atlas_2018,TCGA-37-3783-01,TCGA-37-3783,7431,VIM,E244K,Missense_Mutation,10,17275778,SNP,VIM E244 missense
+bd377f791fd8bada7c93,lusc_tcga_pan_can_atlas_2018,TCGA-37-3789-01,TCGA-37-3789,6696,SPP1,G200S,Missense_Mutation,4,88903701,SNP,SPP1 G200 missense
+a49bb26db043dfc6aaea,lusc_tcga_pan_can_atlas_2018,TCGA-37-3792-01,TCGA-37-3792,4318,MMP9,M422I,Missense_Mutation,20,44641157,SNP,MMP9 M422 missense
+d41b9aeb69e549d5276f,lusc_tcga_pan_can_atlas_2018,TCGA-37-4130-01,TCGA-37-4130,3717,JAK2,X592_splice,Splice_Site,9,5072627,SNP,JAK2 truncating
+9a65ac116257cd0bc9be,lusc_tcga_pan_can_atlas_2018,TCGA-37-4130-01,TCGA-37-4130,4609,MYC,Q448H,Missense_Mutation,8,128753183,SNP,MYC Q448 missense
+1ba90c6b0ab44decfa84,lusc_tcga_pan_can_atlas_2018,TCGA-37-4141-01,TCGA-37-4141,6615,SNAI1,V64D,Missense_Mutation,20,48600469,SNP,SNAI1 V64 missense
+b0002c8e9de77af90136,lusc_tcga_pan_can_atlas_2018,TCGA-37-5819-01,TCGA-37-5819,3105,HLA-A,W298*,Nonsense_Mutation,6,29912172,SNP,HLA-A truncating
+c0140d9c3d563a794295,lusc_tcga_pan_can_atlas_2018,TCGA-37-5819-01,TCGA-37-5819,3105,HLA-A,Y233*,Nonsense_Mutation,6,29911978,SNP,HLA-A truncating
+d415f333a8d370cdd5ec,lusc_tcga_pan_can_atlas_2018,TCGA-37-5819-01,TCGA-37-5819,6279,S100A8,V29L,Missense_Mutation,1,153362927,SNP,S100A8 V29 missense
+1572391afd048e21fd1e,lusc_tcga_pan_can_atlas_2018,TCGA-39-5021-01,TCGA-39-5021,5133,PDCD1,R69H,Missense_Mutation,2,242795003,SNP,PDCD1 R69 missense
+72fb2eacfb58fdeedac4,lusc_tcga_pan_can_atlas_2018,TCGA-39-5021-01,TCGA-39-5021,6935,ZEB1,Y283H,Missense_Mutation,10,31809110,SNP,ZEB1 Y283 missense
+998084217a5e37c650bc,lusc_tcga_pan_can_atlas_2018,TCGA-39-5021-01,TCGA-39-5021,7431,VIM,A332S,Missense_Mutation,10,17276803,SNP,VIM A332 missense
+755bdd04e63e6e971bde,lusc_tcga_pan_can_atlas_2018,TCGA-39-5022-01,TCGA-39-5022,4288,MKI67,H2633D,Missense_Mutation,10,129902207,SNP,MKI67 H2633 missense
+bf235e6a5e8d550f4a79,lusc_tcga_pan_can_atlas_2018,TCGA-39-5024-01,TCGA-39-5024,3105,HLA-A,Q120H,Missense_Mutation,6,29911061,SNP,HLA-A Q120 missense
+94dac0f7aa96208ada8b,lusc_tcga_pan_can_atlas_2018,TCGA-39-5029-01,TCGA-39-5029,4288,MKI67,E1465Q,Missense_Mutation,10,129905711,SNP,MKI67 E1465 missense
+e1480eaf4b2ffe59ec51,lusc_tcga_pan_can_atlas_2018,TCGA-39-5030-01,TCGA-39-5030,4288,MKI67,A711T,Missense_Mutation,10,129910038,SNP,MKI67 A711 missense
+ea060baefd13fa24f323,lusc_tcga_pan_can_atlas_2018,TCGA-39-5031-01,TCGA-39-5031,4233,MET,I565M,Missense_Mutation,7,116381073,SNP,MET I565 missense
+ab8657802af786571bd6,lusc_tcga_pan_can_atlas_2018,TCGA-39-5031-01,TCGA-39-5031,7153,TOP2A,S1117C,Missense_Mutation,17,38555128,SNP,TOP2A S1117 missense
+36131b99846fd0540aac,lusc_tcga_pan_can_atlas_2018,TCGA-39-5035-01,TCGA-39-5035,7431,VIM,D429Y,Missense_Mutation,10,17278304,SNP,VIM D429 missense
+95109b8211d6f7fa3059,lusc_tcga_pan_can_atlas_2018,TCGA-39-5036-01,TCGA-39-5036,7431,VIM,E187G,Missense_Mutation,10,17271981,SNP,VIM E187 missense
+5d1d72e076f912d620e3,lusc_tcga_pan_can_atlas_2018,TCGA-43-2578-01,TCGA-43-2578,4318,MMP9,R267P,Missense_Mutation,20,44639932,SNP,MMP9 R267 missense
+d21e990af15ad9236247,lusc_tcga_pan_can_atlas_2018,TCGA-43-2581-01,TCGA-43-2581,3845,KRAS,G12V,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+5221f85c754bb0cb875b,lusc_tcga_pan_can_atlas_2018,TCGA-43-5668-01,TCGA-43-5668,4318,MMP9,X537_splice,Splice_Region,20,44642296,SNP,
+e27f5b96293ed62138a1,lusc_tcga_pan_can_atlas_2018,TCGA-43-7656-01,TCGA-43-7656,4288,MKI67,C3199W,Missense_Mutation,10,129899630,SNP,MKI67 C3199 missense
+4aa5f2418875996e288d,lusc_tcga_pan_can_atlas_2018,TCGA-43-7656-01,TCGA-43-7656,6935,ZEB1,L720*,Nonsense_Mutation,10,31810422,SNP,ZEB1 truncating
+40d38ef56a5bb622778d,lusc_tcga_pan_can_atlas_2018,TCGA-43-8115-01,TCGA-43-8115,29126,CD274,P235L,Missense_Mutation,9,5465520,SNP,CD274 P235 missense
+5c6a86c8ed977c7ed951,lusc_tcga_pan_can_atlas_2018,TCGA-43-8116-01,TCGA-43-8116,3716,JAK1,Q1098H,Missense_Mutation,1,65301154,SNP,JAK1 Q1098 missense
+c73adac29e41e4227aef,lusc_tcga_pan_can_atlas_2018,TCGA-43-A474-01,TCGA-43-A474,6615,SNAI1,E124K,Missense_Mutation,20,48600648,SNP,SNAI1 E124 missense
+e22309307a4d04127b4b,lusc_tcga_pan_can_atlas_2018,TCGA-43-A56U-01,TCGA-43-A56U,1956,EGFR,P192R,Missense_Mutation,7,55219002,SNP,EGFR P192 missense
+cdfd233dcc3efe389a28,lusc_tcga_pan_can_atlas_2018,TCGA-46-3765-01,TCGA-46-3765,238,ALK,G927V,Missense_Mutation,2,29451785,SNP,ALK G927 missense
+e5119d7620dbc4161400,lusc_tcga_pan_can_atlas_2018,TCGA-46-3765-01,TCGA-46-3765,1956,EGFR,G627*,Nonsense_Mutation,7,55233129,SNP,EGFR truncating
+377c5ae34448a4ebbea7,lusc_tcga_pan_can_atlas_2018,TCGA-46-3767-01,TCGA-46-3767,6615,SNAI1,S63C,Missense_Mutation,20,48600466,SNP,SNAI1 S63 missense
+dc9705841ad4827c1393,lusc_tcga_pan_can_atlas_2018,TCGA-46-3768-01,TCGA-46-3768,4288,MKI67,E305Q,Missense_Mutation,10,129913759,SNP,MKI67 E305 missense
+1530385e05cded86ca68,lusc_tcga_pan_can_atlas_2018,TCGA-46-3768-01,TCGA-46-3768,6935,ZEB1,Q717K,Missense_Mutation,10,31810412,SNP,ZEB1 Q717 missense
+eedb28ffdd054049131c,lusc_tcga_pan_can_atlas_2018,TCGA-46-3769-01,TCGA-46-3769,1956,EGFR,P589L,Missense_Mutation,7,55233016,SNP,EGFR P589 missense
+da9fb2f7da654a482bd7,lusc_tcga_pan_can_atlas_2018,TCGA-46-3769-01,TCGA-46-3769,4288,MKI67,R1632Hfs*8,Frame_Shift_Del,10,129905200,DEL,MKI67 truncating
+4069d67f66ec65199003,lusc_tcga_pan_can_atlas_2018,TCGA-46-6025-01,TCGA-46-6025,4288,MKI67,D165H,Missense_Mutation,10,129914179,SNP,MKI67 D165 missense
+f542bf27de246bf2682f,lusc_tcga_pan_can_atlas_2018,TCGA-51-4079-01,TCGA-51-4079,6935,ZEB1,E430V,Missense_Mutation,10,31809552,SNP,ZEB1 E430 missense
+d4444e73592055d1a7cc,lusc_tcga_pan_can_atlas_2018,TCGA-51-4080-01,TCGA-51-4080,3716,JAK1,P761S,Missense_Mutation,1,65309869,SNP,JAK1 P761 missense
+7303d015864ec5109c0a,lusc_tcga_pan_can_atlas_2018,TCGA-52-7810-01,TCGA-52-7810,3717,JAK2,E930*,Nonsense_Mutation,9,5090472,SNP,JAK2 truncating
+62ef2a5405d906cbe3ce,lusc_tcga_pan_can_atlas_2018,TCGA-52-7812-01,TCGA-52-7812,3845,KRAS,G12A,Missense_Mutation,12,25398284,SNP,KRAS G12 missense
+f5430c2cef6e9447ea5b,lusc_tcga_pan_can_atlas_2018,TCGA-56-1622-01,TCGA-56-1622,4318,MMP9,S381R,Missense_Mutation,20,44640921,SNP,MMP9 S381 missense
+5ea91644a243cdcc5443,lusc_tcga_pan_can_atlas_2018,TCGA-56-7222-01,TCGA-56-7222,3091,HIF1A,I806V,Missense_Mutation,14,62213738,SNP,HIF1A I806 missense
+7eaa610fe5d6680d089a,lusc_tcga_pan_can_atlas_2018,TCGA-56-7731-01,TCGA-56-7731,3716,JAK1,E762D,Missense_Mutation,1,65309864,SNP,JAK1 E762 missense
+a3f00835bd1450c0d92a,lusc_tcga_pan_can_atlas_2018,TCGA-56-7822-01,TCGA-56-7822,238,ALK,S62L,Missense_Mutation,2,30143341,SNP,ALK S62 missense
+b3295ddeeb5981b8ff65,lusc_tcga_pan_can_atlas_2018,TCGA-56-7822-01,TCGA-56-7822,3717,JAK2,E458*,Nonsense_Mutation,9,5069067,SNP,JAK2 truncating
+1ce12f8b3e32bcf8a63d,lusc_tcga_pan_can_atlas_2018,TCGA-56-7822-01,TCGA-56-7822,6935,ZEB1,A13E,Missense_Mutation,10,31608201,SNP,ZEB1 A13 missense
+9c6e948b39a4ac8de240,lusc_tcga_pan_can_atlas_2018,TCGA-56-7823-01,TCGA-56-7823,6935,ZEB1,E933D,Missense_Mutation,10,31815616,SNP,ZEB1 E933 missense
+22ef22f2ecea7ba4e6ec,lusc_tcga_pan_can_atlas_2018,TCGA-56-8304-01,TCGA-56-8304,1956,EGFR,G87C,Missense_Mutation,7,55211016,SNP,EGFR G87 missense
+6bb318304f758f889730,lusc_tcga_pan_can_atlas_2018,TCGA-56-8305-01,TCGA-56-8305,7153,TOP2A,R1053H,Missense_Mutation,17,38556162,SNP,TOP2A R1053 missense
+432d26367f2841e8305e,lusc_tcga_pan_can_atlas_2018,TCGA-56-8307-01,TCGA-56-8307,567,B2M,L15Ffs*41,Frame_Shift_Del,15,45003781,DEL,B2M truncating
+822137b259520048e671,lusc_tcga_pan_can_atlas_2018,TCGA-56-8307-01,TCGA-56-8307,3091,HIF1A,K753R,Missense_Mutation,14,62212464,SNP,HIF1A K753 missense
+bbec160f0745cc69d7c3,lusc_tcga_pan_can_atlas_2018,TCGA-56-8626-01,TCGA-56-8626,3716,JAK1,L248V,Missense_Mutation,1,65332797,SNP,JAK1 L248 missense
+f5bf189a733522e70211,lusc_tcga_pan_can_atlas_2018,TCGA-56-8626-01,TCGA-56-8626,4288,MKI67,I51F,Missense_Mutation,10,129921375,SNP,MKI67 I51 missense
+961df3537d7847caaff3,lusc_tcga_pan_can_atlas_2018,TCGA-56-8628-01,TCGA-56-8628,238,ALK,P1350T,Missense_Mutation,2,29420433,SNP,ALK P1350 missense
+20a5efca2aef042891f0,lusc_tcga_pan_can_atlas_2018,TCGA-56-8628-01,TCGA-56-8628,6935,ZEB1,Y985N,Missense_Mutation,10,31815770,SNP,ZEB1 Y985 missense
+825ee15cca61ace28903,lusc_tcga_pan_can_atlas_2018,TCGA-56-A49D-01,TCGA-56-A49D,4288,MKI67,I2234V,Missense_Mutation,10,129903404,SNP,MKI67 I2234 missense
+6087992f25dee1448d41,lusc_tcga_pan_can_atlas_2018,TCGA-56-A4BW-01,TCGA-56-A4BW,4288,MKI67,P544L,Missense_Mutation,10,129911716,SNP,MKI67 P544 missense
+66f3109f6d288cddaa05,lusc_tcga_pan_can_atlas_2018,TCGA-56-A62T-01,TCGA-56-A62T,4288,MKI67,G2681V,Missense_Mutation,10,129902062,SNP,MKI67 G2681 missense
+0464d67ef3b026cb6cd4,lusc_tcga_pan_can_atlas_2018,TCGA-58-8388-01,TCGA-58-8388,4318,MMP9,G369V,Missense_Mutation,20,44640884,SNP,MMP9 G369 missense
+112bd5478604f1208a12,lusc_tcga_pan_can_atlas_2018,TCGA-58-A46K-01,TCGA-58-A46K,238,ALK,R292H,Missense_Mutation,2,29917793,SNP,ALK R292 missense
+416b04dae0263e6371a3,lusc_tcga_pan_can_atlas_2018,TCGA-58-A46M-01,TCGA-58-A46M,3717,JAK2,A774P,Missense_Mutation,9,5080569,SNP,JAK2 A774 missense
+90cdd0a6235839c666d9,lusc_tcga_pan_can_atlas_2018,TCGA-58-A46M-01,TCGA-58-A46M,6935,ZEB1,G400V,Missense_Mutation,10,31809462,SNP,ZEB1 G400 missense
+7fe7b98918fb2696a3aa,lusc_tcga_pan_can_atlas_2018,TCGA-58-A46M-01,TCGA-58-A46M,7153,TOP2A,G1198E,Missense_Mutation,17,38552662,SNP,TOP2A G1198 missense
+fe9bac32c8a741f80ee2,lusc_tcga_pan_can_atlas_2018,TCGA-60-2695-01,TCGA-60-2695,5133,PDCD1,C241Y,Missense_Mutation,2,242793355,SNP,PDCD1 C241 missense
+b2684ec909701c6ab6fe,lusc_tcga_pan_can_atlas_2018,TCGA-60-2698-01,TCGA-60-2698,1493,CTLA4,*224Lext*16,Nonstop_Mutation,2,204737534,SNP,CTLA4 truncating
+97341996225733dd3b14,lusc_tcga_pan_can_atlas_2018,TCGA-60-2698-01,TCGA-60-2698,1956,EGFR,X210_splice,Splice_Site,7,55220237,SNP,EGFR truncating
+28919a8c93779bfc170d,lusc_tcga_pan_can_atlas_2018,TCGA-60-2698-01,TCGA-60-2698,3105,HLA-A,X299_splice,Splice_Site,6,29912276,SNP,HLA-A truncating
+af9ea7db175a209aec5b,lusc_tcga_pan_can_atlas_2018,TCGA-60-2703-01,TCGA-60-2703,6935,ZEB1,Q557K,Missense_Mutation,10,31809932,SNP,ZEB1 Q557 missense
+7be0b26eb3471cae0ef4,lusc_tcga_pan_can_atlas_2018,TCGA-60-2708-01,TCGA-60-2708,1956,EGFR,S720C,Missense_Mutation,7,55241711,SNP,EGFR S720 missense
+cd063678e7a1e9e9a65a,lusc_tcga_pan_can_atlas_2018,TCGA-60-2722-01,TCGA-60-2722,6935,ZEB1,L735F,Missense_Mutation,10,31810466,SNP,ZEB1 L735 missense
+86e66cc882a8ad15dd16,lusc_tcga_pan_can_atlas_2018,TCGA-60-2723-01,TCGA-60-2723,3717,JAK2,V990L,Missense_Mutation,9,5090820,SNP,JAK2 V990 missense
+ee9b291bc2bd55c50841,lusc_tcga_pan_can_atlas_2018,TCGA-60-2726-01,TCGA-60-2726,6935,ZEB1,E128Q,Missense_Mutation,10,31791338,SNP,ZEB1 E128 missense
+381527dac6ac835b3b6e,lusc_tcga_pan_can_atlas_2018,TCGA-63-6202-01,TCGA-63-6202,3845,KRAS,Q61H,Missense_Mutation,12,25380275,SNP,KRAS Q61 missense
+7f399757c6aa3f343d2f,lusc_tcga_pan_can_atlas_2018,TCGA-63-6202-01,TCGA-63-6202,6615,SNAI1,H252Tfs*28,Frame_Shift_Del,20,48604551,DEL,SNAI1 truncating
+1c0a3a392725a2f3775e,lusc_tcga_pan_can_atlas_2018,TCGA-63-A5MB-01,TCGA-63-A5MB,238,ALK,P117R,Missense_Mutation,2,30143176,SNP,ALK P117 missense
+9ba87f6f82466217b6d8,lusc_tcga_pan_can_atlas_2018,TCGA-63-A5MB-01,TCGA-63-A5MB,4233,MET,Q272*,Nonsense_Mutation,7,116339952,SNP,MET truncating
+81b7edacaf63678987ce,lusc_tcga_pan_can_atlas_2018,TCGA-63-A5MB-01,TCGA-63-A5MB,201633,TIGIT,D218E,Missense_Mutation,3,114026897,SNP,TIGIT D218 missense
+f7b6bf7d4619689c306d,lusc_tcga_pan_can_atlas_2018,TCGA-63-A5MH-01,TCGA-63-A5MH,5133,PDCD1,A149E,Missense_Mutation,2,242794496,SNP,PDCD1 A149 missense
+49dfcc5b440f615db0ae,lusc_tcga_pan_can_atlas_2018,TCGA-63-A5MM-01,TCGA-63-A5MM,238,ALK,A1234T,Missense_Mutation,2,29436893,SNP,ALK A1234 missense
+5de93a3d083e31aaf0c6,lusc_tcga_pan_can_atlas_2018,TCGA-63-A5MM-01,TCGA-63-A5MM,4288,MKI67,N838Kfs*25,Frame_Shift_Ins,10,129907590,INS,MKI67 truncating
+d2ef4c7d4f87708f0a3f,lusc_tcga_pan_can_atlas_2018,TCGA-63-A5MM-01,TCGA-63-A5MM,4288,MKI67,A3179V,Missense_Mutation,10,129899691,SNP,MKI67 A3179 missense
+4cdf67dd213bddd0dde3,lusc_tcga_pan_can_atlas_2018,TCGA-63-A5MP-01,TCGA-63-A5MP,4288,MKI67,A1589T,Missense_Mutation,10,129905339,SNP,MKI67 A1589 missense
+ca55470bd59597fafa87,lusc_tcga_pan_can_atlas_2018,TCGA-63-A5MR-01,TCGA-63-A5MR,3106,HLA-B,S275Lfs*14,Frame_Shift_Ins,6,31323165,INS,HLA-B truncating
+51fd853d98dad83f6cb4,lusc_tcga_pan_can_atlas_2018,TCGA-63-A5MS-01,TCGA-63-A5MS,4288,MKI67,L1562P,Missense_Mutation,10,129905419,SNP,MKI67 L1562 missense
+3248a8e30e91449fd02b,lusc_tcga_pan_can_atlas_2018,TCGA-63-A5MS-01,TCGA-63-A5MS,4288,MKI67,Q885H,Missense_Mutation,10,129907449,SNP,MKI67 Q885 missense
+a0cd130efa9d87830056,lusc_tcga_pan_can_atlas_2018,TCGA-63-A5MW-01,TCGA-63-A5MW,7153,TOP2A,E644D,Missense_Mutation,17,38562657,SNP,TOP2A E644 missense
+8c94af37514fac0e9312,lusc_tcga_pan_can_atlas_2018,TCGA-66-2734-01,TCGA-66-2734,4233,MET,E719*,Nonsense_Mutation,7,116398565,SNP,MET truncating
+48f72a288f1d53b8aafb,lusc_tcga_pan_can_atlas_2018,TCGA-66-2734-01,TCGA-66-2734,6935,ZEB1,L485H,Missense_Mutation,10,31809717,SNP,ZEB1 L485 missense
+3909688d69f9b204037a,lusc_tcga_pan_can_atlas_2018,TCGA-66-2742-01,TCGA-66-2742,238,ALK,R284K,Missense_Mutation,2,29917817,SNP,ALK R284 missense
+ef3d061f760a5b53f6df,lusc_tcga_pan_can_atlas_2018,TCGA-66-2742-01,TCGA-66-2742,1956,EGFR,L861Q,Missense_Mutation,7,55259524,SNP,EGFR L861 missense
+eea619cdd6d94234ce72,lusc_tcga_pan_can_atlas_2018,TCGA-66-2744-01,TCGA-66-2744,238,ALK,R1113L,Missense_Mutation,2,29446229,SNP,ALK R1113 missense
+aa845f7c98ab3f58d2ac,lusc_tcga_pan_can_atlas_2018,TCGA-66-2754-01,TCGA-66-2754,7153,TOP2A,M13I,Missense_Mutation,17,38573130,SNP,TOP2A M13 missense
+9d4608a32b71365f4c3f,lusc_tcga_pan_can_atlas_2018,TCGA-66-2757-01,TCGA-66-2757,4233,MET,X911_splice,Splice_Site,7,116411551,SNP,MET truncating
+03b4c186987c18b5b337,lusc_tcga_pan_can_atlas_2018,TCGA-66-2767-01,TCGA-66-2767,6935,ZEB1,K520N,Missense_Mutation,10,31809823,SNP,ZEB1 K520 missense
+13e2f41391ab36efed91,lusc_tcga_pan_can_atlas_2018,TCGA-66-2769-01,TCGA-66-2769,3091,HIF1A,S186C,Missense_Mutation,14,62193523,SNP,HIF1A S186 missense
+d41308aea141a9517aa4,lusc_tcga_pan_can_atlas_2018,TCGA-66-2769-01,TCGA-66-2769,3845,KRAS,R123*,Nonsense_Mutation,12,25378631,SNP,KRAS truncating
+8dde5b6b6ac8a3838d15,lusc_tcga_pan_can_atlas_2018,TCGA-66-2769-01,TCGA-66-2769,4288,MKI67,G2384V,Missense_Mutation,10,129902953,SNP,MKI67 G2384 missense
+2df78b8cab1bc36fc4f4,lusc_tcga_pan_can_atlas_2018,TCGA-66-2771-01,TCGA-66-2771,3717,JAK2,N433S,Missense_Mutation,9,5066761,SNP,JAK2 N433 missense
+81d6366c17ae1df71cb6,lusc_tcga_pan_can_atlas_2018,TCGA-66-2778-01,TCGA-66-2778,84868,HAVCR2,R259L,Missense_Mutation,5,156514243,SNP,HAVCR2 R259 missense
+9d4cfed87edf6372b312,lusc_tcga_pan_can_atlas_2018,TCGA-66-2785-01,TCGA-66-2785,3902,LAG3,S394*,Nonsense_Mutation,12,6886553,SNP,LAG3 truncating
+9ee304bb3df498478fc9,lusc_tcga_pan_can_atlas_2018,TCGA-66-2785-01,TCGA-66-2785,4233,MET,T698S,Missense_Mutation,7,116397818,SNP,MET T698 missense
+05e9e8e1cb1cedae38a0,lusc_tcga_pan_can_atlas_2018,TCGA-66-2785-01,TCGA-66-2785,4318,MMP9,P389L,Missense_Mutation,20,44640944,SNP,MMP9 P389 missense
+7d0bdae0371d5f7d0546,lusc_tcga_pan_can_atlas_2018,TCGA-66-2785-01,TCGA-66-2785,4609,MYC,Q321E,Missense_Mutation,8,128752800,SNP,MYC Q321 missense
+5777101b468d00eeb3b6,lusc_tcga_pan_can_atlas_2018,TCGA-66-2786-01,TCGA-66-2786,3105,HLA-A,W228*,Nonsense_Mutation,6,29911963,SNP,HLA-A truncating
+db31fc280b75e7ad3187,lusc_tcga_pan_can_atlas_2018,TCGA-66-2786-01,TCGA-66-2786,4288,MKI67,K2097R,Missense_Mutation,10,129903814,SNP,MKI67 K2097 missense
+c335283f6ba8e181b745,lusc_tcga_pan_can_atlas_2018,TCGA-66-2787-01,TCGA-66-2787,3902,LAG3,G273V,Missense_Mutation,12,6884475,SNP,LAG3 G273 missense
+b6687655ed871a4e39ef,lusc_tcga_pan_can_atlas_2018,TCGA-66-2787-01,TCGA-66-2787,6935,ZEB1,E440K,Missense_Mutation,10,31809581,SNP,ZEB1 E440 missense
+1e078bcf57347c9b3854,lusc_tcga_pan_can_atlas_2018,TCGA-66-2793-01,TCGA-66-2793,6935,ZEB1,Y23N,Missense_Mutation,10,31749974,SNP,ZEB1 Y23 missense
+82b1ad6b49b91fb73941,lusc_tcga_pan_can_atlas_2018,TCGA-66-2795-01,TCGA-66-2795,4288,MKI67,P2656Q,Missense_Mutation,10,129902137,SNP,MKI67 P2656 missense
+8c639f04737f81c36ce4,lusc_tcga_pan_can_atlas_2018,TCGA-66-2795-01,TCGA-66-2795,84868,HAVCR2,L125M,Missense_Mutation,5,156533659,SNP,HAVCR2 L125 missense
+19c57236608f220395bc,lusc_tcga_pan_can_atlas_2018,TCGA-68-7755-01,TCGA-68-7755,4288,MKI67,A2102V,Missense_Mutation,10,129903799,SNP,MKI67 A2102 missense
+f9c5a4aaac3c8ad3a6bd,lusc_tcga_pan_can_atlas_2018,TCGA-68-7756-01,TCGA-68-7756,4318,MMP9,G495V,Missense_Mutation,20,44642047,SNP,MMP9 G495 missense
+e54acfe2c3cd468cdfbf,lusc_tcga_pan_can_atlas_2018,TCGA-68-7757-01,TCGA-68-7757,3717,JAK2,A676D,Missense_Mutation,9,5078340,SNP,JAK2 A676 missense
+ae7a03f6916ed586452e,lusc_tcga_pan_can_atlas_2018,TCGA-68-A59J-01,TCGA-68-A59J,6935,ZEB1,D60Y,Missense_Mutation,10,31750085,SNP,ZEB1 D60 missense
+577a773c932b9f311987,lusc_tcga_pan_can_atlas_2018,TCGA-70-6722-01,TCGA-70-6722,1956,EGFR,L861Q,Missense_Mutation,7,55259524,SNP,EGFR L861 missense
+f324f74e1e089fe3569f,lusc_tcga_pan_can_atlas_2018,TCGA-70-6722-01,TCGA-70-6722,1956,EGFR,V843L,Missense_Mutation,7,55259469,SNP,EGFR V843 missense
+c8f13069c8385c5b029c,lusc_tcga_pan_can_atlas_2018,TCGA-70-6722-01,TCGA-70-6722,3091,HIF1A,Y66C,Missense_Mutation,14,62187261,SNP,HIF1A Y66 missense
+ce0497b2f3d735516086,lusc_tcga_pan_can_atlas_2018,TCGA-77-6845-01,TCGA-77-6845,6935,ZEB1,C772F,Missense_Mutation,10,31810578,SNP,ZEB1 C772 missense
+ff4da5a59fff15c264e1,lusc_tcga_pan_can_atlas_2018,TCGA-77-7139-01,TCGA-77-7139,4609,MYC,L164V,Missense_Mutation,8,128750953,SNP,MYC L164 missense
+8da7256927f40c307496,lusc_tcga_pan_can_atlas_2018,TCGA-77-7140-01,TCGA-77-7140,3091,HIF1A,E486_M491del,In_Frame_Del,14,62205009,DEL,
+b5de8580df556029b8ea,lusc_tcga_pan_can_atlas_2018,TCGA-77-7141-01,TCGA-77-7141,4288,MKI67,E341Q,Missense_Mutation,10,129913651,SNP,MKI67 E341 missense
+69cddc3df1e5c29335be,lusc_tcga_pan_can_atlas_2018,TCGA-77-7141-01,TCGA-77-7141,4288,MKI67,R423T,Missense_Mutation,10,129913404,SNP,MKI67 R423 missense
+bc984d1de431e1c36ed7,lusc_tcga_pan_can_atlas_2018,TCGA-77-7141-01,TCGA-77-7141,4288,MKI67,E2755*,Nonsense_Mutation,10,129901841,SNP,MKI67 truncating
+f24af39ba9d5a9486983,lusc_tcga_pan_can_atlas_2018,TCGA-77-7141-01,TCGA-77-7141,84868,HAVCR2,L250F,Missense_Mutation,5,156514269,SNP,HAVCR2 L250 missense
+f3b32b0762ded27dbfb0,lusc_tcga_pan_can_atlas_2018,TCGA-77-7337-01,TCGA-77-7337,4288,MKI67,E2660del,In_Frame_Del,10,129902128,DEL,MKI67 2660-2660 deletion
+c6d1989c024916c47823,lusc_tcga_pan_can_atlas_2018,TCGA-77-7338-01,TCGA-77-7338,201633,TIGIT,Y110F,Missense_Mutation,3,114014659,SNP,TIGIT Y110 missense
+020eb7958d5443fe84d1,lusc_tcga_pan_can_atlas_2018,TCGA-77-8128-01,TCGA-77-8128,7153,TOP2A,A1436D,Missense_Mutation,17,38546377,SNP,TOP2A A1436 missense
+881e19b2dbc9195b9d5d,lusc_tcga_pan_can_atlas_2018,TCGA-77-8133-01,TCGA-77-8133,7153,TOP2A,M1?,Translation_Start_Site,17,38574042,SNP,TOP2A truncating
+6c655b1adfd5dc8ab972,lusc_tcga_pan_can_atlas_2018,TCGA-77-8138-01,TCGA-77-8138,4288,MKI67,T1437I,Missense_Mutation,10,129905794,SNP,MKI67 T1437 missense
+9ff92856fa97e51f72fc,lusc_tcga_pan_can_atlas_2018,TCGA-77-8140-01,TCGA-77-8140,201633,TIGIT,C237S,Missense_Mutation,3,114026952,SNP,TIGIT C237 missense
+37a3d7bb5edcc813e637,lusc_tcga_pan_can_atlas_2018,TCGA-77-8148-01,TCGA-77-8148,238,ALK,D305Y,Missense_Mutation,2,29917755,SNP,ALK D305 missense
+639a978f1a43248a0576,lusc_tcga_pan_can_atlas_2018,TCGA-77-8156-01,TCGA-77-8156,1956,EGFR,Y1138C,Missense_Mutation,7,55273090,SNP,EGFR Y1138 missense
+55759e135a0bdc08f883,lusc_tcga_pan_can_atlas_2018,TCGA-77-A5G1-01,TCGA-77-A5G1,6935,ZEB1,A1098S,Missense_Mutation,10,31816109,SNP,ZEB1 A1098 missense
+98a6299a6af129b416f7,lusc_tcga_pan_can_atlas_2018,TCGA-77-A5G3-01,TCGA-77-A5G3,4318,MMP9,A19S,Missense_Mutation,20,44637620,SNP,MMP9 A19 missense
+1e242c122c0665af437b,lusc_tcga_pan_can_atlas_2018,TCGA-77-A5G6-01,TCGA-77-A5G6,6935,ZEB1,S1022*,Nonsense_Mutation,10,31815882,SNP,ZEB1 truncating
+78c736e9d5ae5f99cd80,lusc_tcga_pan_can_atlas_2018,TCGA-77-A5G7-01,TCGA-77-A5G7,6935,ZEB1,Y600*,Nonsense_Mutation,10,31810063,SNP,ZEB1 truncating
+ca449c00470106be0175,lusc_tcga_pan_can_atlas_2018,TCGA-77-A5G8-01,TCGA-77-A5G8,3717,JAK2,G135V,Missense_Mutation,9,5044456,SNP,JAK2 G135 missense
+531756240ca635bcf08b,lusc_tcga_pan_can_atlas_2018,TCGA-77-A5GF-01,TCGA-77-A5GF,238,ALK,S711N,Missense_Mutation,2,29474043,SNP,ALK S711 missense
+e8958f53ed1e3bf54c0d,lusc_tcga_pan_can_atlas_2018,TCGA-77-A5GH-01,TCGA-77-A5GH,4288,MKI67,A2102S,Missense_Mutation,10,129903800,SNP,MKI67 A2102 missense
+b005f47fbd3c68fc272c,lusc_tcga_pan_can_atlas_2018,TCGA-85-6561-01,TCGA-85-6561,4318,MMP9,R424L,Missense_Mutation,20,44641162,SNP,MMP9 R424 missense
+80f5e7fa54d8af82e1df,lusc_tcga_pan_can_atlas_2018,TCGA-85-6561-01,TCGA-85-6561,5133,PDCD1,W186L,Missense_Mutation,2,242794385,SNP,PDCD1 W186 missense
+3efdd5c8978dbfa0746c,lusc_tcga_pan_can_atlas_2018,TCGA-85-7699-01,TCGA-85-7699,4233,MET,T47S,Missense_Mutation,7,116339278,SNP,MET T47 missense
+204a58868cca0c29f851,lusc_tcga_pan_can_atlas_2018,TCGA-85-7844-01,TCGA-85-7844,4288,MKI67,V323L,Missense_Mutation,10,129913705,SNP,MKI67 V323 missense
+d90ae0c6734c6ea6752a,lusc_tcga_pan_can_atlas_2018,TCGA-85-7950-01,TCGA-85-7950,3902,LAG3,G207S,Missense_Mutation,12,6883868,SNP,LAG3 G207 missense
+9de474a6d0c30360e382,lusc_tcga_pan_can_atlas_2018,TCGA-85-8071-01,TCGA-85-8071,4288,MKI67,V2974L,Missense_Mutation,10,129901184,SNP,MKI67 V2974 missense
+2cb990b90c3d5d2a2bfc,lusc_tcga_pan_can_atlas_2018,TCGA-85-8072-01,TCGA-85-8072,4288,MKI67,K362N,Missense_Mutation,10,129913586,SNP,MKI67 K362 missense
+2e0a77474503359d17eb,lusc_tcga_pan_can_atlas_2018,TCGA-85-8276-01,TCGA-85-8276,6935,ZEB1,S317*,Nonsense_Mutation,10,31809213,SNP,ZEB1 truncating
+d8988bc2afb94f2b7ee7,lusc_tcga_pan_can_atlas_2018,TCGA-85-8287-01,TCGA-85-8287,238,ALK,C480F,Missense_Mutation,2,29543724,SNP,ALK C480 missense
+33e2c3f57ce77caf8e19,lusc_tcga_pan_can_atlas_2018,TCGA-85-8287-01,TCGA-85-8287,567,B2M,M1?,Translation_Start_Site,15,45003745,SNP,B2M truncating
+cc20c9347db417e59b92,lusc_tcga_pan_can_atlas_2018,TCGA-85-8288-01,TCGA-85-8288,6935,ZEB1,A940P,Missense_Mutation,10,31815635,SNP,ZEB1 A940 missense
+10f457d4b1c04ba9dab6,lusc_tcga_pan_can_atlas_2018,TCGA-85-8350-01,TCGA-85-8350,4288,MKI67,D1466N,Missense_Mutation,10,129905708,SNP,MKI67 D1466 missense
+e7e7ab52c22871b76bb2,lusc_tcga_pan_can_atlas_2018,TCGA-85-8352-01,TCGA-85-8352,6935,ZEB1,G1084*,Nonsense_Mutation,10,31816067,SNP,ZEB1 truncating
+39827ece5e3b0b7ff8e0,lusc_tcga_pan_can_atlas_2018,TCGA-85-8664-01,TCGA-85-8664,3553,IL1B,S230F,Missense_Mutation,2,113588059,SNP,IL1B S230 missense
+fe4447129cfd34650778,lusc_tcga_pan_can_atlas_2018,TCGA-85-A4CL-01,TCGA-85-A4CL,3106,HLA-B,Q250R,Missense_Mutation,6,31323240,SNP,HLA-B Q250 missense
+c20f63fc1b37e8585e5a,lusc_tcga_pan_can_atlas_2018,TCGA-85-A4JB-01,TCGA-85-A4JB,4609,MYC,R387W,Missense_Mutation,8,128752998,SNP,MYC R387 missense
+b8b8fcfd0c73fb46554b,lusc_tcga_pan_can_atlas_2018,TCGA-85-A4JC-01,TCGA-85-A4JC,3717,JAK2,X352_splice,Splice_Region,9,5055788,SNP,
+d32aed8c0226f9aa86a7,lusc_tcga_pan_can_atlas_2018,TCGA-85-A4QQ-01,TCGA-85-A4QQ,3717,JAK2,R374T,Missense_Mutation,9,5064947,SNP,JAK2 R374 missense
+0ee4f5193e687742740d,lusc_tcga_pan_can_atlas_2018,TCGA-85-A4QQ-01,TCGA-85-A4QQ,3717,JAK2,F1019L,Missense_Mutation,9,5090909,SNP,JAK2 F1019 missense
+c949e21f596930e66c3f,lusc_tcga_pan_can_atlas_2018,TCGA-85-A50M-01,TCGA-85-A50M,1956,EGFR,E746_A750del,In_Frame_Del,7,55242465,DEL,
+820e05d6f05288c598d2,lusc_tcga_pan_can_atlas_2018,TCGA-85-A50Z-01,TCGA-85-A50Z,238,ALK,V349L,Missense_Mutation,2,29754890,SNP,ALK V349 missense
+95701430288d355d8300,lusc_tcga_pan_can_atlas_2018,TCGA-85-A50Z-01,TCGA-85-A50Z,6935,ZEB1,C366S,Missense_Mutation,10,31809360,SNP,ZEB1 C366 missense
+9d19d6f2233bb0d3708f,lusc_tcga_pan_can_atlas_2018,TCGA-85-A511-01,TCGA-85-A511,6615,SNAI1,L50F,Missense_Mutation,20,48600426,SNP,SNAI1 L50 missense
+fdb03080cd576b2f2742,lusc_tcga_pan_can_atlas_2018,TCGA-85-A5B5-01,TCGA-85-A5B5,201633,TIGIT,H223N,Missense_Mutation,3,114026910,SNP,TIGIT H223 missense
+f9572adcd0e9bdc6aa81,lusc_tcga_pan_can_atlas_2018,TCGA-85-A5B5-01,TCGA-85-A5B5,201633,TIGIT,G244R,Missense_Mutation,3,114026973,SNP,TIGIT G244 missense
+9be3ce7b8df24c94ad6c,lusc_tcga_pan_can_atlas_2018,TCGA-90-A4ED-01,TCGA-90-A4ED,238,ALK,A309T,Missense_Mutation,2,29917743,SNP,ALK A309 missense
+8461246f38243987b9ed,lusc_tcga_pan_can_atlas_2018,TCGA-90-A4ED-01,TCGA-90-A4ED,4288,MKI67,P1842L,Missense_Mutation,10,129904579,SNP,MKI67 P1842 missense
+1eddcf3f7cc3d57cd133,lusc_tcga_pan_can_atlas_2018,TCGA-90-A4ED-01,TCGA-90-A4ED,6935,ZEB1,E216K,Missense_Mutation,10,31799765,SNP,ZEB1 E216 missense
+1bd2be5ad080b6112397,lusc_tcga_pan_can_atlas_2018,TCGA-92-7340-01,TCGA-92-7340,3106,HLA-B,S219C,Missense_Mutation,6,31323333,SNP,HLA-B S219 missense
+1be3f618dcf14c5b47a5,lusc_tcga_pan_can_atlas_2018,TCGA-92-7340-01,TCGA-92-7340,4288,MKI67,R3248T,Missense_Mutation,10,129897482,SNP,MKI67 R3248 missense
+be455526f456401062de,lusc_tcga_pan_can_atlas_2018,TCGA-92-8065-01,TCGA-92-8065,4288,MKI67,S2617L,Missense_Mutation,10,129902254,SNP,MKI67 S2617 missense
+d7df89bffe7b0b7e70f9,lusc_tcga_pan_can_atlas_2018,TCGA-94-8490-01,TCGA-94-8490,7153,TOP2A,E1152Rfs*25,Frame_Shift_Ins,17,38555024,INS,TOP2A truncating
+4a67caee0e64a981abbe,lusc_tcga_pan_can_atlas_2018,TCGA-94-A4VJ-01,TCGA-94-A4VJ,4288,MKI67,K2523N,Missense_Mutation,10,129902535,SNP,MKI67 K2523 missense
+15270d9c4830c14e76c4,lusc_tcga_pan_can_atlas_2018,TCGA-94-A5I6-01,TCGA-94-A5I6,84868,HAVCR2,S241P,Missense_Mutation,5,156514298,SNP,HAVCR2 S241 missense
+8c0e90d78448e6d30bf7,lusc_tcga_pan_can_atlas_2018,TCGA-98-8020-01,TCGA-98-8020,4288,MKI67,E2432Q,Missense_Mutation,10,129902810,SNP,MKI67 E2432 missense
+feea14d249fa7c7a6e4f,lusc_tcga_pan_can_atlas_2018,TCGA-98-8021-01,TCGA-98-8021,3091,HIF1A,S749*,Nonsense_Mutation,14,62212452,SNP,HIF1A truncating
+d26da976efeb3a789f44,lusc_tcga_pan_can_atlas_2018,TCGA-98-8021-01,TCGA-98-8021,4072,EPCAM,E147Q,Missense_Mutation,2,47602386,SNP,EPCAM E147 missense
+4f80230d40c9645fc535,lusc_tcga_pan_can_atlas_2018,TCGA-98-A538-01,TCGA-98-A538,3106,HLA-B,K335N,Missense_Mutation,6,31322891,SNP,HLA-B K335 missense
+568d7c4897b5d1fc1e9e,lusc_tcga_pan_can_atlas_2018,TCGA-98-A538-01,TCGA-98-A538,3106,HLA-B,E113K,Missense_Mutation,6,31324471,SNP,HLA-B E113 missense
+d68dc206ce0f80f50faa,lusc_tcga_pan_can_atlas_2018,TCGA-98-A538-01,TCGA-98-A538,6935,ZEB1,V351E,Missense_Mutation,10,31809315,SNP,ZEB1 V351 missense
+b234e5adc3dc23b91a7f,lusc_tcga_pan_can_atlas_2018,TCGA-J1-A4AH-01,TCGA-J1-A4AH,567,B2M,H104R,Missense_Mutation,15,45007864,SNP,B2M H104 missense
+5992db050e26e2c0151f,lusc_tcga_pan_can_atlas_2018,TCGA-L3-A524-01,TCGA-L3-A524,3105,HLA-A,X299_splice,Splice_Site,6,29912275,SNP,HLA-A truncating
+e2cbfb5c9a1788274b06,lusc_tcga_pan_can_atlas_2018,TCGA-LA-A446-01,TCGA-LA-A446,1493,CTLA4,A121V,Missense_Mutation,2,204735561,SNP,CTLA4 A121 missense
+14444fdeca8c56c86bc6,lusc_tcga_pan_can_atlas_2018,TCGA-LA-A7SW-01,TCGA-LA-A7SW,3845,KRAS,E3K,Missense_Mutation,12,25398312,SNP,KRAS E3 missense
+593b806bd5a3a173d222,lusc_tcga_pan_can_atlas_2018,TCGA-NC-A5HE-01,TCGA-NC-A5HE,6935,ZEB1,P140L,Missense_Mutation,10,31791375,SNP,ZEB1 P140 missense
+36ffcca188b3cfcc5c85,lusc_tcga_pan_can_atlas_2018,TCGA-NC-A5HG-01,TCGA-NC-A5HG,6696,SPP1,P57L,Missense_Mutation,4,88901274,SNP,SPP1 P57 missense
+450a0a4f8e0941921ada,lusc_tcga_pan_can_atlas_2018,TCGA-NC-A5HI-01,TCGA-NC-A5HI,3091,HIF1A,Q320*,Nonsense_Mutation,14,62200933,SNP,HIF1A truncating
+941717ce793ae57be29c,lusc_tcga_pan_can_atlas_2018,TCGA-NC-A5HI-01,TCGA-NC-A5HI,3717,JAK2,Q885*,Nonsense_Mutation,9,5089755,SNP,JAK2 truncating
+65ac8fa6a45f75859007,lusc_tcga_pan_can_atlas_2018,TCGA-NC-A5HM-01,TCGA-NC-A5HM,6935,ZEB1,S607G,Missense_Mutation,10,31810082,SNP,ZEB1 S607 missense
+95c46c9369cc20ab7051,lusc_tcga_pan_can_atlas_2018,TCGA-NC-A5HO-01,TCGA-NC-A5HO,4318,MMP9,S342W,Missense_Mutation,20,44640803,SNP,MMP9 S342 missense
+a7b35793604cc6d094a6,lusc_tcga_pan_can_atlas_2018,TCGA-NK-A5CR-01,TCGA-NK-A5CR,4318,MMP9,P429L,Missense_Mutation,20,44641177,SNP,MMP9 P429 missense
+d925fa05bf36e2ccbe7d,lusc_tcga_pan_can_atlas_2018,TCGA-NK-A5CX-01,TCGA-NK-A5CX,238,ALK,G223V,Missense_Mutation,2,29940563,SNP,ALK G223 missense
+23742336103f89a877f4,lusc_tcga_pan_can_atlas_2018,TCGA-O2-A52N-01,TCGA-O2-A52N,4288,MKI67,H1454Q,Missense_Mutation,10,129905742,SNP,MKI67 H1454 missense
+413a22b5cfc1ca26759d,lusc_tcga_pan_can_atlas_2018,TCGA-O2-A52Q-01,TCGA-O2-A52Q,3553,IL1B,A8T,Missense_Mutation,2,113593785,SNP,IL1B A8 missense
+e00304ac767f69bab525,lusc_tcga_pan_can_atlas_2018,TCGA-O2-A52Q-01,TCGA-O2-A52Q,3845,KRAS,G13C,Missense_Mutation,12,25398282,SNP,KRAS G13 missense
+7545ac814ddebcd0472f,lusc_tcga_pan_can_atlas_2018,TCGA-O2-A52S-01,TCGA-O2-A52S,567,B2M,L15Ffs*41,Frame_Shift_Del,15,45003781,DEL,B2M truncating
+dfe1dfd4b431c6776214,lusc_tcga_pan_can_atlas_2018,TCGA-O2-A52W-01,TCGA-O2-A52W,3716,JAK1,G308del,In_Frame_Del,1,65332616,DEL,JAK1 308-308 deletion

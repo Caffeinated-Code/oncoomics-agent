@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="510" viewBox="0 0 920 510">
+<rect width="100%" height="100%" fill="#f7faf9"/>
+<text x="24" y="34" font-family="Arial" font-size="22" font-weight="700" fill="#17384f">Selected Gene Copy-Number Alteration Fraction</text>
+<text x="24" y="78" font-family="Arial" font-size="13" fill="#17201d">LUSC CD274</text>
+<rect x="180" y="65" width="536" height="17" fill="#2f7d5c"/>
+<text x="724" y="78" font-family="Arial" font-size="13" fill="#17201d">0.825</text>
+<text x="24" y="106" font-family="Arial" font-size="13" fill="#17201d">LUSC HAVCR2</text>
+<rect x="180" y="93" width="508" height="17" fill="#2f7d5c"/>
+<text x="696" y="106" font-family="Arial" font-size="13" fill="#17201d">0.782</text>
+<text x="24" y="134" font-family="Arial" font-size="13" fill="#17201d">LUSC TIGIT</text>
+<rect x="180" y="121" width="488" height="17" fill="#2f7d5c"/>
+<text x="676" y="134" font-family="Arial" font-size="13" fill="#17201d">0.752</text>
+<text x="24" y="162" font-family="Arial" font-size="13" fill="#17201d">LUSC MYC</text>
+<rect x="180" y="149" width="476" height="17" fill="#2f7d5c"/>
+<text x="664" y="162" font-family="Arial" font-size="13" fill="#17201d">0.733</text>
+<text x="24" y="190" font-family="Arial" font-size="13" fill="#17201d">LUAD MYC</text>
+<rect x="180" y="177" width="432" height="17" fill="#2f7d5c"/>
+<text x="620" y="190" font-family="Arial" font-size="13" fill="#17201d">0.665</text>
+<text x="24" y="218" font-family="Arial" font-size="13" fill="#17201d">LUAD CD274</text>
+<rect x="180" y="205" width="419" height="17" fill="#2f7d5c"/>
+<text x="607" y="218" font-family="Arial" font-size="13" fill="#17201d">0.646</text>
+<text x="24" y="246" font-family="Arial" font-size="13" fill="#17201d">LUSC EGFR</text>
+<rect x="180" y="233" width="404" height="17" fill="#2f7d5c"/>
+<text x="592" y="246" font-family="Arial" font-size="13" fill="#17201d">0.622</text>
+<text x="24" y="274" font-family="Arial" font-size="13" fill="#17201d">LUAD EGFR</text>
+<rect x="180" y="261" width="388" height="17" fill="#2f7d5c"/>
+<text x="576" y="274" font-family="Arial" font-size="13" fill="#17201d">0.597</text>
+<text x="24" y="302" font-family="Arial" font-size="13" fill="#17201d">LUSC MET</text>
+<rect x="180" y="289" width="385" height="17" fill="#2f7d5c"/>
+<text x="573" y="302" font-family="Arial" font-size="13" fill="#17201d">0.593</text>
+<text x="24" y="330" font-family="Arial" font-size="13" fill="#17201d">LUAD B2M</text>
+<rect x="180" y="317" width="382" height="17" fill="#2f7d5c"/>
+<text x="570" y="330" font-family="Arial" font-size="13" fill="#17201d">0.589</text>
+<text x="24" y="358" font-family="Arial" font-size="13" fill="#17201d">LUSC LAG3</text>
+<rect x="180" y="345" width="378" height="17" fill="#2f7d5c"/>
+<text x="566" y="358" font-family="Arial" font-size="13" fill="#17201d">0.583</text>
+<text x="24" y="386" font-family="Arial" font-size="13" fill="#17201d">LUSC KRAS</text>
+<rect x="180" y="373" width="360" height="17" fill="#2f7d5c"/>
+<text x="548" y="386" font-family="Arial" font-size="13" fill="#17201d">0.554</text>
+<text x="24" y="414" font-family="Arial" font-size="13" fill="#17201d">LUSC B2M</text>
+<rect x="180" y="401" width="358" height="17" fill="#2f7d5c"/>
+<text x="546" y="414" font-family="Arial" font-size="13" fill="#17201d">0.552</text>
+<text x="24" y="442" font-family="Arial" font-size="13" fill="#17201d">LUAD HAVCR2</text>
+<rect x="180" y="429" width="358" height="17" fill="#2f7d5c"/>
+<text x="546" y="442" font-family="Arial" font-size="13" fill="#17201d">0.552</text>
+<text x="24" y="470" font-family="Arial" font-size="13" fill="#17201d">LUAD MET</text>
+<rect x="180" y="457" width="349" height="17" fill="#2f7d5c"/>
+<text x="537" y="470" font-family="Arial" font-size="13" fill="#17201d">0.538</text>
+</svg>

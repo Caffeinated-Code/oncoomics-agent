@@ -1,0 +1,61 @@
+dataset_id,cancer_type,histology,gene_id,symbol,theme,n_samples,mean_zscore,median_zscore,fraction_high_zscore
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,238,ALK,tumor_driver,510,-0.083924,-0.1722,0.111765
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,567,B2M,antigen_presentation,510,-1e-06,0.0129,0.154902
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,1493,CTLA4,immune_checkpoint,510,0.0,0.1121,0.152941
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,1956,EGFR,tumor_driver,510,0.0,0.0385,0.121569
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,3091,HIF1A,hypoxia_angiogenesis,510,-1e-06,-0.0826,0.154902
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,3105,HLA-A,antigen_presentation,510,-1e-06,0.05725,0.160784
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,3106,HLA-B,antigen_presentation,510,-1e-06,0.07775,0.152941
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,3553,IL1B,myeloid_inflammation,510,1e-06,0.0375,0.152941
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,3576,CXCL8,myeloid_inflammation,510,2e-06,-0.0318,0.172549
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,3716,JAK1,interferon_signaling,510,-1e-06,0.1445,0.129412
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,3717,JAK2,interferon_signaling,510,-1e-06,0.0794,0.162745
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,3845,KRAS,tumor_driver,510,0.0,-0.1306,0.12549
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,3902,LAG3,immune_checkpoint,510,2e-06,-0.02875,0.164706
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,4072,EPCAM,epithelial_state,510,-2e-06,0.1032,0.105882
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,4233,MET,tumor_driver,510,-2e-06,0.10215,0.127451
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,4288,MKI67,proliferation,510,1e-06,0.09855,0.162745
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,4318,MMP9,emt_invasion,510,0.0,0.06025,0.145098
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,4609,MYC,tumor_driver,510,1e-06,-0.01565,0.154902
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,5133,PDCD1,immune_checkpoint,510,1e-06,0.0209,0.164706
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,6279,S100A8,myeloid_inflammation,510,0.0,-0.12545,0.129412
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,6280,S100A9,myeloid_inflammation,510,1e-06,-0.1227,0.158824
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,6615,SNAI1,emt_invasion,510,2e-06,0.0511,0.172549
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,6696,SPP1,myeloid_inflammation,510,-2e-06,0.0375,0.170588
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,6935,ZEB1,emt_invasion,510,-1e-06,0.03655,0.158824
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,7153,TOP2A,proliferation,510,-2e-06,0.16295,0.152941
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,7422,VEGFA,hypoxia_angiogenesis,510,-0.0,0.01085,0.160784
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,7431,VIM,emt_invasion,510,0.0,0.04095,0.135294
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,29126,CD274,immune_checkpoint,510,-2e-06,-0.04295,0.154902
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,84868,HAVCR2,immune_checkpoint,510,-1e-06,0.11365,0.143137
+luad_tcga_pan_can_atlas_2018,LUAD,lung adenocarcinoma,201633,TIGIT,immune_checkpoint,510,0.0,0.1091,0.158824
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,238,ALK,tumor_driver,484,-0.081148,-0.1835,0.134298
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,567,B2M,antigen_presentation,484,-0.0,0.0604,0.142562
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,1493,CTLA4,immune_checkpoint,484,-0.008218,-0.0237,0.157025
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,1956,EGFR,tumor_driver,484,1e-06,0.0598,0.095041
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,3091,HIF1A,hypoxia_angiogenesis,484,-0.0,-0.03065,0.144628
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,3105,HLA-A,antigen_presentation,484,-1e-06,0.07155,0.154959
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,3106,HLA-B,antigen_presentation,484,1e-06,0.0755,0.169421
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,3553,IL1B,myeloid_inflammation,484,1e-06,0.00335,0.152893
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,3576,CXCL8,myeloid_inflammation,484,0.0,-0.0154,0.152893
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,3716,JAK1,interferon_signaling,484,-1e-06,0.03065,0.152893
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,3717,JAK2,interferon_signaling,484,-1e-06,-0.03515,0.146694
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,3845,KRAS,tumor_driver,484,0.0,-0.13225,0.121901
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,3902,LAG3,immune_checkpoint,484,-0.0,-0.0032,0.152893
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,4072,EPCAM,epithelial_state,484,0.0,0.1297,0.142562
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,4233,MET,tumor_driver,484,1e-06,0.09255,0.092975
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,4288,MKI67,proliferation,484,1e-06,0.1001,0.117769
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,4318,MMP9,emt_invasion,484,-0.0,-0.0072,0.126033
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,4609,MYC,tumor_driver,484,0.0,0.111,0.136364
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,5133,PDCD1,immune_checkpoint,484,-0.00722,0.0395,0.163223
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,6279,S100A8,myeloid_inflammation,484,1e-06,0.01735,0.17562
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,6280,S100A9,myeloid_inflammation,484,2e-06,0.03505,0.169421
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,6615,SNAI1,emt_invasion,484,-1e-06,-0.0304,0.169421
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,6696,SPP1,myeloid_inflammation,484,-0.0,-0.02935,0.181818
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,6935,ZEB1,emt_invasion,484,-1e-06,0.08775,0.171488
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,7153,TOP2A,proliferation,484,-0.0,0.08685,0.134298
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,7422,VEGFA,hypoxia_angiogenesis,484,-0.0,-0.0298,0.142562
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,7431,VIM,emt_invasion,484,-1e-06,0.04375,0.157025
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,29126,CD274,immune_checkpoint,484,-2e-06,-0.1252,0.18595
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,84868,HAVCR2,immune_checkpoint,484,-1e-06,0.05455,0.167355
+lusc_tcga_pan_can_atlas_2018,LUSC,lung squamous cell carcinoma,201633,TIGIT,immune_checkpoint,484,-0.009383,0.05625,0.157025

@@ -90,6 +90,46 @@ flowchart LR
     H --> I["Voice interface<br/>later phase"]
 ```
 
+## Current Working Build
+
+The repo now has a runnable local v1:
+
+- curated public TCGA LUAD/LUSC molecular summaries from cBioPortal
+- a 30-gene NSCLC panel spanning driver, immune checkpoint, EMT, myeloid, proliferation, hypoxia, antigen-presentation, and interferon biology
+- compact CSV tables under `data/curated/`
+- a normalized SQL schema under `sql/schema.sql`
+- a local SQLite database for development
+- a safe query CLI that maps biological questions to read-only SQL
+- a generated NSCLC atlas report with SVG figures
+
+Run the full local build:
+
+```bash
+bash scripts/run_project_modules.sh all
+```
+
+Run modules separately:
+
+```bash
+bash scripts/run_project_modules.sh curate
+bash scripts/run_project_modules.sh database
+bash scripts/run_project_modules.sh report
+bash scripts/run_project_modules.sh query
+bash scripts/run_project_modules.sh validate
+```
+
+Ask the local agent-style query layer:
+
+```bash
+python3 scripts/query_oncoomics_agent.py "Which driver genes are most frequently mutated in LUAD and LUSC?"
+python3 scripts/query_oncoomics_agent.py "Which immune checkpoint genes are expressed?"
+python3 scripts/query_oncoomics_agent.py "show source provenance"
+```
+
+Main report:
+
+- [NSCLC Atlas Report](results/nsclc_atlas_report.md)
+
 ## Biological Question For V1
 
 > In NSCLC, how do tumor evolution, immune evasion, and microenvironment-associated genes vary across malignant epithelial cells, immune cells, stromal cells, and lung reference cell types?
@@ -132,6 +172,7 @@ See [Customization Guide](docs/customization-guide.md).
 - [Biology Primer](docs/biology-primer.md)
 - [Data Sources](docs/data-sources.md)
 - [Database Primer](docs/database-primer.md)
+- [Implementation Status](docs/implementation-status.md)
 - [AWS Primer](docs/aws-primer.md)
 - [AWS Account Prep](docs/aws-account-prep.md)
 - [AWS Implementation Plan](docs/aws-implementation-plan.md)

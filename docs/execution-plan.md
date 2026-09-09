@@ -4,7 +4,7 @@
 
 Build **OncoOmics Agent: NSCLC Atlas Edition**, a cost-conscious AWS project that curates public lung single-cell atlas data into PostgreSQL summary tables and exposes the database through a safe AI agent.
 
-The first implementation prioritizes text-based database Q&A. Voice chat is added after the data model, SQL queries, and agent guardrails are reliable.
+The first implementation prioritizes text-based database Q&A. Voice chat is added after the data model, SQL queries, and agent safety checks are reliable.
 
 ## Phase 1: Repo And Scientific Framing
 
@@ -78,3 +78,15 @@ The first implementation prioritizes text-based database Q&A. Voice chat is adde
 - The agent never fabricates unsupported database answers.
 - Every biological answer includes SQL and source provenance.
 - Biological claims are supported by dataset documentation, peer-reviewed papers, or clearly marked as hypotheses.
+
+## Current V1 Milestone
+
+The first local milestone is complete when this command passes:
+
+```bash
+bash scripts/run_project_modules.sh all
+```
+
+This builds curated public tables, creates a local SQLite database, generates the report, runs example query-agent questions, and validates the project.
+
+The next milestone is LuCA cell-type summary ingestion for the same gene panel.

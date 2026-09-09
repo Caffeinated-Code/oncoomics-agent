@@ -16,6 +16,10 @@ data/raw/
 data/processed/
 *.csv
 *.tsv
+!configs/*.csv
+!data/curated/**/*.csv
+!results/**/*.csv
+!examples/**/*.csv
 *.parquet
 *.h5ad
 *.h5
