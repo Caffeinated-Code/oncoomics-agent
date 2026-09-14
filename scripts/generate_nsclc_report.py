@@ -101,6 +101,25 @@ ORDER BY cs.altered_fraction DESC
 LIMIT 15;
 """,
     )
+    luca_meta = query(
+        conn,
+        """
+SELECT title, cell_count, h5ad_filesize_gb, disease_labels
+FROM luca_datasets
+ORDER BY cell_count DESC;
+""",
+    )
+    luca_evidence = query(
+        conn,
+        """
+SELECT g.symbol, lct.cell_type_name, lct.compartment, e.expected_expression, e.quantitative_status
+FROM luca_cell_type_gene_evidence e
+JOIN genes g ON g.gene_id = e.gene_id
+JOIN cell_types lct ON lct.cell_type_id = e.cell_type_id
+WHERE g.symbol IN ('CD274', 'PDCD1', 'CTLA4', 'EGFR', 'VIM', 'SPP1', 'S100A8', 'MKI67')
+ORDER BY g.symbol, lct.compartment, lct.cell_type_name;
+""",
+    )
 
     bar_svg(drivers, "label", "mutation_frequency", "Selected Tumor Driver Mutation Frequency", FIGDIR / "driver_mutation_frequency.svg")
     bar_svg(cna, "label", "altered_fraction", "Selected Gene Copy-Number Alteration Fraction", FIGDIR / "copy_number_alteration_fraction.svg")
@@ -132,6 +151,14 @@ LIMIT 15;
                 markdown_table(checkpoints),
                 "These are bulk tumor RNA z-score summaries. They support cohort-level immune-context questions but cannot identify the exact cell type producing each transcript. LuCA single-cell summaries are the correct next layer for cell-source resolution.",
                 "",
+                "## LuCA Cell-Type Context",
+                "",
+                markdown_table(luca_meta),
+                "The LuCA collection is represented as public CELLxGENE metadata and a curated cell-type evidence layer in this v1 database. The H5AD assets are large, so quantitative matrix extraction is kept as the scalable next step.",
+                "",
+                markdown_table(luca_evidence),
+                "This table is designed for transparent agent behavior. It can answer compartment-level questions now while marking the quantitative status of each statement.",
+                "",
                 "## Copy-Number Context",
                 "",
                 markdown_table(cna),
@@ -144,6 +171,7 @@ LIMIT 15;
                 "- The project now has a real SQL-backed NSCLC molecular context using public LUAD and LUSC data.",
                 "- The strongest v1 signal is disease-aware separation of LUAD and LUSC driver biology.",
                 "- Checkpoint and myeloid RNA summaries should be treated as tumor-level context until single-cell LuCA summaries are ingested.",
+                "- The LuCA evidence layer enables cell-compartment reasoning, with explicit status labels for matrix-derived versus curated evidence.",
                 "- Multi-omics in v1 means mutation, RNA expression, copy number, source provenance, and single-cell atlas source mapping.",
                 "",
                 "## Next Data Layer",

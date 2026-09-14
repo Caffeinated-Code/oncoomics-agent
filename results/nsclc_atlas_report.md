@@ -55,6 +55,39 @@ LUAD shows the expected enrichment of `KRAS` and `EGFR` mutations in this select
 
 These are bulk tumor RNA z-score summaries. They support cohort-level immune-context questions but cannot identify the exact cell type producing each transcript. LuCA single-cell summaries are the correct next layer for cell-source resolution.
 
+## LuCA Cell-Type Context
+
+| title | cell_count | h5ad_filesize_gb | disease_labels |
+| --- | --- | --- | --- |
+| The single-cell lung cancer atlas (LuCA) -- extended atlas | 1283972 | 17.617 | chronic obstructive pulmonary disease;lung adenocarcinoma;non-small cell lung carcinoma;normal;squamous cell lung carcinoma |
+| The single-cell lung cancer atlas (LuCA) -- core atlas | 892296 | 12.897 | chronic obstructive pulmonary disease;lung adenocarcinoma;non-small cell lung carcinoma;normal;squamous cell lung carcinoma |
+
+The LuCA collection is represented as public CELLxGENE metadata and a curated cell-type evidence layer in this v1 database. The H5AD assets are large, so quantitative matrix extraction is kept as the scalable next step.
+
+| symbol | cell_type_name | compartment | expected_expression | quantitative_status |
+| --- | --- | --- | --- | --- |
+| CD274 | malignant cell | malignant tumor | context-dependent | not_matrix_quantified_in_v1 |
+| CD274 | dendritic cell | myeloid immune | moderate | not_matrix_quantified_in_v1 |
+| CD274 | macrophage | myeloid immune | moderate | not_matrix_quantified_in_v1 |
+| CTLA4 | CD4-positive, alpha-beta T cell | lymphoid immune | moderate | not_matrix_quantified_in_v1 |
+| CTLA4 | regulatory T cell | lymphoid immune | high | not_matrix_quantified_in_v1 |
+| EGFR | epithelial cell of lung | epithelial | moderate | not_matrix_quantified_in_v1 |
+| EGFR | malignant cell | malignant tumor | high | not_matrix_quantified_in_v1 |
+| MKI67 | CD8-positive, alpha-beta T cell | lymphoid immune | context-dependent | not_matrix_quantified_in_v1 |
+| MKI67 | malignant cell | malignant tumor | high | not_matrix_quantified_in_v1 |
+| PDCD1 | CD4-positive, alpha-beta T cell | lymphoid immune | moderate | not_matrix_quantified_in_v1 |
+| PDCD1 | CD8-positive, alpha-beta T cell | lymphoid immune | high | not_matrix_quantified_in_v1 |
+| PDCD1 | regulatory T cell | lymphoid immune | moderate | not_matrix_quantified_in_v1 |
+| S100A8 | classical monocyte | myeloid immune | high | not_matrix_quantified_in_v1 |
+| S100A8 | neutrophil | myeloid immune | high | not_matrix_quantified_in_v1 |
+| SPP1 | malignant cell | malignant tumor | context-dependent | not_matrix_quantified_in_v1 |
+| SPP1 | macrophage | myeloid immune | high | not_matrix_quantified_in_v1 |
+| VIM | malignant cell | malignant tumor | context-dependent | not_matrix_quantified_in_v1 |
+| VIM | fibroblast of lung | stromal | high | not_matrix_quantified_in_v1 |
+| VIM | stromal cell | stromal | high | not_matrix_quantified_in_v1 |
+
+This table is designed for transparent agent behavior. It can answer compartment-level questions now while marking the quantitative status of each statement.
+
 ## Copy-Number Context
 
 | label | altered_fraction |
@@ -84,6 +117,7 @@ Discrete GISTIC values are useful screening features. They should be interpreted
 - The project now has a real SQL-backed NSCLC molecular context using public LUAD and LUSC data.
 - The strongest v1 signal is disease-aware separation of LUAD and LUSC driver biology.
 - Checkpoint and myeloid RNA summaries should be treated as tumor-level context until single-cell LuCA summaries are ingested.
+- The LuCA evidence layer enables cell-compartment reasoning, with explicit status labels for matrix-derived versus curated evidence.
 - Multi-omics in v1 means mutation, RNA expression, copy number, source provenance, and single-cell atlas source mapping.
 
 ## Next Data Layer

@@ -87,6 +87,6 @@ The first local milestone is complete when this command passes:
 bash scripts/run_project_modules.sh all
 ```
 
-This builds curated public tables, creates a local SQLite database, generates the report, runs example query-agent questions, and validates the project.
+This builds curated public TCGA tables, ingests LuCA CELLxGENE metadata, creates a local SQLite database, generates the report, runs example query-agent questions, and validates the project.
 
-The next milestone is LuCA cell-type summary ingestion for the same gene panel.
+The next milestone is quantitative LuCA matrix extraction for cell-type expression summaries across the same gene panel.

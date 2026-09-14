@@ -1,38 +1,38 @@
 # OncoOmics Agent: NSCLC Atlas Edition
 
-An advanced Bioinformatics Field Guide project: curate public single-cell lung cancer atlas data into a small AWS-hosted SQL database, then build an AI agent that can answer biological questions about non-small cell lung cancer (NSCLC) cell states, tumor microenvironment biology, and gene expression patterns.
+An advanced Bioinformatics Field Guide project: curate public [single-cell lung cancer atlas data](docs/biology-primer.md#why-single-cell-data) into a small [AWS](docs/aws-primer.md)-hosted [SQL database](docs/database-primer.md), then build an [agent-style query layer](docs/customization-guide.md#stable-interface-for-the-agent) that can answer biological questions about [non-small cell lung cancer (NSCLC)](docs/biology-primer.md#why-nsclc) cell states, [tumor microenvironment](docs/biology-primer.md#the-biological-setting) biology, and gene expression patterns.
 
 ## Who This Is For
 
 This repo is for readers who want to:
 
-- learn NSCLC tumor microenvironment biology through public single-cell data
-- build a similar atlas-backed AI database agent
-- practice SQL, AWS, and data curation with a real biomedical use case
-- see how to keep AI-generated scientific answers grounded in queryable evidence
+- learn [NSCLC](docs/biology-primer.md#why-nsclc) [tumor microenvironment](docs/biology-primer.md#the-biological-setting) biology through public single-cell data
+- build a similar atlas-backed database agent
+- practice [SQL](docs/database-primer.md), [AWS](docs/aws-primer.md), and data curation with a real biomedical use case
+- see how to keep scientific answers grounded in queryable evidence
 
 The writing aims to be direct, reproducible, and easy to navigate.
 
 ## Why This Project?
 
-Public single-cell atlases have changed what a bioinformatics project can do. Instead of looking only at bulk tumor averages, we can ask questions at the level of cell types, tissue compartments, disease states, and patient-derived samples.
+Public [single-cell atlases](docs/biology-primer.md#why-single-cell-data) have changed what a bioinformatics project can do. Instead of looking only at bulk tumor averages, we can ask questions at the level of [cell types](docs/biology-primer.md#the-biological-setting), tissue compartments, disease states, and patient-derived samples.
 
-NSCLC is a strong disease focus because lung cancer progression involves tumor evolution, immune escape, stromal remodeling, metastasis, and treatment resistance. Those processes are not visible from one table or one omics layer alone. They require connecting:
+[NSCLC](docs/biology-primer.md#why-nsclc) is a strong disease focus because lung cancer progression involves [tumor evolution](docs/data-sources.md#biological-framing-tracerx-and-peace), immune escape, stromal remodeling, metastasis, and treatment resistance. Those processes are not visible from one table or one omics layer alone. They require connecting:
 
 - cell type annotations
 - tumor versus non-tumor compartments
 - gene expression
 - sample and patient metadata
 - public atlas provenance
-- biological themes from studies such as TRACERx and PEACE
+- biological themes from studies such as [TRACERx and PEACE](docs/data-sources.md#biological-framing-tracerx-and-peace)
 
 This project makes those connections queryable.
 
 The scientific motivation is supported by three lines of evidence:
 
-- The Human Lung Cell Atlas integrates large-scale lung single-cell data and provides reference cell type context for healthy and diseased lung tissue.
-- LuCA focuses on NSCLC and supports cell-type-level exploration of tumor and immune microenvironment programs.
-- TRACERx/PEACE studies show why lung cancer evolution, metastasis, and sampling context matter, even though controlled-access TRACERx data is not the first ingestion target.
+- The [Human Lung Cell Atlas](docs/data-sources.md#reference-source-human-lung-cell-atlas) integrates large-scale lung single-cell data and provides reference cell type context for healthy and diseased lung tissue.
+- [**LuCA**](docs/data-sources.md#primary-source-luca) focuses on [NSCLC](docs/biology-primer.md#why-nsclc) and supports cell-type-level exploration of tumor and immune microenvironment programs.
+- [**TRACERx/PEACE**](docs/data-sources.md#biological-framing-tracerx-and-peace) studies show why lung cancer evolution, metastasis, and sampling context matter, even though controlled-access TRACERx data is not the first ingestion target.
 
 ## What It Solves
 
@@ -46,16 +46,16 @@ Researchers and learners often know the biological question but not the data eng
 
 > "What public dataset did this answer come from?"
 
-The agent translates questions like these into safe SQL over curated public data, then returns an evidence-backed answer with the query, source tables, and caveats.
+The agent translates questions like these into [safe SQL](docs/database-primer.md#query-safety-rules) over curated public data, then returns an evidence-backed answer with the query, source tables, and caveats.
 
 ## What It Accomplishes
 
 This repo is designed to demonstrate four skill sets in one coherent project:
 
 - **Bioinformatics curation:** choose public atlas data, extract metadata, summarize expression, and preserve provenance.
-- **SQL/database design:** model samples, cell types, genes, expression summaries, and source files in PostgreSQL.
-- **AWS architecture:** deploy a small, budget-protected database and API using free-tier-friendly services.
-- **AI agent engineering:** build a tool-using agent that answers from the database instead of guessing.
+- **SQL/database design:** model samples, cell types, genes, expression summaries, and source files in [PostgreSQL](docs/database-primer.md).
+- **AWS architecture:** deploy a small, budget-protected database and API using [free-tier-friendly services](docs/aws-primer.md).
+- **Agent engineering:** build a tool-using query layer that answers from the database instead of guessing.
 
 ## Data Strategy
 
@@ -71,10 +71,10 @@ Instead, v1 stores curated summary tables:
 
 Recommended public sources:
 
-- [Human Lung Cell Atlas / HLCA](https://data.humancellatlas.org/hca-bio-networks/lung/atlases/lung-v1-0) as the healthy/disease lung reference atlas.
-- [LuCA single-cell Lung Cancer Atlas](https://github.com/icbi-lab/luca) as the NSCLC-focused tumor atlas.
+- [Human Lung Cell Atlas / HLCA](docs/data-sources.md#reference-source-human-lung-cell-atlas) as the healthy/disease lung reference atlas.
+- [**LuCA single-cell Lung Cancer Atlas**](docs/data-sources.md#primary-source-luca) as the NSCLC-focused tumor atlas.
 - [CZ CELLxGENE LuCA collection](https://cellxgene.cziscience.com/collections/edb893ee-4066-4128-9aec-5eb2b03f8287) for atlas exploration and access.
-- [TRACERx/PEACE NSCLC studies](https://www.nature.com/articles/s41586-023-05729-x) as biological framing for tumor evolution and metastasis. These are not the first ingestion target because some data are controlled-access or academic-use restricted.
+- [**TRACERx/PEACE NSCLC studies**](docs/data-sources.md#biological-framing-tracerx-and-peace) as biological framing for tumor evolution and metastasis. These are not the first ingestion target because some data are controlled-access or academic-use restricted.
 
 ## Big-Picture Architecture
 
@@ -94,13 +94,14 @@ flowchart LR
 
 The repo now has a runnable local v1:
 
-- curated public TCGA LUAD/LUSC molecular summaries from cBioPortal
-- a 30-gene NSCLC panel spanning driver, immune checkpoint, EMT, myeloid, proliferation, hypoxia, antigen-presentation, and interferon biology
+- curated public [TCGA LUAD/LUSC](docs/data-sources.md#implemented-v1-sources) molecular summaries from [cBioPortal](docs/scientific-references.md#core-dataset-references)
+- a 30-gene [NSCLC](docs/biology-primer.md#why-nsclc) panel spanning driver, immune checkpoint, [EMT](docs/biology-primer.md#v1-gene-themes), myeloid, proliferation, hypoxia, antigen-presentation, and interferon biology
 - compact CSV tables under `data/curated/`
 - a normalized SQL schema under `sql/schema.sql`
 - a local SQLite database for development
 - a safe query CLI that maps biological questions to read-only SQL
 - a generated NSCLC atlas report with SVG figures
+- public [LuCA](docs/data-sources.md#primary-source-luca) metadata and cell-type evidence tables
 
 Run the full local build:
 
@@ -132,7 +133,7 @@ Main report:
 
 ## Biological Question For V1
 
-> In NSCLC, how do tumor evolution, immune evasion, and microenvironment-associated genes vary across malignant epithelial cells, immune cells, stromal cells, and lung reference cell types?
+> In [NSCLC](docs/biology-primer.md#why-nsclc), how do [tumor evolution](docs/data-sources.md#biological-framing-tracerx-and-peace), immune evasion, and [microenvironment](docs/biology-primer.md#the-biological-setting)-associated genes vary across malignant epithelial cells, immune cells, stromal cells, and lung reference cell types?
 
 Example v1 questions:
 

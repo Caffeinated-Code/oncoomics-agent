@@ -12,6 +12,7 @@ Usage:
 
 Modules:
   curate      Pull public TCGA LUAD/LUSC summaries from cBioPortal.
+  luca        Pull LuCA CELLxGENE metadata and cell-type evidence tables.
   database    Build the local SQLite database from curated CSV tables.
   report      Generate the Markdown report and SVG figures.
   query       Run three example agent-style questions.
@@ -20,12 +21,17 @@ Modules:
 
 Examples:
   bash scripts/run_project_modules.sh curate
+  bash scripts/run_project_modules.sh luca
   bash scripts/run_project_modules.sh all
 EOF
 }
 
 run_curate() {
   python3 scripts/curate_cbioportal_nsclc.py
+}
+
+run_luca() {
+  python3 scripts/curate_luca_metadata.py
 }
 
 run_database() {
@@ -39,6 +45,8 @@ run_report() {
 run_query() {
   python3 scripts/query_oncoomics_agent.py "Which driver genes are most frequently mutated in LUAD and LUSC?"
   python3 scripts/query_oncoomics_agent.py "Which immune checkpoint genes are expressed?"
+  python3 scripts/query_oncoomics_agent.py "Which cell types express CD274?"
+  python3 scripts/query_oncoomics_agent.py "show LuCA cell types"
   python3 scripts/query_oncoomics_agent.py "show source provenance"
 }
 
@@ -49,6 +57,9 @@ run_validate() {
 case "${MODULE}" in
   curate)
     run_curate
+    ;;
+  luca)
+    run_luca
     ;;
   database)
     run_database
@@ -64,6 +75,7 @@ case "${MODULE}" in
     ;;
   all)
     run_curate
+    run_luca
     run_database
     run_report
     run_query

@@ -25,6 +25,9 @@ TABLE_FILES = [
     ("cna_observations", "cna_observations.csv"),
     ("cna_summary", "cna_summary.csv"),
     ("atlas_source_summaries", "atlas_source_summaries.csv"),
+    ("luca_datasets", "luca_datasets.csv"),
+    ("cell_types", "cell_types.csv"),
+    ("luca_cell_type_gene_evidence", "luca_cell_type_gene_evidence.csv"),
 ]
 
 CANNED_QUESTIONS = [
@@ -76,6 +79,20 @@ WHERE g.theme = 'myeloid_inflammation'
 ORDER BY ges.cancer_type, ges.fraction_high_zscore DESC;
 """.strip(),
         "interpretation_note": "These are cohort-level RNA patterns. Cell-type localization should be checked against single-cell summaries.",
+    },
+    {
+        "question_id": "luca_cell_type_checkpoint_context",
+        "question": "Which LuCA cell types are expected to express immune checkpoint genes?",
+        "sql_text": """
+SELECT g.symbol, lct.cell_type_name, lct.compartment, e.expected_expression, e.quantitative_status
+FROM luca_cell_type_gene_evidence e
+JOIN genes g ON g.gene_id = e.gene_id
+JOIN cell_types lct ON lct.cell_type_id = e.cell_type_id
+WHERE g.theme = 'immune_checkpoint'
+ORDER BY g.symbol, e.expected_expression, lct.cell_type_name
+LIMIT 30;
+""".strip(),
+        "interpretation_note": "This table is a curated LuCA cell-type evidence layer. Quantitative LuCA expression extraction is the next large-matrix processing step.",
     },
 ]
 

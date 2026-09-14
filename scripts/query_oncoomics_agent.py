@@ -27,6 +27,18 @@ LIMIT 20;
         "LUAD and LUSC should be interpreted separately. EGFR and KRAS are expected to be more informative in LUAD than in LUSC.",
     ),
     (
+        ("cd274",),
+        """
+SELECT g.symbol, lct.cell_type_name, lct.compartment, e.expected_expression, e.quantitative_status, e.biological_rationale
+FROM luca_cell_type_gene_evidence e
+JOIN genes g ON g.gene_id = e.gene_id
+JOIN cell_types lct ON lct.cell_type_id = e.cell_type_id
+WHERE g.symbol = 'CD274'
+ORDER BY lct.compartment, lct.cell_type_name;
+""".strip(),
+        "CD274/PD-L1 can come from malignant or antigen-presenting immune compartments. The next LuCA matrix step should quantify this by cell type.",
+    ),
+    (
         ("checkpoint", "express"),
         """
 SELECT ges.cancer_type, g.symbol, ges.n_samples, ROUND(ges.mean_zscore, 3) AS mean_zscore, ROUND(ges.fraction_high_zscore, 3) AS fraction_high_zscore
@@ -36,6 +48,27 @@ WHERE g.theme = 'immune_checkpoint'
 ORDER BY ges.cancer_type, ges.fraction_high_zscore DESC;
 """.strip(),
         "This is bulk tumor RNA from TCGA. It cannot identify the cell type producing the checkpoint transcript.",
+    ),
+    (
+        ("cell", "type", "express"),
+        """
+SELECT g.symbol, lct.cell_type_name, lct.compartment, e.expected_expression, e.quantitative_status, e.biological_rationale
+FROM luca_cell_type_gene_evidence e
+JOIN genes g ON g.gene_id = e.gene_id
+JOIN cell_types lct ON lct.cell_type_id = e.cell_type_id
+ORDER BY g.symbol, lct.compartment, lct.cell_type_name
+LIMIT 40;
+""".strip(),
+        "This is a curated LuCA cell-type evidence layer, not a quantitative matrix-derived expression table.",
+    ),
+    (
+        ("luca", "cell"),
+        """
+SELECT cell_type_name, compartment, ontology_term_id
+FROM cell_types
+ORDER BY compartment, cell_type_name;
+""".strip(),
+        "These are public LuCA CELLxGENE cell-type labels mapped into broad compartments for agent queries.",
     ),
     (
         ("copy", "number"),

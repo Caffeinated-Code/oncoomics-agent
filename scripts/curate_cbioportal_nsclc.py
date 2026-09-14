@@ -59,8 +59,9 @@ def write_csv(path: Path, rows: list[dict[str, object]], fields: list[str] | Non
     path.parent.mkdir(parents=True, exist_ok=True)
     if not fields:
         fields = list(rows[0]) if rows else []
+    line_ending = "\n" if path.name == "source_files.csv" else "\r\n"
     with path.open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator=line_ending)
         writer.writeheader()
         writer.writerows(rows)
 

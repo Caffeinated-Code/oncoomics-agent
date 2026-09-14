@@ -1,0 +1,34 @@
+cell_type_id,cell_type_name,ontology_term_id,compartment,primer_link
+b_cell,B cell,CL:0000236,lymphoid immune,docs/biology-primer.md#the-biological-setting
+cd1c_positive_myeloid_dendritic_cell,CD1c-positive myeloid dendritic cell,CL:0002399,myeloid immune,docs/biology-primer.md#the-biological-setting
+cd4_positive_alpha_beta_t_cell,"CD4-positive, alpha-beta T cell",CL:0000624,lymphoid immune,docs/biology-primer.md#the-biological-setting
+cd8_positive_alpha_beta_t_cell,"CD8-positive, alpha-beta T cell",CL:0000625,lymphoid immune,docs/biology-primer.md#the-biological-setting
+alveolar_macrophage,alveolar macrophage,CL:0000583,myeloid immune,docs/biology-primer.md#the-biological-setting
+bronchus_fibroblast_of_lung,bronchus fibroblast of lung,CL:2000093,stromal,docs/biology-primer.md#the-biological-setting
+capillary_endothelial_cell,capillary endothelial cell,CL:0002144,vascular,docs/biology-primer.md#the-biological-setting
+classical_monocyte,classical monocyte,CL:0000860,myeloid immune,docs/biology-primer.md#the-biological-setting
+club_cell,club cell,CL:0000158,epithelial,docs/biology-primer.md#the-biological-setting
+conventional_dendritic_cell,conventional dendritic cell,CL:0000990,myeloid immune,docs/biology-primer.md#the-biological-setting
+dendritic_cell,dendritic cell,CL:0000451,myeloid immune,docs/biology-primer.md#the-biological-setting
+endothelial_cell_of_lymphatic_vessel,endothelial cell of lymphatic vessel,CL:0002138,vascular,docs/biology-primer.md#the-biological-setting
+epithelial_cell_of_lung,epithelial cell of lung,CL:0000082,epithelial,docs/biology-primer.md#the-biological-setting
+fibroblast_of_lung,fibroblast of lung,CL:0002553,stromal,docs/biology-primer.md#the-biological-setting
+macrophage,macrophage,CL:0000235,myeloid immune,docs/biology-primer.md#the-biological-setting
+malignant_cell,malignant cell,CL:0001064,malignant tumor,docs/biology-primer.md#the-biological-setting
+mast_cell,mast cell,CL:0000097,myeloid immune,docs/biology-primer.md#the-biological-setting
+mesothelial_cell,mesothelial cell,CL:0000077,mesothelial,docs/biology-primer.md#the-biological-setting
+multiciliated_epithelial_cell,multiciliated epithelial cell,CL:0005012,epithelial,docs/biology-primer.md#the-biological-setting
+myeloid_cell,myeloid cell,CL:0000763,myeloid immune,docs/biology-primer.md#the-biological-setting
+natural_killer_cell,natural killer cell,CL:0000623,lymphoid immune,docs/biology-primer.md#the-biological-setting
+neutrophil,neutrophil,CL:0000775,myeloid immune,docs/biology-primer.md#the-biological-setting
+non_classical_monocyte,non-classical monocyte,CL:0000875,myeloid immune,docs/biology-primer.md#the-biological-setting
+pericyte,pericyte,CL:0000669,stromal,docs/biology-primer.md#the-biological-setting
+plasma_cell,plasma cell,CL:0000786,lymphoid immune,docs/biology-primer.md#the-biological-setting
+plasmacytoid_dendritic_cell,plasmacytoid dendritic cell,CL:0000784,myeloid immune,docs/biology-primer.md#the-biological-setting
+pulmonary_alveolar_type_1_cell,pulmonary alveolar type 1 cell,CL:0002062,epithelial,docs/biology-primer.md#the-biological-setting
+pulmonary_alveolar_type_2_cell,pulmonary alveolar type 2 cell,CL:0002063,epithelial,docs/biology-primer.md#the-biological-setting
+pulmonary_artery_endothelial_cell,pulmonary artery endothelial cell,CL:1001568,vascular,docs/biology-primer.md#the-biological-setting
+regulatory_t_cell,regulatory T cell,CL:0000815,lymphoid immune,docs/biology-primer.md#the-biological-setting
+smooth_muscle_cell,smooth muscle cell,CL:0000192,stromal,docs/biology-primer.md#the-biological-setting
+stromal_cell,stromal cell,CL:0000499,stromal,docs/biology-primer.md#the-biological-setting
+vein_endothelial_cell,vein endothelial cell,CL:0002543,vascular,docs/biology-primer.md#the-biological-setting

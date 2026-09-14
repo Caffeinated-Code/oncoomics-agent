@@ -143,6 +143,40 @@ CREATE TABLE IF NOT EXISTS atlas_source_summaries (
   source_url TEXT NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS luca_datasets (
+  luca_dataset_id TEXT PRIMARY KEY,
+  title TEXT NOT NULL,
+  collection_id TEXT NOT NULL,
+  collection_url TEXT NOT NULL,
+  cell_count INTEGER NOT NULL,
+  disease_labels TEXT NOT NULL,
+  tissue_labels TEXT NOT NULL,
+  assay_labels TEXT NOT NULL,
+  h5ad_url TEXT NOT NULL,
+  h5ad_filesize_gb REAL NOT NULL,
+  citation TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS cell_types (
+  cell_type_id TEXT PRIMARY KEY,
+  cell_type_name TEXT NOT NULL UNIQUE,
+  ontology_term_id TEXT,
+  compartment TEXT NOT NULL,
+  primer_link TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS luca_cell_type_gene_evidence (
+  evidence_id TEXT PRIMARY KEY,
+  gene_id INTEGER NOT NULL,
+  cell_type_id TEXT NOT NULL,
+  expected_expression TEXT NOT NULL,
+  evidence_basis TEXT NOT NULL,
+  biological_rationale TEXT NOT NULL,
+  quantitative_status TEXT NOT NULL,
+  FOREIGN KEY (gene_id) REFERENCES genes(gene_id),
+  FOREIGN KEY (cell_type_id) REFERENCES cell_types(cell_type_id)
+);
+
 CREATE TABLE IF NOT EXISTS canned_questions (
   question_id TEXT PRIMARY KEY,
   question TEXT NOT NULL,

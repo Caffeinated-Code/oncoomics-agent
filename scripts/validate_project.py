@@ -17,6 +17,7 @@ REQUIRED_FILES = [
     "configs/gene_panel.csv",
     "sql/schema.sql",
     "scripts/curate_cbioportal_nsclc.py",
+    "scripts/curate_luca_metadata.py",
     "scripts/build_sqlite_database.py",
     "scripts/query_oncoomics_agent.py",
     "scripts/generate_nsclc_report.py",
@@ -27,6 +28,9 @@ REQUIRED_FILES = [
     "data/curated/expression_observations.csv",
     "data/curated/mutation_observations.csv",
     "data/curated/cna_observations.csv",
+    "data/curated/luca_datasets.csv",
+    "data/curated/cell_types.csv",
+    "data/curated/luca_cell_type_gene_evidence.csv",
     "results/tables/gene_expression_summary.csv",
     "results/tables/mutation_summary.csv",
     "results/tables/cna_summary.csv",
@@ -62,6 +66,7 @@ def main() -> int:
 
     py_files = [
         "scripts/curate_cbioportal_nsclc.py",
+        "scripts/curate_luca_metadata.py",
         "scripts/build_sqlite_database.py",
         "scripts/query_oncoomics_agent.py",
         "scripts/generate_nsclc_report.py",
@@ -81,6 +86,9 @@ def main() -> int:
             "expression_observations": 25000,
             "mutation_summary": 50,
             "cna_summary": 50,
+            "luca_datasets": 2,
+            "cell_types": 30,
+            "luca_cell_type_gene_evidence": 40,
         }
         for table, minimum in checks.items():
             observed = conn.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0]
@@ -94,6 +102,7 @@ def main() -> int:
         "results/tables/gene_expression_summary.csv",
         "results/tables/mutation_summary.csv",
         "results/tables/cna_summary.csv",
+        "results/tables/luca_cell_type_gene_evidence.csv",
     ]:
         path = ROOT / rel
         if path.exists() and count_csv(path) == 0:

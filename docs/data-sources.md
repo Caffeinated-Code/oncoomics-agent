@@ -2,7 +2,7 @@
 
 ## Primary Source: LuCA
 
-LuCA, the single-cell Lung Cancer Atlas, is the recommended primary source for v1 because it is focused on NSCLC and provides a strong basis for tumor microenvironment questions.
+[**LuCA**](https://github.com/icbi-lab/luca), the single-cell Lung Cancer Atlas, is the recommended primary source for v1 because it is focused on [NSCLC](biology-primer.md#why-nsclc) and provides a strong basis for [tumor microenvironment](biology-primer.md#the-biological-setting) questions.
 
 Source links:
 
@@ -20,7 +20,7 @@ Why it fits:
 
 ## Reference Source: Human Lung Cell Atlas
 
-The Human Lung Cell Atlas provides healthy and disease lung reference context.
+The [**Human Lung Cell Atlas**](https://data.humancellatlas.org/hca-bio-networks/lung/atlases/lung-v1-0) provides healthy and disease lung reference context.
 
 Source links:
 
@@ -37,7 +37,7 @@ Why it fits:
 
 ## Biological Framing: TRACERx And PEACE
 
-TRACERx and PEACE are valuable for explaining why NSCLC evolution and metastasis matter. They are not the first ingestion target because parts of the data are controlled-access or license-restricted.
+[**TRACERx and PEACE**](https://www.nature.com/articles/s41586-023-05729-x) are valuable for explaining why [NSCLC](biology-primer.md#why-nsclc) evolution and metastasis matter. They are not the first ingestion target because parts of the data are controlled-access or license-restricted.
 
 Source links:
 
@@ -68,7 +68,19 @@ The current local build ingests compact public cBioPortal data from:
 
 These sources provide mutation, RNA expression, copy-number, methylation, RPPA, and structural-variant profile availability. The implemented scripts currently summarize mutation, RNA expression z-scores, and discrete GISTIC copy-number calls for the curated NSCLC gene panel.
 
-LuCA and HLCA are recorded as source records in the database. Their full single-cell matrices are kept out of the first database build because v1 is designed to stay small, inspectable, and AWS-friendly.
+The current local build also ingests public LuCA CELLxGENE metadata:
+
+- core and extended LuCA dataset records
+- cell counts
+- disease labels
+- tissue labels
+- assay labels
+- H5AD asset URLs and file sizes
+- 33 LuCA cell-type labels
+- broad compartment mapping for agent queries
+- curated gene-by-cell-type evidence for the NSCLC panel
+
+The full LuCA single-cell matrices are kept out of Git and out of the first database build because v1 is designed to stay small, inspectable, and AWS-friendly. Quantitative expression extraction from the large H5AD assets is the next scalable processing step.
 
 ## Citation And Provenance Fields
 

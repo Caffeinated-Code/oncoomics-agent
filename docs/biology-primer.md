@@ -34,13 +34,13 @@ NSCLC is a strong first disease focus because it connects multiple advanced biol
 - metastasis
 - therapy resistance
 
-TRACERx and PEACE studies provide the motivating biological story: lung cancer evolves across space and time, and metastasis is shaped by subclonal selection and tumor microenvironment context. This project uses that story to motivate public atlas questions, while keeping v1 data ingestion focused on easier-to-use public single-cell atlas resources.
+[TRACERx and PEACE](data-sources.md#biological-framing-tracerx-and-peace) studies provide the motivating biological story: lung cancer evolves across space and time, and metastasis is shaped by subclonal selection and tumor microenvironment context. This project uses that story to motivate public atlas questions, while keeping v1 data ingestion focused on easier-to-use public single-cell atlas resources.
 
 Key evidence anchors:
 
-- The Human Lung Cell Atlas provides a broad reference for lung cell identities in health and disease.
-- LuCA integrates NSCLC single-cell datasets and is useful for tumor microenvironment questions.
-- TRACERx/PEACE motivates the need to reason about tumor evolution, metastasis, and sampling context.
+- The [Human Lung Cell Atlas](data-sources.md#reference-source-human-lung-cell-atlas) provides a broad reference for lung cell identities in health and disease.
+- [**LuCA**](data-sources.md#primary-source-luca) integrates [NSCLC](#why-nsclc) single-cell datasets and is useful for [tumor microenvironment](#the-biological-setting) questions.
+- [**TRACERx/PEACE**](data-sources.md#biological-framing-tracerx-and-peace) motivates the need to reason about tumor evolution, metastasis, and sampling context.
 
 ## What Counts As Multi-Omics Here?
 
