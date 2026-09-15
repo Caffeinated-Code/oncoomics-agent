@@ -102,6 +102,7 @@ The repo now has a runnable local v1:
 - a safe query CLI that maps biological questions to read-only SQL
 - a generated NSCLC atlas report with SVG figures
 - public [LuCA](docs/data-sources.md#primary-source-luca) metadata and cell-type evidence tables
+- a Shiny results app for interactive review of mutation, expression, copy-number, and LuCA cell-context results
 
 Run the full local build:
 
@@ -115,6 +116,7 @@ Run modules separately:
 bash scripts/run_project_modules.sh curate
 bash scripts/run_project_modules.sh database
 bash scripts/run_project_modules.sh report
+bash scripts/run_project_modules.sh appdata
 bash scripts/run_project_modules.sh query
 bash scripts/run_project_modules.sh validate
 ```
@@ -130,6 +132,17 @@ python3 scripts/query_oncoomics_agent.py "show source provenance"
 Main report:
 
 - [NSCLC Atlas Report](results/nsclc_atlas_report.md)
+- [Action Report](results/oncoomics_nsclc_action_report.md)
+
+Run the local Shiny app:
+
+```r
+shiny::runApp("shiny_app")
+```
+
+Public Shiny demo:
+
+- [OncoOmics Agent NSCLC Atlas](https://caffeinated-code.shinyapps.io/oncoomics-agent-nsclc-atlas/)
 
 ## Biological Question For V1
 

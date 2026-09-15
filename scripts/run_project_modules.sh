@@ -15,9 +15,10 @@ Modules:
   luca        Pull LuCA CELLxGENE metadata and cell-type evidence tables.
   database    Build the local SQLite database from curated CSV tables.
   report      Generate the Markdown report and SVG figures.
+  appdata     Refresh the deployable Shiny app data bundle.
   query       Run three example agent-style questions.
   validate    Run compile checks, SQL checks, and text hygiene checks.
-  all         Run curate, database, report, query, and validate.
+  all         Run curate, luca, database, report, appdata, query, and validate.
 
 Examples:
   bash scripts/run_project_modules.sh curate
@@ -40,6 +41,11 @@ run_database() {
 
 run_report() {
   python3 scripts/generate_nsclc_report.py
+  python3 scripts/generate_action_report.py
+}
+
+run_appdata() {
+  python3 scripts/prepare_shiny_app_data.py
 }
 
 run_query() {
@@ -67,6 +73,9 @@ case "${MODULE}" in
   report)
     run_report
     ;;
+  appdata)
+    run_appdata
+    ;;
   query)
     run_query
     ;;
@@ -78,6 +87,7 @@ case "${MODULE}" in
     run_luca
     run_database
     run_report
+    run_appdata
     run_query
     run_validate
     ;;

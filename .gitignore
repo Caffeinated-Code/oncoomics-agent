@@ -19,6 +19,7 @@ data/processed/
 !configs/*.csv
 !data/curated/**/*.csv
 !results/**/*.csv
+!shiny_app/data/*.csv
 !examples/**/*.csv
 *.parquet
 *.h5ad

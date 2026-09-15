@@ -21,7 +21,11 @@ REQUIRED_FILES = [
     "scripts/build_sqlite_database.py",
     "scripts/query_oncoomics_agent.py",
     "scripts/generate_nsclc_report.py",
+    "scripts/generate_action_report.py",
+    "scripts/prepare_shiny_app_data.py",
     "scripts/run_project_modules.sh",
+    "shiny_app/app.R",
+    "shiny_app/README.md",
     "data/curated/datasets.csv",
     "data/curated/genes.csv",
     "data/curated/samples.csv",
@@ -35,6 +39,11 @@ REQUIRED_FILES = [
     "results/tables/mutation_summary.csv",
     "results/tables/cna_summary.csv",
     "results/nsclc_atlas_report.md",
+    "results/oncoomics_nsclc_action_report.md",
+    "shiny_app/data/mutation_summary.csv",
+    "shiny_app/data/gene_expression_summary.csv",
+    "shiny_app/data/cna_summary.csv",
+    "shiny_app/data/luca_cell_type_gene_evidence.csv",
 ]
 
 BLOCKED_TERMS = [
@@ -70,6 +79,8 @@ def main() -> int:
         "scripts/build_sqlite_database.py",
         "scripts/query_oncoomics_agent.py",
         "scripts/generate_nsclc_report.py",
+        "scripts/generate_action_report.py",
+        "scripts/prepare_shiny_app_data.py",
         "scripts/validate_project.py",
     ]
     result = subprocess.run([sys.executable, "-m", "py_compile", *py_files], cwd=ROOT, capture_output=True, text=True)
@@ -103,6 +114,10 @@ def main() -> int:
         "results/tables/mutation_summary.csv",
         "results/tables/cna_summary.csv",
         "results/tables/luca_cell_type_gene_evidence.csv",
+        "shiny_app/data/mutation_summary.csv",
+        "shiny_app/data/gene_expression_summary.csv",
+        "shiny_app/data/cna_summary.csv",
+        "shiny_app/data/luca_cell_type_gene_evidence.csv",
     ]:
         path = ROOT / rel
         if path.exists() and count_csv(path) == 0:
