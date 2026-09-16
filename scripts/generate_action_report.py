@@ -128,7 +128,7 @@ ORDER BY cell_count DESC;
                 "",
                 "## App Scope",
                 "",
-                "The Shiny app provides a demo-ready interface with searchable tables, interactive plots, metric explanations, and caveats. It is designed for lightweight public deployment. It does not host raw human genomic files or large H5AD matrices.",
+                "The Shiny app provides a demo-ready interface with searchable tables, interactive plots, dataset background, metric explanations, and caveats. It is designed for lightweight public deployment. It does not host raw human genomic files or large H5AD matrices.",
                 "",
                 "## Recommended Next Step",
                 "",

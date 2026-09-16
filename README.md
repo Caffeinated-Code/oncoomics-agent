@@ -1,12 +1,24 @@
 # OncoOmics Agent: NSCLC Atlas Edition
 
-An advanced Bioinformatics Field Guide project: curate public [single-cell lung cancer atlas data](docs/biology-primer.md#why-single-cell-data) into a small [AWS](docs/aws-primer.md)-hosted [SQL database](docs/database-primer.md), then build an [agent-style query layer](docs/customization-guide.md#stable-interface-for-the-agent) that can answer biological questions about [non-small cell lung cancer (NSCLC)](docs/biology-primer.md#why-nsclc) cell states, [tumor microenvironment](docs/biology-primer.md#the-biological-setting) biology, and gene expression patterns.
+An advanced Bioinformatics Field Guide project: curate public [NSCLC](docs/biology-primer.md#why-nsclc) molecular and [single-cell atlas](docs/biology-primer.md#why-single-cell-data) resources into a compact [SQL database](docs/database-primer.md), then expose the evidence through a reproducible query layer and an interactive [Shiny results app](https://caffeinated-code.shinyapps.io/oncoomics-agent-nsclc-atlas/).
+
+The scientific focus is [lung adenocarcinoma and lung squamous cell carcinoma](docs/data-sources.md#implemented-v1-sources), [immune checkpoint](docs/biology-primer.md#v1-gene-themes) biology, [tumor microenvironment](docs/biology-primer.md#the-biological-setting) context, and the engineering pattern needed to turn public oncology data into a searchable atlas product.
+
+## Expert Framing
+
+This repo is built for a technical reader who wants to evaluate both the biology and the implementation. The current build combines public [TCGA PanCancer LUAD/LUSC](docs/data-sources.md#implemented-v1-sources) summaries from [cBioPortal](docs/scientific-references.md#core-dataset-references), [**LuCA**](docs/data-sources.md#primary-source-luca) metadata and cell-type evidence, and a schema that can later move from local SQLite to [AWS-hosted PostgreSQL](docs/aws-primer.md).
+
+The project intentionally separates evidence levels:
+
+- [mutation frequency](docs/biology-primer.md#v1-gene-themes), [RNA expression z-score](docs/biology-primer.md#why-single-cell-data), and [copy-number](docs/database-primer.md) summaries are quantitative TCGA-derived layers
+- [LuCA](docs/data-sources.md#primary-source-luca) cell-type evidence is curated and clearly marked until matrix-derived single-cell expression is added
+- [HLCA](docs/data-sources.md#reference-source-human-lung-cell-atlas) is recorded as the normal-lung reference layer for the next comparison module
 
 ## Who This Is For
 
 This repo is for readers who want to:
 
-- learn [NSCLC](docs/biology-primer.md#why-nsclc) [tumor microenvironment](docs/biology-primer.md#the-biological-setting) biology through public single-cell data
+- learn [NSCLC](docs/biology-primer.md#why-nsclc) [tumor microenvironment](docs/biology-primer.md#the-biological-setting) biology through public molecular and single-cell data
 - build a similar atlas-backed database agent
 - practice [SQL](docs/database-primer.md), [AWS](docs/aws-primer.md), and data curation with a real biomedical use case
 - see how to keep scientific answers grounded in queryable evidence
@@ -71,8 +83,9 @@ Instead, v1 stores curated summary tables:
 
 Recommended public sources:
 
-- [Human Lung Cell Atlas / HLCA](docs/data-sources.md#reference-source-human-lung-cell-atlas) as the healthy/disease lung reference atlas.
+- [TCGA PanCancer LUAD/LUSC via cBioPortal](docs/data-sources.md#implemented-v1-sources) for mutation, RNA expression, and copy-number summaries.
 - [**LuCA single-cell Lung Cancer Atlas**](docs/data-sources.md#primary-source-luca) as the NSCLC-focused tumor atlas.
+- [Human Lung Cell Atlas / HLCA](docs/data-sources.md#reference-source-human-lung-cell-atlas) as the healthy/disease lung reference atlas.
 - [CZ CELLxGENE LuCA collection](https://cellxgene.cziscience.com/collections/edb893ee-4066-4128-9aec-5eb2b03f8287) for atlas exploration and access.
 - [**TRACERx/PEACE NSCLC studies**](docs/data-sources.md#biological-framing-tracerx-and-peace) as biological framing for tumor evolution and metastasis. These are not the first ingestion target because some data are controlled-access or academic-use restricted.
 
@@ -183,9 +196,9 @@ See [Customization Guide](docs/customization-guide.md).
 
 ## Primers
 
-- [Biology Primer](docs/biology-primer.md)
-- [Data Sources](docs/data-sources.md)
-- [Database Primer](docs/database-primer.md)
+- [Biology Primer](docs/biology-primer.md): [NSCLC](docs/biology-primer.md#why-nsclc), [single-cell data](docs/biology-primer.md#why-single-cell-data), [tumor microenvironment](docs/biology-primer.md#the-biological-setting), and [gene themes](docs/biology-primer.md#v1-gene-themes)
+- [Data Sources](docs/data-sources.md): [LuCA](docs/data-sources.md#primary-source-luca), [HLCA](docs/data-sources.md#reference-source-human-lung-cell-atlas), [TRACERx/PEACE](docs/data-sources.md#biological-framing-tracerx-and-peace), and [implemented TCGA sources](docs/data-sources.md#implemented-v1-sources)
+- [Database Primer](docs/database-primer.md): schema design, SQL safety, and evidence provenance
 - [Implementation Status](docs/implementation-status.md)
 - [AWS Primer](docs/aws-primer.md)
 - [AWS Account Prep](docs/aws-account-prep.md)

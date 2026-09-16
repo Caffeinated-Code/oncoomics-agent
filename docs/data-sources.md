@@ -68,6 +68,13 @@ The current local build ingests compact public cBioPortal data from:
 
 These sources provide mutation, RNA expression, copy-number, methylation, RPPA, and structural-variant profile availability. The implemented scripts currently summarize mutation, RNA expression z-scores, and discrete GISTIC copy-number calls for the curated NSCLC gene panel.
 
+Primary use in this project:
+
+- separate [LUAD and LUSC](biology-primer.md#why-nsclc) driver interpretation
+- provide cohort-level mutation frequencies for genes such as `KRAS`, `EGFR`, `MET`, `ALK`, and `MYC`
+- provide bulk tumor expression context for [immune checkpoint](biology-primer.md#v1-gene-themes), myeloid, EMT, proliferation, hypoxia, and antigen-presentation genes
+- provide discrete GISTIC copy-number summaries as screening features for follow-up analysis
+
 The current local build also ingests public LuCA CELLxGENE metadata:
 
 - core and extended LuCA dataset records
@@ -79,6 +86,12 @@ The current local build also ingests public LuCA CELLxGENE metadata:
 - 33 LuCA cell-type labels
 - broad compartment mapping for agent queries
 - curated gene-by-cell-type evidence for the NSCLC panel
+
+Primary use in this project:
+
+- connect genes such as `CD274`, `PDCD1`, `CTLA4`, `SPP1`, `S100A8`, and `VIM` to plausible malignant, lymphoid, myeloid, stromal, or epithelial compartments
+- expose [cell-type](biology-primer.md#the-biological-setting) context for app users and database queries
+- mark evidence status transparently until full matrix-derived expression summaries are computed
 
 The full LuCA single-cell matrices are kept out of Git and out of the first database build because v1 is designed to stay small, inspectable, and AWS-friendly. Quantitative expression extraction from the large H5AD assets is the next scalable processing step.
 

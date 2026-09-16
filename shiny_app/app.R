@@ -38,7 +38,10 @@ info_text <- list(
   fraction_high_zscore = "Fraction of tumor samples with RNA expression z-score >= 1 for the selected gene. This is bulk tumor RNA, so it does not identify the exact producing cell type.",
   altered_fraction = "Fraction of samples with any non-neutral discrete GISTIC copy-number call for the selected gene. This is a screening signal and should be paired with expression, focality, purity, and histology context.",
   luca_evidence = "Curated LuCA cell-type evidence links genes to plausible cell compartments. Values marked not_matrix_quantified_in_v1 are evidence-backed but not yet computed from the full LuCA H5AD matrix.",
-  multiomics = "This demo integrates mutation, RNA expression, copy number, source provenance, and single-cell atlas context in one small SQL-ready project."
+  multiomics = "This demo integrates mutation, RNA expression, copy number, source provenance, and single-cell atlas context in one small SQL-ready project.",
+  tcga = "TCGA LUAD and LUSC PanCancer Atlas studies provide public cohort-scale mutation, RNA expression, and copy-number context for lung adenocarcinoma and lung squamous cell carcinoma.",
+  luca = "LuCA is a single-cell lung cancer atlas. In this demo it contributes dataset metadata, cell-type labels, compartment mapping, and curated gene-cell evidence.",
+  hlca = "HLCA is a healthy and diseased lung reference atlas. It anchors future normal-lung comparisons and helps keep NSCLC cell-state interpretation biologically grounded."
 )
 
 metric_help <- function(id, label) {
@@ -81,6 +84,9 @@ ui <- page_navbar(
     tags$style(HTML("
       body { background: #f6f8f6; color: #17201d; }
       .navbar { box-shadow: 0 1px 12px rgba(17, 34, 33, 0.08); }
+      .navbar .nav-link { color: rgba(255,255,255,.92) !important; font-weight: 700; border-radius: 4px; margin: 0 2px; }
+      .navbar .nav-link:hover, .navbar .nav-link:focus { background: rgba(255,255,255,.16) !important; color: #ffffff !important; }
+      .navbar .nav-link.active, .navbar .show > .nav-link { background: #f4c95d !important; color: #142521 !important; box-shadow: inset 0 -3px 0 #9a5f17; }
       .brand-title { font-weight: 800; letter-spacing: 0; }
       .brand-title span { font-weight: 600; margin-left: .45rem; color: #dfeee8; }
       .app-hero { background: linear-gradient(135deg, #17384f, #2f6f73 55%, #67597a); color: white; padding: 28px; border-radius: 6px; margin-bottom: 18px; }
@@ -90,6 +96,7 @@ ui <- page_navbar(
       .panel h3, .panel h4 { color: #17384f; font-weight: 800; }
       .value-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; margin: 16px 0; }
       .value-box { background: #fbfcfb; border: 1px solid #cfe0d9; border-left: 5px solid #2f6f73; border-radius: 6px; padding: 14px; min-height: 112px; }
+      .dataset-card { border-left-color: #67597a; }
       .value-label { color: #566662; font-weight: 700; font-size: .92rem; }
       .value-number { font-size: 2rem; color: #17201d; font-weight: 850; line-height: 1.2; overflow-wrap: anywhere; }
       .value-note { color: #5f6f69; font-size: .86rem; margin-top: 6px; }
@@ -120,6 +127,29 @@ ui <- page_navbar(
     ),
     div(
       class = "panel",
+      h3("Dataset background"),
+      p("The demo uses public, processed datasets that are small enough for a review app and structured enough to become a database-backed analysis system."),
+      div(
+        class = "value-grid",
+        div(
+          class = "value-box dataset-card",
+          div(class = "value-label", metric_help("help_tcga", "TCGA PanCancer LUAD/LUSC")),
+          div(class = "value-note", "Primary use: cohort-scale molecular context for NSCLC histologies. The app uses mutation frequency, bulk RNA z-score summaries, and discrete GISTIC copy-number calls.")
+        ),
+        div(
+          class = "value-box dataset-card",
+          div(class = "value-label", metric_help("help_luca", "LuCA single-cell Lung Cancer Atlas")),
+          div(class = "value-note", "Primary use: NSCLC cell-type and tumor microenvironment context. The app uses LuCA metadata, 33 public cell-type labels, broad compartments, and curated gene-cell evidence.")
+        ),
+        div(
+          class = "value-box dataset-card",
+          div(class = "value-label", metric_help("help_hlca", "Human Lung Cell Atlas")),
+          div(class = "value-note", "Primary use: reference lung biology. HLCA is recorded as the normal-lung comparison layer for future cell-state and disease-context extensions.")
+        )
+      )
+    ),
+    div(
+      class = "panel",
       h3("Actionable readout"),
       tags$ul(
         class = "insight-list",
@@ -140,7 +170,7 @@ ui <- page_navbar(
     )
   ),
   nav_panel(
-    "Driver Landscape",
+    "Drivers",
     layout_sidebar(
       sidebar = sidebar(
         selectInput("driver_histology", "Cancer type", choices = c("All", sort(unique(mutation_summary$cancer_type))), selected = "All"),
@@ -157,7 +187,7 @@ ui <- page_navbar(
     )
   ),
   nav_panel(
-    "Checkpoint And Expression",
+    "Checkpoint RNA",
     layout_sidebar(
       sidebar = sidebar(
         selectInput("expr_theme", "Gene theme", choices = c("All", theme_labels), selected = "immune_checkpoint"),
@@ -173,7 +203,7 @@ ui <- page_navbar(
     )
   ),
   nav_panel(
-    "Copy Number",
+    "CNA",
     layout_sidebar(
       sidebar = sidebar(
         selectInput("cna_theme", "Gene theme", choices = c("All", theme_labels), selected = "All"),
@@ -189,7 +219,7 @@ ui <- page_navbar(
     )
   ),
   nav_panel(
-    "LuCA Cell Context",
+    "LuCA Context",
     layout_sidebar(
       sidebar = sidebar(
         selectizeInput("luca_gene", "Gene", choices = sort(unique(luca_evidence$symbol)), selected = "CD274"),
@@ -210,7 +240,7 @@ ui <- page_navbar(
     )
   ),
   nav_panel(
-    "Data Browser",
+    "Data",
     div(
       class = "panel",
       h3("Search all result tables"),
@@ -256,6 +286,9 @@ server <- function(input, output, session) {
   observeEvent(input$help_altered_fraction, show_help("altered_fraction", info_text$altered_fraction))
   observeEvent(input$help_luca_evidence, show_help("LuCA evidence", info_text$luca_evidence))
   observeEvent(input$help_multiomics, show_help("Multi-omics scope", info_text$multiomics))
+  observeEvent(input$help_tcga, show_help("TCGA PanCancer LUAD/LUSC", info_text$tcga))
+  observeEvent(input$help_luca, show_help("LuCA single-cell Lung Cancer Atlas", info_text$luca))
+  observeEvent(input$help_hlca, show_help("Human Lung Cell Atlas", info_text$hlca))
 
   filtered_mutations <- reactive({
     x <- mutation_summary |> left_join(gene_panel |> select(symbol, theme), by = "symbol")
