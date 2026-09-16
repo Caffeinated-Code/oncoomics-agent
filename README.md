@@ -2,6 +2,8 @@
 
 An advanced Bioinformatics Field Guide project: curate public [NSCLC](docs/biology-primer.md#why-nsclc) molecular and [single-cell atlas](docs/biology-primer.md#why-single-cell-data) resources into a compact [SQL database](docs/database-primer.md), then expose the evidence through a reproducible query layer and an interactive [Shiny results app](https://caffeinated-code.shinyapps.io/oncoomics-agent-nsclc-atlas/).
 
+Repository display name: `OncoOmics_Agent_NSCLC_Atlas`.
+
 The scientific focus is [lung adenocarcinoma and lung squamous cell carcinoma](docs/data-sources.md#implemented-v1-sources), [immune checkpoint](docs/biology-primer.md#v1-gene-themes) biology, [tumor microenvironment](docs/biology-primer.md#the-biological-setting) context, and the engineering pattern needed to turn public oncology data into a searchable atlas product.
 
 ## Expert Framing
@@ -19,8 +21,9 @@ The project intentionally separates evidence levels:
 This repo is for readers who want to:
 
 - learn [NSCLC](docs/biology-primer.md#why-nsclc) [tumor microenvironment](docs/biology-primer.md#the-biological-setting) biology through public molecular and single-cell data
+- learn the difference between [LUAD and LUSC](docs/biology-primer.md#luad-versus-lusc) before interpreting NSCLC plots
 - build a similar atlas-backed database agent
-- practice [SQL](docs/database-primer.md), [AWS](docs/aws-primer.md), and data curation with a real biomedical use case
+- practice [SQL](docs/database-primer.md), [AWS](docs/aws-primer.md), [FAIR data practices](docs/fair-data-practices.md), and data curation with a real biomedical use case
 - see how to keep scientific answers grounded in queryable evidence
 
 The writing aims to be direct, reproducible, and easy to navigate.
@@ -199,6 +202,8 @@ See [Customization Guide](docs/customization-guide.md).
 - [Biology Primer](docs/biology-primer.md): [NSCLC](docs/biology-primer.md#why-nsclc), [single-cell data](docs/biology-primer.md#why-single-cell-data), [tumor microenvironment](docs/biology-primer.md#the-biological-setting), and [gene themes](docs/biology-primer.md#v1-gene-themes)
 - [Data Sources](docs/data-sources.md): [LuCA](docs/data-sources.md#primary-source-luca), [HLCA](docs/data-sources.md#reference-source-human-lung-cell-atlas), [TRACERx/PEACE](docs/data-sources.md#biological-framing-tracerx-and-peace), and [implemented TCGA sources](docs/data-sources.md#implemented-v1-sources)
 - [Database Primer](docs/database-primer.md): schema design, SQL safety, and evidence provenance
+- [FAIR Data Practices](docs/fair-data-practices.md): how the repo keeps data findable, accessible, interoperable, and reusable
+- [Project Roadmap](docs/roadmap.md): the next build sequence for LuCA matrix summaries, API, AWS, voice/chat, expert modules, and teaching assets
 - [Implementation Status](docs/implementation-status.md)
 - [AWS Primer](docs/aws-primer.md)
 - [AWS Account Prep](docs/aws-account-prep.md)

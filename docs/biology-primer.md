@@ -34,6 +34,20 @@ NSCLC is a strong first disease focus because it connects multiple advanced biol
 - metastasis
 - therapy resistance
 
+## LUAD Versus LUSC
+
+[LUAD](data-sources.md#implemented-v1-sources) means **lung adenocarcinoma**. [LUSC](data-sources.md#implemented-v1-sources) means **lung squamous cell carcinoma**. Both are major [NSCLC](#why-nsclc) histologies, but they should not be treated as interchangeable datasets.
+
+| Feature | LUAD | LUSC |
+|---|---|---|
+| Full name | Lung adenocarcinoma | Lung squamous cell carcinoma |
+| Typical biology | Gland-forming distal airway or alveolar epithelial programs | Squamous epithelial differentiation |
+| Common project lesson | Strong examples for driver mutation and targeted therapy reasoning | Strong examples for copy-number, smoking-associated, squamous-lineage, and immune-context reasoning |
+| Driver context | Often includes `EGFR`, `KRAS`, `ALK`, `MET`, `RET`, `ROS1`, `BRAF`, and related actionable programs depending on cohort | Often includes `TP53`, 3q amplification, `SOX2`, `PIK3CA`, `NFE2L2`, `KEAP1`, and copy-number complexity |
+| Why this matters in SQL | Keep `cancer_type = 'LUAD'` and `cancer_type = 'LUSC'` separate for first-pass summaries | Avoid averaging the two histologies into a single generic NSCLC result |
+
+For beginners: a histology is a tumor category based on how cancer cells look and behave in tissue. In this project, histology is also a data-analysis grouping variable.
+
 [TRACERx and PEACE](data-sources.md#biological-framing-tracerx-and-peace) studies provide the motivating biological story: lung cancer evolves across space and time, and metastasis is shaped by subclonal selection and tumor microenvironment context. This project uses that story to motivate public atlas questions, while keeping v1 data ingestion focused on easier-to-use public single-cell atlas resources.
 
 Key evidence anchors:
@@ -44,7 +58,7 @@ Key evidence anchors:
 
 ## What Counts As Multi-Omics Here?
 
-The first build is single-cell transcriptomics plus metadata. It is still an omics integration project because it connects expression with:
+The first build integrates public mutation, RNA expression, copy-number, single-cell atlas metadata, and curated cell-type evidence. It is an omics integration project because it connects:
 
 - cell type
 - disease state
@@ -52,6 +66,7 @@ The first build is single-cell transcriptomics plus metadata. It is still an omi
 - tumor or non-tumor compartment
 - atlas provenance
 - biological gene programs
+- molecular alteration context
 
 Later versions can add mutation, copy number, spatial, proteomic, or clinical outcome tables where public access and licensing allow.
 

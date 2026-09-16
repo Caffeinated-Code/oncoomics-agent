@@ -4,7 +4,15 @@
 
 This project now has a compact, reproducible NSCLC atlas database and a Shiny demo app for interactive review. The current build integrates public TCGA LUAD/LUSC mutation, RNA expression, and copy-number summaries with LuCA single-cell atlas metadata and curated gene-by-cell-type evidence.
 
+The teaching goal is to show novice bioinformatics learners how to turn public oncology data into an evidence-backed project using FAIR data practices. Expert readers should be able to inspect the biological assumptions, provenance, schema, caveats, and next technical milestones.
+
 The main value is fast biological triage. A user can compare LUAD and LUSC driver patterns, inspect checkpoint expression context, review copy-number alteration signals, and connect selected markers to plausible LuCA cell compartments.
+
+## LUAD And LUSC In Plain Language
+
+LUAD means lung adenocarcinoma. LUSC means lung squamous cell carcinoma. They are both NSCLC histologies, but they differ in lineage programs, driver landscapes, smoking association, copy-number patterns, and common interpretation strategies.
+
+In this project, LUAD and LUSC are kept as separate `cancer_type` values because averaging them into one generic NSCLC result can hide biologically meaningful differences.
 
 ## Database Coverage
 

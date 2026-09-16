@@ -41,7 +41,9 @@ info_text <- list(
   multiomics = "This demo integrates mutation, RNA expression, copy number, source provenance, and single-cell atlas context in one small SQL-ready project.",
   tcga = "TCGA LUAD and LUSC PanCancer Atlas studies provide public cohort-scale mutation, RNA expression, and copy-number context for lung adenocarcinoma and lung squamous cell carcinoma.",
   luca = "LuCA is a single-cell lung cancer atlas. In this demo it contributes dataset metadata, cell-type labels, compartment mapping, and curated gene-cell evidence.",
-  hlca = "HLCA is a healthy and diseased lung reference atlas. It anchors future normal-lung comparisons and helps keep NSCLC cell-state interpretation biologically grounded."
+  hlca = "HLCA is a healthy and diseased lung reference atlas. It anchors future normal-lung comparisons and helps keep NSCLC cell-state interpretation biologically grounded.",
+  luad_lusc = "LUAD means lung adenocarcinoma. LUSC means lung squamous cell carcinoma. They are both major NSCLC histologies, but they differ in cell lineage, smoking association, driver mutations, and clinical testing patterns.",
+  fair = "FAIR means findable, accessible, interoperable, and reusable. In this app, FAIR practice means public source links, provenance tables, compact reusable outputs, and explicit caveats."
 )
 
 metric_help <- function(id, label) {
@@ -119,6 +121,17 @@ ui <- page_navbar(
       p("Explore public LUAD and LUSC mutation, RNA, copy-number, and LuCA cell-type context from one compact database-ready project.")
     ),
     div(
+      class = "panel",
+      h3("Learning goal"),
+      p("This project teaches novice bioinformatics learners how to build an impactful public-data project while giving expert readers enough provenance, caveats, and schema detail to evaluate the work."),
+      tags$ul(
+        class = "insight-list",
+        tags$li("Start with the biology: what NSCLC, LUAD, LUSC, cell types, and tumor microenvironment mean."),
+        tags$li("Apply FAIR data practice: make sources findable, access notes explicit, tables interoperable, and outputs reusable."),
+        tags$li("Turn public data into a small evidence system: curated tables, SQL schema, reports, app, validation, and a cloud-ready path.")
+      )
+    ),
+    div(
       class = "value-grid",
       value_box("TCGA samples", format(nrow(samples), big.mark = ","), "LUAD and LUSC sample records"),
       value_box("Curated genes", nrow(gene_panel), "Driver, checkpoint, myeloid, EMT, hypoxia, antigen-presentation, proliferation"),
@@ -128,7 +141,7 @@ ui <- page_navbar(
     div(
       class = "panel",
       h3("Dataset background"),
-      p("The demo uses public, processed datasets that are small enough for a review app and structured enough to become a database-backed analysis system."),
+      p("The demo uses public, processed datasets that are small enough for a review app and structured enough to become a database-backed analysis system. ", metric_help("help_fair", "FAIR practice"), " is treated as part of the analysis, not as paperwork after the fact."),
       div(
         class = "value-grid",
         div(
@@ -145,6 +158,31 @@ ui <- page_navbar(
           class = "value-box dataset-card",
           div(class = "value-label", metric_help("help_hlca", "Human Lung Cell Atlas")),
           div(class = "value-note", "Primary use: reference lung biology. HLCA is recorded as the normal-lung comparison layer for future cell-state and disease-context extensions.")
+        )
+      )
+    ),
+    div(
+      class = "panel",
+      h3("LUAD versus LUSC"),
+      p(metric_help("help_luad_lusc", "LUAD and LUSC"), " are the two TCGA NSCLC cohorts used in this demo. They should be analyzed separately because they represent different tumor histologies."),
+      fluidRow(
+        column(
+          6,
+          tags$strong("LUAD: lung adenocarcinoma"),
+          tags$ul(
+            tags$li("Often arises from gland-forming distal airway or alveolar epithelial programs."),
+            tags$li("Commonly enriched for actionable drivers such as EGFR, KRAS, ALK, MET, RET, ROS1, BRAF, and others depending on cohort and ancestry."),
+            tags$li("Frequently used for targeted-therapy examples because molecular testing is central to treatment selection.")
+          )
+        ),
+        column(
+          6,
+          tags$strong("LUSC: lung squamous cell carcinoma"),
+          tags$ul(
+            tags$li("Usually reflects squamous epithelial differentiation and is more strongly linked to smoking exposure."),
+            tags$li("Often has TP53 alteration, 3q amplification, SOX2/PIK3CA pathway changes, and high copy-number complexity."),
+            tags$li("Has fewer classic kinase-driver treatment examples than LUAD, so interpretation often leans on copy-number, immune, and pathway context.")
+          )
         )
       )
     ),
@@ -289,6 +327,8 @@ server <- function(input, output, session) {
   observeEvent(input$help_tcga, show_help("TCGA PanCancer LUAD/LUSC", info_text$tcga))
   observeEvent(input$help_luca, show_help("LuCA single-cell Lung Cancer Atlas", info_text$luca))
   observeEvent(input$help_hlca, show_help("Human Lung Cell Atlas", info_text$hlca))
+  observeEvent(input$help_luad_lusc, show_help("LUAD versus LUSC", info_text$luad_lusc))
+  observeEvent(input$help_fair, show_help("FAIR data practice", info_text$fair))
 
   filtered_mutations <- reactive({
     x <- mutation_summary |> left_join(gene_panel |> select(symbol, theme), by = "symbol")

@@ -6,6 +6,10 @@ This v1 report builds a compact public NSCLC database from cBioPortal TCGA PanCa
 
 The database is intentionally summary-first. It stores gene-panel mutation, RNA expression z-score, and discrete copy-number summaries for fast SQL queries. Raw single-cell matrices remain outside the database.
 
+## LUAD And LUSC
+
+LUAD means lung adenocarcinoma. LUSC means lung squamous cell carcinoma. They are both major NSCLC histologies, but they should be analyzed separately because their lineage programs, driver landscapes, smoking association, and copy-number patterns differ.
+
 ## Database Contents
 
 | table_name | rows |

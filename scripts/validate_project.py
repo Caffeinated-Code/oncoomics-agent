@@ -14,6 +14,9 @@ ROOT = Path(__file__).resolve().parents[1]
 
 REQUIRED_FILES = [
     "README.md",
+    "docs/biology-primer.md",
+    "docs/fair-data-practices.md",
+    "docs/roadmap.md",
     "configs/gene_panel.csv",
     "sql/schema.sql",
     "scripts/curate_cbioportal_nsclc.py",
